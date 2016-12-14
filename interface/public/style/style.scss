@@ -1,0 +1,113 @@
+input,a, button {
+    &:focus{
+        outline: none !important;
+        box-shadow: none !important;
+    }
+    outline: none !important;
+    
+}
+input:focus {
+    border-color: #ccc !important;
+    border-right: none;
+}
+body {
+    background: #fafafa;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    font-family: "Open-Sans", sans-serif;
+}
+.chat {
+    outline: none;
+    box-sizing: border-box;
+    position: relative;
+    max-width: 640px;
+    margin: 0 auto;
+    z-index: 10;
+    padding: 8px;
+    a {
+        text-decoration: none;
+    }
+    &__avatar {
+        border-radius: 50%;
+        position: absolute;
+        height: 34px;
+        z-index: 99;
+        width: 34px;
+        opacity: 0;
+        top: 36px;
+        left: 0; 
+    }
+    &__list {
+        padding: 0;
+        margin: 0 0 148px 0;
+        list-style: none;
+        overflow: hidden;
+        &__item {
+            margin: 0;
+            padding: 0 15px;
+            overflow: hidden;
+            &-new {
+                position: relative;
+                overflow: hidden;
+                .chat{
+                    &__list__item__author {
+                        opacity: 1;
+                    }
+                    &__avatar {
+                        opacity: 1;
+                    }
+                }
+            }
+            &__author {
+                margin: 16px 0 6px 28px;
+                padding-left: 10px;
+                font-size: 10px;
+                display: block;
+                color: #888;
+                opacity: 0;
+            }
+        }
+    }
+    &__bubble {
+        margin: 0 0 15px 28px;
+        background: #fff;
+        box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+        display: inline-block;
+        line-height: 26px;
+        border-radius: 3px;
+        text-align: left;
+        position: relative;
+        padding: 6px 12px;
+        font-size: 15px;
+        border: none;
+        max-width: 90%;
+        min-width: 44px;
+        min-height: 12px;
+        &-response {
+            background: #27ae60;
+            color: #fff;
+            float: right;
+            clear: both;
+        }
+    }
+    &__input {
+        position: fixed;
+        background-color: #fafafa;
+        padding: 0px 0px 23px 0px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        max-width: 640px;
+        z-index: 100;
+        .input-group-btn {
+            &>.btn {
+                background: #fff;
+                color: #27ae60;
+                border: 1px solid #ccc;
+                border-left: none;
+            }
+        }
+    }
+}
