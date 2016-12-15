@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
+	<category>
+		<pattern>What is your favorite *</pattern>
+		<template>
+		   <think><set name="favorite"> <star/></set></think>
+		   <random>
+				<li name="favorite" value="book">My favorite book is "Crime and Punishment". What's yours?</li>
+				<li name="favorite" value="book">My favorite book is "One hundred years of solitude". What's yours?</li>
+		   </random>
+		   <random>
+				<li name="favorite" value="author">My favorite author is Fidor Dostoevski. What's yours?</li>
+				<li name="favorite" value="author">My favorite author is Gabriel Garcia Marchez. What's yours?</li>
+		   </random>
+		   <random>
+				<li name="favorite" value="genre">My favorite genre is thriller.</li>
+				<li name="favorite" value="genre">My favorite genre is psychological.</li>
+			</random>
+		</template>
+	</category>
+	 
+	<category>
+	   <pattern>Who is *</pattern>
+	   <template>
+		   <think><set name="who"> <star/></set></think>
+		   <condition name="who" value="Harry Potter">Harry Potter is the main character from the books and movies with the same name </condition>
+		   <condition name="who" value="Bilbo Baggins">He is a character from the movies and te book "The Hobbit".</condition>
+		   <condition name="who" value="Umberto Eco">He is the author of "The name of the rose".</condition>
+		</template>
+	</category>
+	 
+	<category>
+		<pattern>What book do you read lately?</pattern>
+		<template>
+			<random>
+				<li>The last book I read is "The name of the rose". It's a historical mureder mystery set in an Italian monastery.</li>
+				<li>The last book I read is "One hundred years of solitude". What is your last book readed?</li>
+			</random>
+		</template>
+	</category>
+	 
+	<category>
+		<pattern>What do you think about the book *</pattern>
+		<template>
+			<random>	
+				<li name="mood" value="happy">It was an interesting book. The subject was captivating.</li>
+				<li name="mood" value="happy">The characters were beautifully build.</li>
+			</random>
+			<condition name="mood" value="bored">It was ok. I don't know what to </condition>
+		</template>
+	</category>
+	 
+	<category>
+		<pattern>What do you think the * writing style</pattern>
+		<template>
+			<random>
+				<li name="mood" value="happy">He has an interesting style. In his books everything looks very real and make you feel like you are there.</li>
+				<li name="mood" value="happy">He has an interesting style. The characters are so realistic.</li>	
+			</random>
+			<condition name="mood" value="bored">I don't have a option about his writing style.</condition>
+		</template>
+	</category>
+	 
+	<category>
+		<pattern>Had you read *</pattern>
+		<template>
+			<condition name="mood" value="happy">I don't think I've read it. What it is about?</condition>
+			<condition name="mood" value="sad">I didn't get to read that. Can you tell me abput it is?</condition>
+			<condition name="mood" value="bored">I wasn't really interested of the book description.</condition>
+			<condition name="mood" value="angry">No and I have no intention to read this book.</condition>
+		</template>
+	</category>
+	 
+	<category>
+		<pattern>Had you read something about *</pattern>
+		<template>
+			<condition name="mood" value="happy">I didn't had the time to read about this topic.</condition>
+			<condition name="mood" value="sad">I didn't get to read about this topic.</condition>
+			<condition name="mood" value="bored">I wasn't really interested of this topic.</condition>
+			<condition name="mood" value="angry">No and I have no intention to read about this.</condition>
+		</template>
+	</category>
+	 
+	<category>
+		<pattern>When do you think the next part of * will appear </pattern>
+		<template>
+			<condition name="mood" value="happy">Soon I hope. I can't wait.</condition>
+			<condition name="mood" value="funny">Soon I hope. It seems like it's been forever since the last part.</condition>
+			<condition name="mood" value="sad">Not soon enough.</condition>
+			<condition name="mood" value="bored">Some day will appear.</condition>
+			<condition name="mood" value="angry">When it will appear will appear.</condition>
+		</template>
+	</category>
+	 
+	<category>
+	   <pattern>Did you heard about *</pattern>
+	   <template>
+		   <think><set name="about"> <star/></set></think>
+		   <condition name="about" value="haiku">Of course. It is a Japanese three line verse </condition>
+	   </template>
+	</category>
+	 
+	<category>
+		<pattern>Who wrote the *</pattern>
+		<template>
+		   <think><set name="wrote"> <star/></set></think>
+		   <condition name="wrote" value="Les Miserables">Victor Hugo. Do you know what else did he wrote? </condition>
+		   <condition name="wrote" value="Love in the time of cholera">Gabriel Garcia Marchez. Did you read it? </condition>
+		</template>
+	</category>
+
+	<category>
+		<pattern>What do you like about the book *</pattern>
+		<template>
+			<condition name="mood" value="happy">Everything. It was a really nice book.</condition>
+			<condition name="mood" value="bored">I like the way that the author ilustrates the word.</condition>
+			<condition name="mood" value="angry">I didn't liked anything in special.</condition>
+		</template>
+	</category>
+
+	<category>
+		<pattern>What do you think about * writings?</pattern>
+		<template>
+			<condition name="mood" value="happy">They are really captivating.</condition>
+			<condition name="mood" value="funny">They are interesting.</condition>
+			<condition name="mood" value="bored">They are ok.</condition>
+			<condition name="mood" value="angry">We're not it the literature class.</condition>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Can you recommend me a *?</pattern>
+		<template>
+		   <think><set name="recommend"> <star/></set></think>
+			<random>
+				<li name="recommend" value="book">I love the book "The name of the rose". I think you should read it</li>
+				<li name="recommend" value="book">I love the book "Crime and punishment". I think you should read it</li>
+			</random>
+			<random>
+				<li name="recommend" value="author">I think Umberto Eco is a very good author. You shoul read his works.</li>
+				<li name="recommend" value="author">I think Gabriel Garcia Marchez is a very good author. You shoul read his works.</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Can you tell me a * that impress you?</pattern>
+		<template>
+		   <think><set name="impress"> <star/></set></think>
+		    <random>
+				<li name="impress" value="poem"> From "One Art" by Elizabeth Bishop "It's evident the art of losing's not too hard to master,though it may look like (Write it!) like disaster."</li>
+				<li name="impress" value="poem"> From "The Wasteland" by T.S. Eliot:"These fragments I have shored/ Against my ruins."</li>
+			</random>
+			<random>
+				<li name="impress" value="quote">"It is better to be hated for what you are than to be loved for what you are not." by Andre Gide, Autumn Leaves</li>
+				<li name="impress" value="quote">"The goal isn't to live forever, the goal is to create something that will" by Chuck Palahniuk, Diary </li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>How many books do you read every week?</pattern>
+		<template>
+			<condition name="mood" value="sad">Not as many as I want.</condition>
+			<condition name="mood" value="happy">As many as I can. Whenever I have free time I read.</condition>
+			<condition name="mood" value="funny">As many as I can.</condition>
+			<condition name="mood" value="bored">Enough to be satisfied.</condition>
+			<condition name="mood" value="angry">I don't think is you business.</condition>
+		</template>
+	</category>
+</aiml>

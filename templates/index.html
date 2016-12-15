@@ -34,7 +34,7 @@
                     }, "json");
                     $.post("/respond", $(this).serialize(), function(jsonData){
                         var x = JSON.stringify(jsonData)
-                        x = JSON.parse(x)["outres"]
+                        x = JSON.parse(x)["response"]
                         console.log(x)
                         var ret = "<li class=\"chat__list__item chat__list__item-new\"><a target=\"_blank\" href=\"#\" class=\"chat__list__item__author\">Chad</a><a target=\"_blank\" href=\"#\"><img class=\"chat__avatar\" src=\"{{ url_for('static', filename='img/avatar.png') }}\"></a><div class=\"chat__bubble\"><span>" + x + "</span></div></li>"
                         chatlist.append(ret);
@@ -55,7 +55,7 @@
                 </ul>
                 <form method="POST">
                     <div class="input-group chat__input">
-                        <input id="user-input" type="text" class="form-control" name="user_input" placeholder="Say something...">
+                        <input id="user-input" type="text" class="form-control" name="user_input" autocomplete="off" placeholder="Say something...">
                         <span class="input-group-btn">
                             <button class="btn btn-secondary" type="submit">Send</button>
                         </span>

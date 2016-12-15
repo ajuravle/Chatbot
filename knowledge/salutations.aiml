@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
+    <category>
+        <pattern>HI, I'M *</pattern>
+        <template>
+            <think><set name="username"> <star/></set></think>
+            <random>
+                <li>Well, hello <get name="username"></get>!</li>
+                <li>Hello, <get name="username"></get></li>
+                <li>Hi! Nice to meet you!</li>
+                <li>Welcome! How are you?</li>
+                <li>Hello! Nice to meet you</li>
+                <li>Hi! How are you?</li>
+                <li>Hello! What's your name?</li>
+                <li>Hi! What's your name?</li>
+                <li>Hi! Nice to meet you! How are you?</li>
+                <li>Hi! Nice to meet you! What's your name?</li>
+                <li>Hi there! How are you?</li>
+            </random>
+        </template>
+    </category>
+	
+    <category>
+        <pattern>HI, MY NAME IS *</pattern>
+        <template>
+            <think><set name="username"> <star/></set></think>
+            <random>
+                <li>Well, hello <get name="username"></get>!</li>
+                <li>Hello, <get name="username"></get></li>
+                <li>Hi! Nice to meet you!</li>
+                <li>Welcome! How are you?</li>
+                <li>Hello! Nice to meet you</li>
+                <li>Hi! How are you?</li>
+                <li>Hello! What's your name?</li>
+                <li>Hi! What's your name?</li>
+                <li>Hi! Nice to meet you! How are you?</li>
+                <li>Hi! Nice to meet you! What's your name?</li>
+                <li>hi there! How are you?</li>
+            </random>
+        </template>
+    </category>
+	
+    <category>
+        <pattern>HI THERE</pattern>
+        <template>
+            <random>
+                <li>Hello! Nice to meet you</li>
+                <li>Hi! Nice to meet you</li>
+                <li>Hi! How are you?</li>
+                <li>Welcome! How are you?</li>
+                <li>Hello! What's your name?</li>
+                <li>Hi! What's your name?</li>
+                <li>Hi! Nice to meet you! How are you?</li>
+                <li>Hi! Nice to meet you! What's your name?</li>
+                <li>hi there! How are you?</li>
+            </random>
+        </template>
+    </category>
+	
+    <category>
+        <pattern>HELLO, MY NAME IS *</pattern>
+        <template>
+            <think><set name="username"><star/></set></think>
+            <random>
+                <li>Well, hello <get name="username"></get>!</li>
+                <li>Hello, <get name="username"></get></li>
+                <li>Hi! Nice to meet you!</li>
+                <li>Welcome! How are you?</li>
+                <li>Hello! Nice to meet you</li>
+                <li>Hi! How are you?</li>
+                <li>Hello! What's your name?</li>
+                <li>Hi! What's your name?</li>
+                <li>Hi! Nice to meet you! How are you?</li>
+                <li>Hi! Nice to meet you! What's your name?</li>
+                <li>hi there! How are you?</li>
+            </random>
+        </template>
+    </category>
+	
+    <category>
+        <pattern>HELLO</pattern>
+        <template>
+            <random>
+                <li>hi there! How are you?</li>
+                <li>Hello! What's your name?</li>
+                <li>Hi! Nice to meet you! How are you?</li>
+                <li>Hi! Nice to meet you! What's your name?</li>
+                <li>Hi! Nice to meet you!</li>
+                <li>Welcome! How are you?</li>
+                <li>Hello! Nice to meet you</li>
+                <li>Hi! How are you?</li>
+                <li>Hi! What's your name?</li>
+            </random>
+        </template>
+    </category>
+	
+    <category>
+        <pattern>HEY *</pattern>
+        <template>
+            <random>
+                <li>hi there! How are you?</li>
+                <li>Hello! What's your name?</li>
+                <li>Hi! Nice to meet you! How are you?</li>
+                <li>Hi! Nice to meet you! What's your name?</li>
+                <li>Hi! Nice to meet you!</li>
+                <li>Welcome! How are you?</li>
+                <li>Hello! Nice to meet you</li>
+                <li>Hi! How are you?</li>
+                <li>Hi! What's your name?</li>
+            </random>
+        </template>
+    </category>
+	
+    <category>
+        <pattern>GOOD MORNING</pattern>
+        <template>
+            <random>
+                <li>hi there! How are you?</li>
+                <li>Welcome! How are you?</li>
+                <li>Hi! How are you?</li>
+                <li>Good morning! How are you today?</li>
+                <li>Good morning! How are you feeling today?</li>
+                <li>Hello!</li>
+                <li>Hello! How are you?</li>
+                <li>Good morning</li>
+            </random>
+        </template>
+    </category>
+	
+    <category>
+        <pattern>GOOD AFTERNOON</pattern>
+        <template>
+            <random>
+                <li>hi there! How are you?</li>
+                <li>Welcome! How are you?</li>
+                <li>Hi! How are you?</li>
+                <li>Good afternoon! How are you today?</li>
+                <li>Good afternoon! How are you feeling today?</li>
+                <li>Hello!</li>
+                <li>Hello! How are you?</li>
+                <li>Good afternoon</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>BYE</pattern>
+        <template>
+            <random>
+                <li>See you later, <get name="username"></get></li>
+                <li>Bye! I hope to see you again!</li>
+                <li>Goodbye! I'll see you later!</li>
+                <li>Bye! Have a nice day!</li>
+                <li>Thanks for chatting, <get name="username"></get></li>
+            </random>
+        </template>
+    </category>
+	
+    <category>
+        <pattern>GOODBYE</pattern>
+        <template>
+            <random>
+                <li>See you later, <get name="username"></get></li>
+                <li>Bye! I hope to see you again!</li>
+                <li>Goodbye! I'll see you later!</li>
+                <li>Bye! Have a nice day!</li>
+                <li>Thanks for chatting, <get name="username"></get></li>
+            </random>
+        </template>
+    </category>
+	
+    <category>
+        <pattern>BYE *</pattern>
+        <template>
+            <random>
+                <li>See you later, <get name="username"></get></li>
+                <li>Bye! I hope to see you again!</li>
+                <li>Goodbye! I'll see you later!</li>
+                <li>Bye! Have a nice day!</li>
+                <li>Thanks for chatting, <get name="username"></get></li>
+            </random>
+        </template>
+    </category>
+	
+    <category>
+        <pattern>* BYE</pattern>
+        <template>
+            <random>
+                <li>See you later, <get name="username"></get></li>
+                <li>Bye! I hope to see you again!</li>
+                <li>Goodbye! I'll see you later!</li>
+                <li>Bye! Have a nice day!</li>
+                <li>Thanks for chatting, <get name="username"></get></li>
+            </random>
+        </template>
+    </category>
+	
+    <category>
+        <pattern>I HAVE TO GO</pattern>
+        <template>
+            <random>
+                <li>See you later, <get name="username"></get></li>
+                <li>Bye! I hope to see you again!</li>
+                <li>Goodbye! I'll see you later!</li>
+                <li>Bye! Have a nice day!</li>
+                <li>Thanks for chatting, <get name="username"></get></li>
+            </random>
+        </template>
+    </category>
+	
+    <category>
+        <pattern>I NEED TO GET GOING</pattern>
+        <template>
+            <random>
+                <li>See you later, <get name="username"></get></li>
+                <li>Bye! I hope to see you again!</li>
+                <li>Goodbye! I'll see you later!</li>
+                <li>Bye! Have a nice day!</li>
+                <li>Thanks for chatting, <get name="username"></get></li>
+            </random>
+        </template>
+    </category>
+	
+    <category>
+        <pattern>I NEED TO GO</pattern>
+        <template>
+            <random>
+                <li>See you later, <get name="username"></get></li>
+                <li>Bye! I hope to see you again!</li>
+                <li>Goodbye! I'll see you later!</li>
+                <li>Bye! Have a nice day!</li>
+                <li>Thanks for chatting, <get name="username"></get></li>
+            </random>
+        </template>
+    </category>
+	
+    <category>
+        <pattern>I GOTTA GO</pattern>
+        <template>
+            <random>
+                <li>See you later, <get name="username"></get></li>
+                <li>Bye! I hope to see you again!</li>
+                <li>Goodbye! I'll see you later!</li>
+                <li>Bye! Have a nice day!</li>
+                <li>Thanks for chatting, <get name="username"></get></li>
+            </random>
+        </template>
+    </category>
+	
+    <category>
+        <pattern>I HAVE TO LEAVE</pattern>
+        <template>
+            <random>
+                <li>See you later, <get name="username"></get></li>
+                <li>Bye! I hope to see you again!</li>
+                <li>Goodbye! I'll see you later!</li>
+                <li>Bye! Have a nice day!</li>
+                <li>Thanks for chatting, <get name="username"></get></li>
+            </random>
+        </template>
+    </category>
+	
+    <category>
+        <pattern>I NEED TO LEAVE</pattern>
+        <template>
+            <random>
+                <li>See you later, <get name="username"></get></li>
+                <li>Bye! I hope to see you again!</li>
+                <li>Goodbye! I'll see you later!</li>
+                <li>Bye! Have a nice day!</li>
+                <li>Thanks for chatting, <get name="username"></get></li>
+            </random>
+        </template>
+    </category>
+	
+    <category>
+        <pattern>I MUST GO</pattern>
+        <template>
+            <random>
+                <li>See you later, <get name="username"></get></li>
+                <li>Bye! I hope to see you again!</li>
+                <li>Goodbye! I'll see you later!</li>
+                <li>Bye! Have a nice day!</li>
+                <li>Thanks for chatting, <get name="username"></get></li>
+            </random>
+        </template>
+    </category>
+	
+    <category>
+        <pattern>I MUST LEAVE</pattern>
+        <template>
+            <random>
+                <li>See you later, <get name="username"></get></li>
+                <li>Bye! I hope to see you again!</li>
+                <li>Goodbye! I'll see you later!</li>
+                <li>Bye! Have a nice day!</li>
+                <li>Thanks for chatting, <get name="username"></get></li>
+            </random>
+        </template>
+    </category>
+	
+    <category>
+        <pattern>I MUST BE GOING</pattern>
+        <template>
+            <random>
+                <li>See you later, <get name="username"></get></li>
+                <li>Bye! I hope to see you again!</li>
+                <li>Goodbye! I'll see you later!</li>
+                <li>Bye! Have a nice day!</li>
+                <li>Thanks for chatting, <get name="username"></get></li>
+            </random>
+        </template>
+    </category>
+	
+    <category>
+        <pattern>I QUIT</pattern>
+        <template>
+            <random>
+                <li>See you later, <get name="username"></get></li>
+                <li>Bye! I hope to see you again!</li>
+                <li>Goodbye! I'll see you later!</li>
+                <li>Bye! Have a nice day!</li>
+                <li>Thanks for chatting, <get name="username"></get></li>
+            </random>
+        </template>
+    </category>
+	
+    <category>
+        <pattern>I WANT TO LEAVE</pattern>
+        <template>
+            <random>
+                <li>Ok, but why?</li>
+                <li>Ok, see you later!</li>
+                <li>Ok, bye, <get name="username"></get></li>
+                <li>See you later, <get name="username"></get></li>
+                <li>Bye! I hope to see you again!</li>
+                <li>Goodbye! I'll see you later!</li>
+                <li>Bye! Have a nice day!</li>
+                <li>Thanks for chatting, <get name="username"></get></li>
+            </random>
+        </template>
+    </category>
+	
+    <category>
+        <pattern>I WILL TALK TO YOU LATER</pattern>
+        <template>
+            <random>
+                <li>See you later, <get name="username"></get></li>
+                <li>Bye! I hope to see you again!</li>
+                <li>Goodbye! I'll see you later!</li>
+                <li>Bye! Have a nice day!</li>
+                <li>Thanks for chatting, <get name="username"></get></li>
+            </random>
+        </template>
+    </category>
+	
+    <category>
+        <pattern>I WILL SEE YOU LATER</pattern>
+        <template>
+            <random>
+                <li>See you later, <get name="username"></get></li>
+                <li>Bye! I hope to see you again!</li>
+                <li>Goodbye! I'll see you later!</li>
+                <li>Bye! Have a nice day!</li>
+                <li>Thanks for chatting, <get name="username"></get></li>
+            </random>
+        </template>
+    </category>
+	
+    <category>
+        <pattern>SEE YOU LATER</pattern>
+        <template>
+            <random>
+                <li>See you later, <get name="username"></get></li>
+                <li>Bye! I hope to see you again!</li>
+                <li>Goodbye! I'll see you later!</li>
+                <li>Bye! Have a nice day!</li>
+                <li>Thanks for chatting, <get name="username"></get></li>
+            </random>
+        </template>
+    </category>
+	
+    <category>
+        <pattern>SEEYA</pattern>
+        <template>
+            <random>
+                <li>See you later, <get name="username"></get></li>
+                <li>Bye! I hope to see you again!</li>
+                <li>Goodbye! I'll see you later!</li>
+                <li>Bye! Have a nice day!</li>
+                <li>Thanks for chatting, <get name="username"></get></li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>TIME TO GO</pattern>
+        <template>
+            <random>
+                <li>See you later, <get name="username"></get></li>
+                <li>Bye! I hope to see you again!</li>
+                <li>Goodbye! I'll see you later!</li>
+                <li>Bye! Have a nice day!</li>
+                <li>Thanks for chatting, <get name="username"></get></li>
+            </random>
+        </template>
+    </category>
+	
+    <category>
+        <pattern>SEE YOU SOON</pattern>
+        <template>
+            <random>
+                <li>See you later, <get name="username"></get></li>
+                <li>Bye! I hope to see you again!</li>
+                <li>Goodbye! I'll see you later!</li>
+                <li>Bye! Have a nice day!</li>
+                <li>Thanks for chatting, <get name="username"></get></li>
+            </random>
+        </template>
+    </category>
+	
+    <category>
+        <pattern>SEE YOU</pattern>
+        <template>
+            <random>
+                <li>See you later, <get name="username"></get></li>
+                <li>Bye! I hope to see you again!</li>
+                <li>Goodbye! I'll see you later!</li>
+                <li>Bye! Have a nice day!</li>
+                <li>Thanks for chatting, <get name="username"></get></li>
+            </random>
+        </template>
+    </category>
+	
+    <category>
+        <pattern>I'LL SEE YOU</pattern>
+        <template>
+            <random>
+                <li>See you later, <get name="username"></get></li>
+                <li>Bye! I hope to see you again!</li>
+                <li>Goodbye! I'll see you later!</li>
+                <li>Bye! Have a nice day!</li>
+                <li>Thanks for chatting, <get name="username"></get></li>
+            </random>
+        </template>
+    </category>
+	
+    <category>
+        <pattern>GOOD NIGHT</pattern>
+        <template>
+            <random>
+                <li>See you tomorrow, <get name="username"></get></li>
+                <li>Bye! I hope to see you again!</li>
+                <li>Goodbye! I'll see you tomorrow!</li>
+                <li>Thanks for chatting, <get name="username"></get></li>
+                <li>Good night! I'll see you tomorrow!</li>
+            </random>
+        </template>
+    </category>
+</aiml>

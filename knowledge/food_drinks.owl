@@ -1,0 +1,782 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#"
+     xml:base="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Acar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Acar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Salad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Alcoholic_drink -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Alcoholic_drink">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Drink"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Aloe_vera_juice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Aloe_vera_juice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Juice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Appetizer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Appetizer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Apple_juice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Apple_juice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Juice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Banana -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Banana">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Fruit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Barbina -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Barbina">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Pasta"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Beef -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Beef">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Meat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Beer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Beer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Alcoholic_drink"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Bigoli -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Bigoli">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Pasta"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Biscuit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Biscuit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Dessert"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Bob_chorba -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Bob_chorba">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Soup"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Borscht -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Borscht">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Soup"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Broccoli -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Broccoli">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Bucatini -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Bucatini">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Pasta"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Busiate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Busiate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Pasta"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Butter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Butter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Condiment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Caesar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Caesar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Salad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Cake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Cake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Dessert"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Caprese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Caprese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Salad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Carpacccio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Carpacccio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Appetizer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Carrot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Carrot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Salad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Celery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Celery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Celery_Victor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Celery_Victor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Salad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Cheese_fries -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Cheese_fries">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Fast_food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Cheese_soup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Cheese_soup">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Soup"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Chicken_fingers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Chicken_fingers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Fast_food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Chicken_salad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Chicken_salad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Salad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Chicken_soup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Chicken_soup">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Soup"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Chips -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Chips">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Fast_food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Chocolate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Chocolate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Dessert"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Cider -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Cider">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Alcoholic_drink"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Citrus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Citrus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Fruit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Coconut_water -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Coconut_water">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Juice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Coffe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Coffe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Non-alcoholic_drink"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Condiment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Condiment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Corn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Corn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Corn_soup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Corn_soup">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Soup"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Cream_soup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Cream_soup">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Soup"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Crouton -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Crouton">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Salad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Cruduite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Cruduite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Appetizer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Curly_fries -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Curly_fries">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Fast_food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Deser_wine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Deser_wine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Wine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Dessert -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Dessert">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Doughnuts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Doughnuts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Dessert"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Drink -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Drink"/>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Egg_roll -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Egg_roll">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Appetizer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Egg_salad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Egg_salad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Salad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Fast_food -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Fast_food">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Food -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Food"/>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Fruit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Fruit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Garlic_soup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Garlic_soup">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Soup"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Grape_juice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Grape_juice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Juice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Green_tea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Green_tea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Tea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Hamburger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Hamburger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Fast_food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Herbal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Herbal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Tea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Honey_tea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Honey_tea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Tea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Humus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Humus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Appetizer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Ice_cream -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Ice_cream">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Dessert"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Juice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Juice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Non-alcoholic_drink"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Ketchup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Ketchup">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Condiment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Lemon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Lemon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Fruit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Lemonade -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Lemonade">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Juice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Lettuce -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Lettuce">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Mead -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Mead">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Alcoholic_drink"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Meat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Meat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Melon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Melon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Fruit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Milk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Milk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Non-alcoholic_drink"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Milk_tea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Milk_tea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Tea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Mustard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Mustard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Non-alcoholic_drink -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Non-alcoholic_drink">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Drink"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Pasta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Pasta">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Pici -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Pici">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Pasta"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Pickle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Pickle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Condiment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Pie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Pie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Dessert"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Pizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Pizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Fast_food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Pork -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Pork">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Meat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Poultry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Poultry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Meat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Red_wine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Red_wine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Wine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Rose_wine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Rose_wine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Wine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Salad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Salad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Sandwich -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Sandwich">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Fast_food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Soup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Soup">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Soy_sauce -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Soy_sauce">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Condiment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Spaghetti -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Spaghetti">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Pasta"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Spaghettini -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Spaghettini">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Pasta"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Strawberrie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Strawberrie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Fruit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Tea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Tea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Non-alcoholic_drink"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Vegetable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Vegetable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Vinegar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Vinegar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Condiment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Water -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Water">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Non-alcoholic_drink"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#White_tea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#White_tea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Tea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#White_wine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#White_wine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Wine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Wine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Wine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Alcoholic_drink"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Yougurt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Yougurt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6#Dessert"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

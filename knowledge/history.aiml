@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
+	<category>
+		<pattern>When World War II started</pattern>
+		<template>World War II started on 1 September 1939</template>
+	</category>
+
+	<category>
+		<pattern>Who is *</pattern>
+		<template>
+			<think><set name="who"> <star/></set></think>
+			<condition name="who" value="Adolf Hitler">Adolf Hitler was a German politician who was the leader of Nazi Party</condition>
+			<condition name="who" value="Joseph Stalin">Stalin was the leader of Soviet Union</condition>
+			<condition name="who" value="Vladimir Putin">Putin is the current President of the Russian Federation</condition>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Do you think that a World War III is coming</pattern>
+		<template>I can`t predict the future but i can see that all nations are getting more and more disrespectful with each other. I think something very dangerously is not so far...</template>
+	</category>
+
+	<category>
+		<pattern>In what year did Fidel Castrio die</pattern>
+		<template>He died in 2016</template>
+	</category>
+
+	<category>
+		<pattern>In what year did India gain tis independence from Britain</pattern>
+		<template>1947</template>
+	</category>
+
+	<category>
+		<pattern>What famous document begins: When in the cours of human event...</pattern>
+		<template>The Declaration of Independence</template>
+	</category>
+
+	<category>
+		<pattern>What is the name of the deepest known location in the Earth's oceans</pattern>
+		<template>Challenger Deep</template>
+	</category>
+
+	<category>
+		<pattern>What do you know about 9/11 attacks</pattern>
+		<template>The September 11 attacks were a series of four coordinated terrorist attacks by the Islamic terrorist group al-Qaeda on the United States on the morning of Tuesday, September 11, 2001</template>
+	</category>
+
+	<category>
+		<pattern>FARC is the acronym for a guerrilla movement originating in which country</pattern>
+		<template>Colombia</template>
+	</category>
+
+	<category>
+		<pattern>The United Kingdom's withdrawal from the European Union is commonly known as what</pattern>
+		<template>Is known as Brexit</template>
+	</category>
+
+	<category>
+		<pattern>How long did the * last</pattern>
+		<template>
+			<think><set name="which"> <star/></set></think>
+			<condition name="which" value="Vietnam War">19 years, 5 months, 4 weeks and 1 day</condition>
+			<condition name="which" value="Cold War">The Cold War lasted for a total of 45 years</condition>
+			<condition name="which" value="World War II">6 yeard and one day</condition>
+			<condition name="which" value="World War I">4 years, 3 months and 2 weeks</condition>
+			<condition name="which" value="Hundred Years' War">I know what you're thinking but it last 116 years</condition>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Are you a racist ?</pattern>
+		<template>No, and i think no one should be. We should make the world a better place by stoping judgement based on race, religion and so on...</template>
+	</category>
+
+	<category>
+		<pattern>Who assassinated President Abraham Lincoln</pattern>
+		<template>He was assasinated by John Wilkes Booth</template>
+	</category>
+
+	<category>
+		<pattern>In what year was the Declaration of Independence created</pattern>
+		<template>
+			<random>
+				<li>1776</li>
+				<li>It was created in 1776</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>How many elevators does the Empire State Building have</pattern>
+		<template>
+			<random>
+				<li>Woaah, there are 73 elevators</li>
+				<li>73 elevators</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Who was the first austronaut to visit space twice</pattern>
+		<template>Gus Grissom</template>
+	</category>
+
+	<category>
+		<pattern>In what year was Nelson Mandela released from prison ?</pattern>
+		<template>1990</template>
+	</category>
+</aiml>

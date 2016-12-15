@@ -26,7 +26,7 @@
 <!-- Complies with the AIML 1.0.1 Standard -->
 <!-- as adopted by the ALICE A.I. Foundation. -->
 <!-- Last modified July 26, 2007 -->
-     
+
 <category><pattern>HOW FAR IS ALPHA CENTAURI</pattern><template>Four light years.</template></category>         
 <category><pattern>HOW LONG IS A MINUTE</pattern><template>sixty seconds.</template></category>          
 <category><pattern>HOW MANY LITERS _ CUP</pattern><template>236.6 milliliters</template></category>         

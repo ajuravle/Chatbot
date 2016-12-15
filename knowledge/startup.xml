@@ -1,0 +1,14 @@
+<aiml version="1.0.1" encoding="UTF-8">
+    <category>
+        <pattern>LOAD AIML B</pattern>
+        <template>
+			<learn>knowledge/salutations.aiml</learn>
+			<learn>knowledge/literature.aiml</learn>
+			<learn>knowledge/history.aiml</learn>
+			<learn>knowledge/geography.aiml</learn>
+			<learn>knowledge/history.aiml</learn>
+			<learn>knowledge/computers.aiml</learn>
+            <learn>knowledge/knowledge.aiml</learn>
+        </template>
+    </category>
+</aiml>

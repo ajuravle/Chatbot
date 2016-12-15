@@ -1,0 +1,641 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/nicoletatanasa/ontologies/2016/11/untitled-ontology-3"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/nicoletatanasa/ontologies/2016/11/untitled-ontology-3">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <NamedIndividual IRI="#Lion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spider"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Herbivorous"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDomestic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Animal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Crocodile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Carnivorous"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Amphibian"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mullet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mouse"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tiger"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wolf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bear"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSubclassOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dog"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Deer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cobra"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chameleon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Domestic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dove"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Salamander"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Worm"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Giraffe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Carp"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLivingWinged"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bird"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLivingTerrestrial"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jackal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sparrow"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLivingAquatic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isEatingOmnivorous"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Antelope"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Terrestrial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mammal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Frog"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isEatingHerbivorous"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aquatic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wild"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Insect"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Invertebrate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nightingale"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Whale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vertebrate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hedgehog"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reptile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Winged"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WildBoar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hornet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fox"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Shark"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isEatingCarnivorous"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rabbit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Eagle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Omnivorous"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isWild"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Amphibian"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aquatic"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bird"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Carnivorous"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Domestic"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fish"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Herbivorous"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Insect"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Invertebrate"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mammal"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Omnivorous"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reptile"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Terrestrial"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vertebrate"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wild"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Winged"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Herbivorous"/>
+        <NamedIndividual IRI="#Antelope"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Omnivorous"/>
+        <NamedIndividual IRI="#Bear"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Insect"/>
+        <NamedIndividual IRI="#Bee"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fish"/>
+        <NamedIndividual IRI="#Carp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Domestic"/>
+        <NamedIndividual IRI="#Cat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vertebrate"/>
+        <NamedIndividual IRI="#Chameleon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reptile"/>
+        <NamedIndividual IRI="#Cobra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reptile"/>
+        <NamedIndividual IRI="#Crocodile"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Herbivorous"/>
+        <NamedIndividual IRI="#Deer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Domestic"/>
+        <NamedIndividual IRI="#Dog"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bird"/>
+        <NamedIndividual IRI="#Dove"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bird"/>
+        <NamedIndividual IRI="#Eagle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vertebrate"/>
+        <NamedIndividual IRI="#Fox"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Amphibian"/>
+        <NamedIndividual IRI="#Frog"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mammal"/>
+        <NamedIndividual IRI="#Giraffe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Omnivorous"/>
+        <NamedIndividual IRI="#Hedgehog"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Invertebrate"/>
+        <NamedIndividual IRI="#Hornet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Wild"/>
+        <NamedIndividual IRI="#Jackal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Carnivorous"/>
+        <NamedIndividual IRI="#Lion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Terrestrial"/>
+        <NamedIndividual IRI="#Mouse"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fish"/>
+        <NamedIndividual IRI="#Mullet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Winged"/>
+        <NamedIndividual IRI="#Nightingale"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Terrestrial"/>
+        <NamedIndividual IRI="#Rabbit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Amphibian"/>
+        <NamedIndividual IRI="#Salamander"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Aquatic"/>
+        <NamedIndividual IRI="#Shark"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Winged"/>
+        <NamedIndividual IRI="#Sparrow"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Insect"/>
+        <NamedIndividual IRI="#Spider"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Carnivorous"/>
+        <NamedIndividual IRI="#Tiger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Aquatic"/>
+        <NamedIndividual IRI="#Whale"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Wild"/>
+        <NamedIndividual IRI="#WildBoar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mammal"/>
+        <NamedIndividual IRI="#Wolf"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Invertebrate"/>
+        <NamedIndividual IRI="#Worm"/>
+    </ClassAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isDomestic"/>
+        <Class IRI="#Bird"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isDomestic"/>
+        <Class IRI="#Fish"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isDomestic"/>
+        <Class IRI="#Mammal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isDomestic"/>
+        <Class IRI="#Reptile"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isEatingCarnivorous"/>
+        <Class IRI="#Amphibian"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isEatingCarnivorous"/>
+        <Class IRI="#Bird"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isEatingCarnivorous"/>
+        <Class IRI="#Fish"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isEatingCarnivorous"/>
+        <Class IRI="#Insect"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isEatingCarnivorous"/>
+        <Class IRI="#Mammal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isEatingCarnivorous"/>
+        <Class IRI="#Reptile"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isEatingHerbivorous"/>
+        <Class IRI="#Amphibian"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isEatingHerbivorous"/>
+        <Class IRI="#Bird"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isEatingHerbivorous"/>
+        <Class IRI="#Fish"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isEatingHerbivorous"/>
+        <Class IRI="#Insect"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isEatingHerbivorous"/>
+        <Class IRI="#Mammal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isEatingHerbivorous"/>
+        <Class IRI="#Reptile"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isEatingOmnivorous"/>
+        <Class IRI="#Amphibian"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isEatingOmnivorous"/>
+        <Class IRI="#Bird"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isEatingOmnivorous"/>
+        <Class IRI="#Fish"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isEatingOmnivorous"/>
+        <Class IRI="#Insect"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isEatingOmnivorous"/>
+        <Class IRI="#Mammal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isEatingOmnivorous"/>
+        <Class IRI="#Reptile"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLivingAquatic"/>
+        <Class IRI="#Amphibian"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLivingAquatic"/>
+        <Class IRI="#Fish"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLivingAquatic"/>
+        <Class IRI="#Mammal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLivingAquatic"/>
+        <Class IRI="#Reptile"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLivingTerrestrial"/>
+        <Class IRI="#Amphibian"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLivingTerrestrial"/>
+        <Class IRI="#Bird"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLivingTerrestrial"/>
+        <Class IRI="#Insect"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLivingTerrestrial"/>
+        <Class IRI="#Mammal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLivingTerrestrial"/>
+        <Class IRI="#Reptile"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLivingWinged"/>
+        <Class IRI="#Bird"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLivingWinged"/>
+        <Class IRI="#Insect"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSubclassOf"/>
+        <Class IRI="#Amphibian"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSubclassOf"/>
+        <Class IRI="#Aquatic"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSubclassOf"/>
+        <Class IRI="#Bird"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSubclassOf"/>
+        <Class IRI="#Carnivorous"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSubclassOf"/>
+        <Class IRI="#Domestic"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSubclassOf"/>
+        <Class IRI="#Fish"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSubclassOf"/>
+        <Class IRI="#Herbivorous"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSubclassOf"/>
+        <Class IRI="#Insect"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSubclassOf"/>
+        <Class IRI="#Invertebrate"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSubclassOf"/>
+        <Class IRI="#Mammal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSubclassOf"/>
+        <Class IRI="#Omnivorous"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSubclassOf"/>
+        <Class IRI="#Reptile"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSubclassOf"/>
+        <Class IRI="#Terrestrial"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSubclassOf"/>
+        <Class IRI="#Vertebrate"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSubclassOf"/>
+        <Class IRI="#Wild"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSubclassOf"/>
+        <Class IRI="#Winged"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isWild"/>
+        <Class IRI="#Amphibian"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isWild"/>
+        <Class IRI="#Bird"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isWild"/>
+        <Class IRI="#Fish"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isWild"/>
+        <Class IRI="#Insect"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isWild"/>
+        <Class IRI="#Mammal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isWild"/>
+        <Class IRI="#Reptile"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isDomestic"/>
+        <Class IRI="#Domestic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isEatingCarnivorous"/>
+        <Class IRI="#Carnivorous"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isEatingHerbivorous"/>
+        <Class IRI="#Herbivorous"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isEatingOmnivorous"/>
+        <Class IRI="#Omnivorous"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isLivingAquatic"/>
+        <Class IRI="#Aquatic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isLivingTerrestrial"/>
+        <Class IRI="#Terrestrial"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isLivingWinged"/>
+        <Class IRI="#Winged"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSubclassOf"/>
+        <Class IRI="#Animal"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isWild"/>
+        <Class IRI="#Wild"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
