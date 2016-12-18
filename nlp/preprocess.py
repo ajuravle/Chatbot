@@ -7,41 +7,45 @@ import language_check
 from nltk.corpus import wordnet as wn
 import collections
 
-
-
 from langdetect import detect
 
-# nltk.download()
-
 st = nltk.StanfordNERTagger(
-        "nlp/stanford-ner-2015-12-09/classifiers/english.all.3class.distsim.crf.ser.gz",
-        "nlp/stanford-ner-2015-12-09/stanford-ner.jar")
+    "nlp/stanford-ner-2015-12-09/classifiers/english.all.3class.distsim.crf.ser.gz",
+    "nlp/stanford-ner-2015-12-09/stanford-ner.jar")
+
+tool = language_check.LanguageTool('en-US')
+sent_detector = nltk.data.load('tokenizers/punkt/english.pickle')
+wordnet_lemmatizer = WordNetLemmatizer()
+
 
 def check_grammar(text):
-    tool = language_check.LanguageTool('en-US')
     matches = tool.check(text)
     len(matches)
     text = language_check.correct(text, matches)
     return text
 
+
 def get_sentences(text):
-    sent_detector = nltk.data.load('tokenizers/punkt/english.pickle')
     sentenced_text = sent_detector.tokenize(text.strip())
     return sentenced_text
+
 
 def tokenize_text(text):
     tokenized_text = nltk.tokenize.word_tokenize(text)
     return tokenized_text
 
+
 def lemmatize_text(text):
-    wordnet_lemmatizer = WordNetLemmatizer()
     return wordnet_lemmatizer.lemmatize(text)
+
 
 def pos_tag_text(text):
     return nltk.pos_tag(text)
 
+
 def ner_tag_text(text):
     return st.tag(text.split())
+
 
 def get_synonyms(word):
     synonyms = wn.synsets(word)
@@ -51,9 +55,9 @@ def get_synonyms(word):
         for lemma in synset.lemmas():
             syn_info = synonym_info(lemma.name())
             synonyms_list.append(syn_info)
-            #print(lemma)
-
+            # print(lemma)
     return synonyms_list
+
 
 def process_text():
     path = "input.txt"
@@ -73,20 +77,21 @@ def process_text():
         tokenized_text = tokenize_text(sentence)
 
         ##POS-Tag
-        #print(pos_tag_text(tokenized_text))
+        print(pos_tag_text(tokenized_text))
 
         ##lemmatize each sentence
-        #for token in tokenized_text:
-            #print(lemmatize_text(token))
+        # for token in tokenized_text:
+        # print(lemmatize_text(token))
 
         ##Stanford NER
-        #print(ner_tag_text(sentence))
+        # print(ner_tag_text(sentence))
 
-    #print(detect("War doesn't show who's right, just who's left."))
-    #print(detect("Ein, zwei, drei, some dogs were here before you vier"))
+    # print(detect("War doesn't show who's right, just who's left."))
+    # print(detect("Ein, zwei, drei, some dogs were here before you vier"))
     for syn in get_synonyms('small'):
-        print (syn )
-    #print(path_similarity(Synset('shrimp.n.03'), Synset('pearl.n.01')))
+        print (syn)
+        # print(path_similarity(Synset('shrimp.n.03'), Synset('pearl.n.01')))
+
 
 if __name__ == "__main__":
     process_text()

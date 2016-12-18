@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <aiml>
     <category>
+        <pattern>GREET</pattern>
+        <template>
+            <random>
+                <li>Well, hello <get name="username"></get>!</li>
+                <li>Hello, <get name="username"></get></li>
+                <li>Hi! Nice to meet you!</li>
+                <li>Welcome! How are you?</li>
+                <li>Hello! Nice to meet you</li>
+                <li>Hi! How are you?</li>
+                <li>Hello! What's your name?</li>
+                <li>Hi! What's your name?</li>
+                <li>Hi! Nice to meet you! How are you?</li>
+                <li>Hi! Nice to meet you! What's your name?</li>
+                <li>Hi there! How are you?</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
         <pattern>HI, I'M *</pattern>
         <template>
             <think><set name="username"> <star/></set></think>

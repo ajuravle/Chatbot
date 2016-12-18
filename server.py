@@ -9,6 +9,8 @@ import brain
 
 app = Flask(__name__, static_url_path='/static')
 
+brain_ai = brain.Brain()
+
 
 @app.route("/", methods=['GET'])
 def page():
@@ -27,7 +29,7 @@ def send():
 def process():
     request.get_data()
     message = request.form['user_input']
-    res = brain.aiml_respone(message)
+    res = brain_ai.process(message)
     out = {"response": res}
     return jsonify(out)
 
