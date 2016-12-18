@@ -1,2 +1,5 @@
-nlp
 aiml==0.8.6
+langdetect
+3to2
+language_check
+nltk
