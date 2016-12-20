@@ -1,3 +1,4 @@
+<aiml>
 <category>
 	<pattern>GREET</pattern>
 	<template>
@@ -14,7 +15,6 @@
 		</random>
 	</template>
 </category>
-
 <category>
 	<pattern>bye</pattern>
 	<template>
@@ -27,3 +27,4 @@
 		</random>
 	</template>
 </category>
+</aiml>

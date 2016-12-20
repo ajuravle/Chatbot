@@ -103,6 +103,13 @@ class Brain:
         for sentence in s:
             sentence_type = self.instant_classifier.classify(dialogue_act_features(sentence))
 
+            aiml_response = self.kernel.respond(sentence_type, sessionId)
+            if len(aiml_response) < 3:
+                response = "I don't know that...but maybe you can teach me."
+            else:
+                response = aiml_response
+                return response
+
             verbs_subj = set()
             sentence = sentence[0].upper() + sentence[1:]
             doc = spacy_nlp(sentence)
@@ -202,9 +209,10 @@ class Brain:
 
         aiml_response = self.kernel.respond(message, sessionId)
         if len(aiml_response) < 3:
-            response = "I don't know that...but maybe you can teach me."
+            response = ""
         else:
             response = aiml_response
+            return response
 
         if len(response) < 2:
             if len(memory_msg) > 0:
