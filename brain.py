@@ -126,6 +126,7 @@ class Brain:
 
         for sentence in s:
             sentence_type = self.instant_classifier.classify(dialogue_act_features(sentence))
+
             sentence_types.append(sentence_type)
 
             polarity, subjective = pattern_en.sentiment(sentence)
@@ -151,11 +152,12 @@ class Brain:
 
             print sentence_type, polarity, subjective, modality, mood
 
-            try:
-                aiml_sent_type_res = self.kernel.respond(sentence_type, sessionId)
-            except:
-                aiml_sent_type_res = ""
-            aiml_sent_type.append(aiml_sent_type_res)
+            if sentence_type not in ["whQuestion", "ynQuestion"]:
+                try:
+                    aiml_sent_type_res = self.kernel.respond(sentence_type, sessionId)
+                except:
+                    aiml_sent_type_res = ""
+                aiml_sent_type.append(aiml_sent_type_res)
 
             verbs_subj = set()
             sentence = sentence[0].upper() + sentence[1:]
@@ -255,12 +257,6 @@ class Brain:
                                 memory_msg += memory[sessionId][verb][subjs[-1]] + "."
             memory_responses.append(memory_msg)
 
-        # tone generator : eg. concatenate : I'm not exactly sure, but ...
-        s = pattern_en.parse(message, lemmata=True)
-        s = pattern_en.Sentence(s)
-        modality = pattern_en.modality(s)
-        mood = pattern_en.mood(s)
-
         arr_response = []
 
         for i in aiml_sent_type:
@@ -271,6 +267,12 @@ class Brain:
 
         for i in memory_responses:
             arr_response.append(i)
+
+        data = search.search(message)
+        snip = data['items'][0]['snippet']
+        newsnip = nlp.check_grammar(snip)
+        sents = nlp.get_sentences(newsnip)
+        arr_response.append(sents[0])
 
         response = ""
         for res in arr_response:
@@ -285,7 +287,7 @@ class Brain:
                 aiml_response = self.kernel.respond(sentence_types[idx], sessionId)
             except:
                 aiml_response = ""
-            response = aiml_response
+            response += aiml_response
 
         for i in emotions:
             try:

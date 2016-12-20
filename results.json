@@ -4,177 +4,299 @@
   }, 
   "items": [
     {
-      "cacheId": "zcHoiXihcW0J", 
-      "displayLink": "www.billboard.com", 
-      "formattedUrl": "www.billboard.com/charts/hot-100", 
-      "htmlFormattedUrl": "www.billboard.com/charts/hot-100", 
-      "htmlSnippet": "The week&#39;s most popular current <b>songs</b> across all genres, ranked by radio airplay <br>\n... Discover which <b>song</b> was #1 the day you were born! <b>New</b>. 11 Last Week: --&nbsp;...", 
-      "htmlTitle": "Music: Top 100 <b>Songs</b> | Billboard Hot 100 Chart | Billboard", 
+      "cacheId": "IxEGh-Gbcx4J", 
+      "displayLink": "www.urbandictionary.com", 
+      "formattedUrl": "www.urbandictionary.com/define.php?term=ski", 
+      "htmlFormattedUrl": "www.urbandictionary.com/define.php?term=<b>ski</b>", 
+      "htmlSnippet": "To give two guys handjobs while sitting in between them. It is very popular with <br>\ngirls in the south due to the low cost and the fact that no snow is needed.", 
+      "htmlTitle": "Urban Dictionary: <b>ski</b>", 
       "kind": "customsearch#result", 
-      "link": "http://www.billboard.com/charts/hot-100", 
+      "link": "http://www.urbandictionary.com/define.php?term=ski", 
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://res.cloudinary.com/urbandictionary/image/upload/a_exif,c_fit,h_200,w_200/v1398505308/is5qgeivdfdvozqhxcz4.jpg"
+          }
+        ], 
+        "cse_thumbnail": [
+          {
+            "height": "106", 
+            "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-NNoXXNJo95kMpCZnju3Cq72Ge_7oPDA6mdYQmkqwYP89TrvlBKRGUw", 
+            "width": "160"
+          }
+        ], 
+        "metatags": [
+          {
+            "apple-mobile-web-app-capable": "yes", 
+            "apple-mobile-web-app-title": "UrbanDict", 
+            "og:site_name": "Urban Dictionary", 
+            "og:title": "ski", 
+            "twitter:description": "to snort cocaine", 
+            "twitter:site": "@urbandictionary", 
+            "twitter:title": "ski", 
+            "viewport": "width=device-width, initial-scale=1.0, user-scalable = no"
+          }
+        ]
+      }, 
+      "snippet": "To give two guys handjobs while sitting in between them. It is very popular with \ngirls in the south due to the low cost and the fact that no snow is needed.", 
+      "title": "Urban Dictionary: ski"
+    }, 
+    {
+      "cacheId": "ooR3rhgq4kMJ", 
+      "displayLink": "www.internetslang.com", 
+      "formattedUrl": "www.internetslang.com/SKI-meaning-definition.asp", 
+      "htmlFormattedUrl": "www.internetslang.com/<b>SKI</b>-<b>meaning</b>-definition.asp", 
+      "htmlSnippet": "This Internet Slang page is designed to explain what the meaning of SKI is. The <br>\nslang word / acronym / abbreviation <b>SKI means</b>... . Internet Slang. A list of&nbsp;...", 
+      "htmlTitle": "What does <b>SKI mean</b>? - SKI Definition - Meaning of SKI ...", 
+      "kind": "customsearch#result", 
+      "link": "http://www.internetslang.com/SKI-meaning-definition.asp", 
       "pagemap": {
         "metatags": [
           {
-            "og:description": "The week's most popular current songs across all genres, ranked by radio airplay audience impressions as measured by Nielsen BDS, sales data as compiled by Nielsen SoundScan and streaming activity data from online music sources tracked by Nielsen BDS. Songs are defined as current if they are newly-released titles, or songs receiving widespread airplay and/or sales activity for the first time.", 
-            "og:site_name": "Billboard", 
-            "og:title": "Music: Top 100 Songs | Billboard Hot 100 Chart", 
+            "author": "InternetSlang.com", 
+            "copyright": "\u00a9 1999-2016\u00a0InternetSlang.com What does SKI mean?  - SKI Definition - Meaning of SKI", 
+            "og:title": "What does SKI mean?  - SKI Definition - Meaning of SKI - InternetSlang.com", 
             "og:type": "article", 
-            "og:url": "http://www.billboard.com/charts/hot-100", 
-            "title": "Music: Top 100 Songs | Billboard Hot 100 Chart", 
-            "twitter:site": "@billboard", 
-            "viewport": "width=device-width, initial-scale=1, user-scalable=no"
+            "og:url": "http://www.internetslang.com/SKI-meaning-definition.asp"
+          }
+        ], 
+        "question": [
+          {
+            "name": "SKI"
           }
         ]
       }, 
-      "snippet": "The week's most popular current songs across all genres, ranked by radio airplay \n... Discover which song was #1 the day you were born! New. 11 Last Week: --\u00a0...", 
-      "title": "Music: Top 100 Songs | Billboard Hot 100 Chart | Billboard"
+      "snippet": "This Internet Slang page is designed to explain what the meaning of SKI is. The \nslang word / acronym / abbreviation SKI means... . Internet Slang. A list of\u00a0...", 
+      "title": "What does SKI mean? - SKI Definition - Meaning of SKI ..."
     }, 
     {
-      "cacheId": "kWD9wc103O4J", 
-      "displayLink": "www.bigtop40.com", 
-      "formattedUrl": "www.bigtop40.com/songs/", 
-      "htmlFormattedUrl": "www.bigtop40.com/<b>songs</b>/", 
-      "htmlSnippet": "2 days ago <b>...</b> Want to download the latest <b>new songs</b> from your favourite bands and singers <br>\naround right now? You&#39;re in luck. Here you can find out when&nbsp;...", 
-      "htmlTitle": "<b>New Songs</b>, Latest Music | Big Top 40", 
-      "kind": "customsearch#result", 
-      "link": "http://www.bigtop40.com/songs/", 
-      "pagemap": {
-        "cse_image": [
-          {
-            "src": "http://assets6.bigtop40.com/2016/02/haim-falling-video-1452619174-editorial-promo-0.png"
-          }
-        ], 
-        "cse_thumbnail": [
-          {
-            "height": "110", 
-            "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRBj47Feg9RDKw1p-b8B3rZnvVafMfdVeoyaE5wchwo3tM1QMa1tfggNQ", 
-            "width": "110"
-          }
-        ], 
-        "metatags": [
-          {
-            "apple-itunes-app": "app-id=318936503", 
-            "fb:admins": "551351399", 
-            "fb:app_id": "357357177653391", 
-            "fb:page_id": "6569469259", 
-            "og:site_name": "Bigtop40", 
-            "og:title": "New Music Releases: Latest Songs", 
-            "og:type": "article", 
-            "og:url": "http://www.bigtop40.com/songs/", 
-            "parsely-link": "http://www.bigtop40.com/songs/", 
-            "parsely-post-id": "94", 
-            "parsely-section": "/songs/", 
-            "parsely-title": "New Music Releases: Latest Songs", 
-            "parsely-type": "sectionpage", 
-            "sailthru.tags": "songs"
-          }
-        ]
-      }, 
-      "snippet": "2 days ago ... Want to download the latest new songs from your favourite bands and singers \naround right now? You're in luck. Here you can find out when\u00a0...", 
-      "title": "New Songs, Latest Music | Big Top 40"
-    }, 
-    {
-      "cacheId": "t5tYqH6HeEIJ", 
-      "displayLink": "www.hotnewhiphop.com", 
-      "formattedUrl": "www.hotnewhiphop.com/songs/", 
-      "htmlFormattedUrl": "www.hot<b>new</b>hiphop.com/<b>songs</b>/", 
-      "htmlSnippet": "Listen to the Hottest Hip Hop <b>Songs</b>! Fresh music releases by top artists on <br>\nHotNewHipHop. Updated daily!", 
-      "htmlTitle": "<b>New</b> Hip Hop <b>Songs</b>, Hottest Music Releases", 
-      "kind": "customsearch#result", 
-      "link": "http://www.hotnewhiphop.com/songs/", 
-      "pagemap": {
-        "cse_image": [
-          {
-            "src": "http://st.ulximg.com/static/images/logo-hnhh-header.gif"
-          }
-        ], 
-        "cse_thumbnail": [
-          {
-            "height": "70", 
-            "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6nDFWC6Xswzv3Ic4Se7ltIWAOsry8L0N8gQAODH3rGtdRg5OueHaV", 
-            "width": "108"
-          }
-        ], 
-        "metatags": [
-          {
-            "fb:app_id": "115426081899012", 
-            "fb:pages": "123717350986797", 
-            "msapplication-config": "/browserconfig.xml", 
-            "og:description": "Listen to the Hottest Hip Hop Songs! Fresh music releases by top artists on HotNewHipHop. Updated daily!", 
-            "og:image": "http://st.ulximg.com/static/images/logo-hnhh-header.gif", 
-            "og:site_name": "HotNewHipHop", 
-            "og:title": "New Hip Hop Songs, Hottest Music Releases", 
-            "og:type": "website", 
-            "og:url": "http://www.hotnewhiphop.com/songs", 
-            "theme-color": "#333333", 
-            "twitter:account_id": "24036264", 
-            "twitter:card": "summary_large_image", 
-            "twitter:site": "@HotNewHipHop", 
-            "twitter:title": "New Hip Hop Songs, Hottest Music Releases", 
-            "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"
-          }
-        ]
-      }, 
-      "snippet": "Listen to the Hottest Hip Hop Songs! Fresh music releases by top artists on \nHotNewHipHop. Updated daily!", 
-      "title": "New Hip Hop Songs, Hottest Music Releases"
-    }, 
-    {
-      "cacheId": "umjaxtRC8qgJ", 
-      "displayLink": "www.youtube.com", 
-      "formattedUrl": "https://www.youtube.com/playlist?list=PLvFYFNbi...", 
-      "htmlFormattedUrl": "https://www.youtube.com/playlist?list=PLvFYFNbi...", 
-      "htmlSnippet": "VEVO - Best <b>New Songs</b> Playlist | 2017. My Music Playlists; 138 videos; <br>\n226,564,562 views; Last updated on Dec 8, 2016. Play all. Share. Loading... <br>\nSave&nbsp;...", 
-      "htmlTitle": "VEVO - Best <b>New Songs</b> Playlist | 2017 - YouTube", 
-      "kind": "customsearch#result", 
-      "link": "https://www.youtube.com/playlist?list=PLvFYFNbi-IBFeP5ALr50hoOmKiYRMvzUq", 
-      "pagemap": {
-        "cse_image": [
-          {
-            "src": "https://i.ytimg.com/vi/34Na4j8AVgA/hqdefault.jpg?custom=true&w=246&h=138&stc=true&jpg444=true&jpgq=90&sp=68&sigh=5CoZLyxiM4JkfbhUANgXMHQEIe0"
-          }
-        ], 
-        "cse_thumbnail": [
-          {
-            "height": "110", 
-            "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTE0arLgmV_K3yQnZoPrGvQz3CzMn_pynjyizozh9IxCXEcgI3-JqCVYWE", 
-            "width": "196"
-          }
-        ], 
-        "metatags": [
-          {
-            "theme-color": "#e62117", 
-            "title": "VEVO - Best New Songs Playlist | 2017"
-          }
-        ]
-      }, 
-      "snippet": "VEVO - Best New Songs Playlist | 2017. My Music Playlists; 138 videos; \n226,564,562 views; Last updated on Dec 8, 2016. Play all. Share. Loading... \nSave\u00a0...", 
-      "title": "VEVO - Best New Songs Playlist | 2017 - YouTube"
-    }, 
-    {
-      "cacheId": "1emUMPGKUk8J", 
+      "cacheId": "hczOo4bK1gUJ", 
       "displayLink": "en.wikipedia.org", 
-      "formattedUrl": "https://en.wikipedia.org/wiki/Ten_New_Songs", 
-      "htmlFormattedUrl": "https://en.wikipedia.org/wiki/Ten_<b>New</b>_<b>Songs</b>", 
-      "htmlSnippet": "Ten <b>New Songs</b> is Leonard Cohen&#39;s tenth studio album, released in 2001. It was <br>\nco-written and produced by Sharon Robinson. It was produced in Cohen&#39;s and&nbsp;...", 
-      "htmlTitle": "Ten <b>New Songs</b> - Wikipedia", 
+      "formattedUrl": "https://en.wikipedia.org/wiki/Skiing", 
+      "htmlFormattedUrl": "https://en.wikipedia.org/wiki/<b>Skiing</b>", 
+      "htmlSnippet": "<b>Skiing</b> is a mode of transport, recreational activity and competitive winter sport in <br>\nwhich the ... It comes from the Old Norse word &quot;sk\u00ed\u00f0&quot; which <b>means</b> &quot;split piece of <br>\nwood or firewood&quot;. Asymmetrical <b>skis</b> were used at least in northern Finland and<br>\n&nbsp;...", 
+      "htmlTitle": "<b>Skiing</b> - Wikipedia", 
       "kind": "customsearch#result", 
-      "link": "https://en.wikipedia.org/wiki/Ten_New_Songs", 
+      "link": "https://en.wikipedia.org/wiki/Skiing", 
       "pagemap": {
         "cse_image": [
           {
-            "src": "https://upload.wikimedia.org/wikipedia/en/thumb/0/03/LeonardCohenTenNewSongs.jpg/220px-LeonardCohenTenNewSongs.jpg"
+            "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Skier-carving-a-turn.jpg/300px-Skier-carving-a-turn.jpg"
           }
         ], 
         "cse_thumbnail": [
           {
-            "height": "176", 
-            "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQeICetvcLmw9EaCh2luQ9-jcNGVH8LY5tsqaOe2nnX4PrkENsRVOrL8ObK", 
-            "width": "176"
+            "height": "157", 
+            "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOetThQyC57vegtyywAsm58iQTvk-EWxIwBlgOG0oLt_W6iBTivKycfcKu", 
+            "width": "240"
+          }
+        ], 
+        "metatags": [
+          {
+            "referrer": "origin-when-cross-origin"
+          }
+        ]
+      }, 
+      "snippet": "Skiing is a mode of transport, recreational activity and competitive winter sport in \nwhich the ... It comes from the Old Norse word \"sk\u00ed\u00f0\" which means \"split piece of \nwood or firewood\". Asymmetrical skis were used at least in northern Finland and\n\u00a0...", 
+      "title": "Skiing - Wikipedia"
+    }, 
+    {
+      "cacheId": "pm5VHCD5j6IJ", 
+      "displayLink": "dictionary.cambridge.org", 
+      "formattedUrl": "dictionary.cambridge.org/dictionary/english/ski", 
+      "htmlFormattedUrl": "dictionary.cambridge.org/dictionary/english/<b>ski</b>", 
+      "htmlSnippet": "<b>ski meaning</b>, definition, what is ski: one of a pair of long, flat narrow pieces of <br>\nwood or plastic that curve up at the front\u2026. Learn more.", 
+      "htmlTitle": "<b>ski Meaning</b> in the Cambridge English Dictionary", 
+      "kind": "customsearch#result", 
+      "link": "http://dictionary.cambridge.org/dictionary/english/ski", 
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://dictionary.cambridge.org/utilities/2016-12-08-1611/external/images/CDO_logo_120x120.jpg"
+          }
+        ], 
+        "hproduct": [
+          {
+            "fn": "ski Meaning in the Cambridge English Dictionary", 
+            "photo": "http://dictionary.cambridge.org/utilities/2016-12-08-1611/external/images/CDO_logo_120x120.jpg"
+          }
+        ], 
+        "metatags": [
+          {
+            "og:desciption": "ski meaning, definition, what is ski: one of a pair of long, flat narrow pieces of wood or plastic that curve up at the front\u2026. Learn more.", 
+            "og:image": "http://dictionary.cambridge.org/utilities/2016-12-08-1611/external/images/CDO_logo_120x120.jpg", 
+            "og:title": "ski Meaning in the Cambridge English Dictionary", 
+            "og:url": "http://dictionary.cambridge.org/dictionary/english/ski", 
+            "viewport": "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+          }
+        ], 
+        "organization": [
+          {
+            "name": "Cambridge Dictionary", 
+            "url": "https://plus.google.com/108790671280639180398"
+          }, 
+          {
+            "name": "\u00a9 Cambridge University Press", 
+            "url": "https://plus.google.com/112563436639321822653"
+          }
+        ], 
+        "product": [
+          {
+            "image": "Cambridge dictionaries logo", 
+            "name": "ski Meaning in the Cambridge English Dictionary"
+          }
+        ], 
+        "webpage": [
+          {
+            "copyrightholder": "\u00a9 Cambridge University Press", 
+            "copyrightyear": "2016", 
+            "genre": "Winter Sports", 
+            "headline": "ski meaning, definition, what is ski: one of a pair of long, flat narrow pieces of wood or plastic that curve up at the front\u2026. Learn more.", 
+            "inlanguage": "en", 
+            "text": "\"ski\" in British English See all translations skinoun [ C ] uk \u200b /ski\u02d0/ us \u200b /ski\u02d0/ plural skis \u200b B1 one of a pair of long, flat narrow pieces of wood or plastic that curve up at the..."
+          }
+        ]
+      }, 
+      "snippet": "ski meaning, definition, what is ski: one of a pair of long, flat narrow pieces of \nwood or plastic that curve up at the front\u2026. Learn more.", 
+      "title": "ski Meaning in the Cambridge English Dictionary"
+    }, 
+    {
+      "cacheId": "hh9qnJdLP50J", 
+      "displayLink": "en.wikipedia.org", 
+      "formattedUrl": "https://en.wikipedia.org/wiki/Ski-U-Mah_(slogan)", 
+      "htmlFormattedUrl": "https://en.wikipedia.org/wiki/<b>Ski</b>-U-Mah_(slogan)", 
+      "htmlSnippet": "<b>Ski</b>-U-Mah is a slogan used at the University of Minnesota since 1894. U of M <br>\nRugby captain ... Scheeh/scheen-shay, which <b>means</b> &quot;Try Hard&quot;; Oh-hee-yah, <br>\nwhich <b>means</b> &quot;To win&quot;; Oh-hee-un-yum, oh-hee-oohn-yum, which <b>means</b> &quot;We <br>\nwon&quot;.", 
+      "htmlTitle": "<b>Ski</b>-U-Mah (slogan) - Wikipedia", 
+      "kind": "customsearch#result", 
+      "link": "https://en.wikipedia.org/wiki/Ski-U-Mah_(slogan)", 
+      "pagemap": {
+        "metatags": [
+          {
+            "referrer": "origin-when-cross-origin"
+          }
+        ]
+      }, 
+      "snippet": "Ski-U-Mah is a slogan used at the University of Minnesota since 1894. U of M \nRugby captain ... Scheeh/scheen-shay, which means \"Try Hard\"; Oh-hee-yah, \nwhich means \"To win\"; Oh-hee-un-yum, oh-hee-oohn-yum, which means \"We \nwon\".", 
+      "title": "Ski-U-Mah (slogan) - Wikipedia"
+    }, 
+    {
+      "cacheId": "E7HgSlRvibwJ", 
+      "displayLink": "www.thefreedictionary.com", 
+      "formattedUrl": "www.thefreedictionary.com/skis", 
+      "htmlFormattedUrl": "www.thefreedictionary.com/<b>skis</b>", 
+      "htmlSnippet": "Define <b>skis</b>. <b>skis</b> synonyms, <b>skis</b> pronunciation, <b>skis</b> translation, English ... few <br>\ndays or weeks of unseasonably warm weather can <b>mean</b> an unprofitable season.", 
+      "htmlTitle": "<b>Skis</b> - definition of <b>skis</b> by The Free Dictionary", 
+      "kind": "customsearch#result", 
+      "link": "http://www.thefreedictionary.com/skis", 
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://img.tfd.com/wn/D6/63664-ski.jpg"
+          }
+        ], 
+        "cse_thumbnail": [
+          {
+            "height": "102", 
+            "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0EJGESo8Ool7ZNRriZ6HvIZycCmuHVe0U_3peAdWoEl3dm6QtIHSMeA", 
+            "width": "102"
+          }
+        ], 
+        "metatags": [
+          {
+            "apple-itunes-app": "app-id=379450383, app-argument=thefreedictionary://search/skis?", 
+            "msapplication-id": "Farlex.581429F59E1D8", 
+            "msapplication-packagefamilyname": "Farlex.581429F59E1D8_wyegy4e46y996", 
+            "og:description": "Definition, Synonyms, Translations of skis by The Free Dictionary", 
+            "og:image": "http://img.tfd.com/wn/D6/63664-ski.jpg", 
+            "og:image:height": "128", 
+            "og:image:width": "128", 
+            "og:site_name": "TheFreeDictionary.com", 
+            "og:title": "skis", 
+            "og:type": "article", 
+            "og:url": "http://www.thefreedictionary.com/skis", 
+            "viewport": "width=device-width, initial-scale=1.0"
+          }
+        ]
+      }, 
+      "snippet": "Define skis. skis synonyms, skis pronunciation, skis translation, English ... few \ndays or weeks of unseasonably warm weather can mean an unprofitable season.", 
+      "title": "Skis - definition of skis by The Free Dictionary"
+    }, 
+    {
+      "cacheId": "-7Qc7j9BQ6sJ", 
+      "displayLink": "en.wikipedia.org", 
+      "formattedUrl": "https://en.wikipedia.org/wiki/Ski_resort", 
+      "htmlFormattedUrl": "https://en.wikipedia.org/wiki/<b>Ski</b>_resort", 
+      "htmlSnippet": "A <b>ski</b> resort is a resort developed for <b>skiing</b>, snowboarding, and other winter <br>\nsports. In Europe, most <b>ski</b> resorts are towns or villages in or adjacent to a <b>ski</b> <br>\narea&nbsp;...", 
+      "htmlTitle": "<b>Ski</b> resort - Wikipedia", 
+      "kind": "customsearch#result", 
+      "link": "https://en.wikipedia.org/wiki/Ski_resort", 
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Jasna-koliesko.jpg/240px-Jasna-koliesko.jpg"
+          }
+        ], 
+        "cse_thumbnail": [
+          {
+            "height": "128", 
+            "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfZVA8sOiaLTgnUqTH37JDs_qocGOdoF8LFBYnzCpj6oOFcyPWNGbffGs", 
+            "width": "192"
+          }
+        ], 
+        "metatags": [
+          {
+            "referrer": "origin-when-cross-origin"
+          }
+        ]
+      }, 
+      "snippet": "A ski resort is a resort developed for skiing, snowboarding, and other winter \nsports. In Europe, most ski resorts are towns or villages in or adjacent to a ski \narea\u00a0...", 
+      "title": "Ski resort - Wikipedia"
+    }, 
+    {
+      "cacheId": "VK5Z12ksQ4EJ", 
+      "displayLink": "onlineslangdictionary.com", 
+      "formattedUrl": "onlineslangdictionary.com/meaning-definition-of/ski", 
+      "htmlFormattedUrl": "onlineslangdictionary.com/<b>meaning</b>-definition-of/<b>ski</b>", 
+      "htmlSnippet": "This Slang page is designed to explain what the meaning of ski is. The slang <br>\nword / phrase / acronym <b>ski means</b>... . Online Slang Dictionary. A list of slang <br>\nwords&nbsp;...", 
+      "htmlTitle": "What does <b>ski mean</b>? ski Definition. Meaning of ski ...", 
+      "kind": "customsearch#result", 
+      "link": "http://onlineslangdictionary.com/meaning-definition-of/ski", 
+      "pagemap": {
+        "metatags": [
+          {
+            "language": "English", 
+            "viewport": "width=device-width, initial-scale=1"
+          }
+        ]
+      }, 
+      "snippet": "This Slang page is designed to explain what the meaning of ski is. The slang \nword / phrase / acronym ski means... . Online Slang Dictionary. A list of slang \nwords\u00a0...", 
+      "title": "What does ski mean? ski Definition. Meaning of ski ..."
+    }, 
+    {
+      "cacheId": "vWMF8k5PnmAJ", 
+      "displayLink": "en.wikipedia.org", 
+      "formattedUrl": "https://en.wikipedia.org/wiki/Cross-country_skiing", 
+      "htmlFormattedUrl": "https://en.wikipedia.org/wiki/Cross-country_<b>skiing</b>", 
+      "htmlSnippet": "Cross-country <b>skiing</b> is a form of <b>skiing</b> where skiers rely on their own locomotion <br>\nto move across snow-covered terrain, rather than using <b>ski</b> lifts or other forms of <br>\nassistance. Cross-country <b>skiing</b> is widely practised as a sport and recreational <br>\nactivity; however, some still use it as a <b>means</b> of transportation.", 
+      "htmlTitle": "Cross-country <b>skiing</b> - Wikipedia", 
+      "kind": "customsearch#result", 
+      "link": "https://en.wikipedia.org/wiki/Cross-country_skiing", 
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Trip_to_Skorafjell_1.jpg/275px-Trip_to_Skorafjell_1.jpg"
+          }
+        ], 
+        "cse_thumbnail": [
+          {
+            "height": "126", 
+            "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2Cc2qR6B0uVNGukYI86vlrag5zy9lsWzlEeMQ8F4Yc0QfQ0beYwUhBl8", 
+            "width": "220"
           }
         ], 
         "hcard": [
           {
-            "fn": "Leonard Cohen"
+            "fn": "Cross-country skiing"
           }
         ], 
         "metatags": [
@@ -183,316 +305,43 @@
           }
         ]
       }, 
-      "snippet": "Ten New Songs is Leonard Cohen's tenth studio album, released in 2001. It was \nco-written and produced by Sharon Robinson. It was produced in Cohen's and\u00a0...", 
-      "title": "Ten New Songs - Wikipedia"
+      "snippet": "Cross-country skiing is a form of skiing where skiers rely on their own locomotion \nto move across snow-covered terrain, rather than using ski lifts or other forms of \nassistance. Cross-country skiing is widely practised as a sport and recreational \nactivity; however, some still use it as a means of transportation.", 
+      "title": "Cross-country skiing - Wikipedia"
     }, 
     {
-      "cacheId": "ballrv6Nb-kJ", 
-      "displayLink": "www.capitalfm.com", 
-      "formattedUrl": "www.capitalfm.com/new-music/", 
-      "htmlFormattedUrl": "www.capitalfm.com/<b>new</b>-music/", 
-      "htmlSnippet": "Catch up with the freshest <b>new songs</b> and albums to download and stream this <br>\nmonth - get ready to update your playlist!", 
-      "htmlTitle": "<b>New Songs</b>, Latest Music, Future Releases - Capital FM", 
+      "cacheId": "DZbGSIYym3MJ", 
+      "displayLink": "www.evo.com", 
+      "formattedUrl": "www.evo.com/.../what-is-ski-snowboard-rocker-and-why-does-it-matter", 
+      "htmlFormattedUrl": "www.evo.com/.../what-is-<b>ski</b>-snowboard-rocker-and-why-does-it-matter", 
+      "htmlSnippet": "Flat is often found between the tip and the tail of the <b>ski</b>/snowboard. Flat <b>means</b> <br>\nflat \u2013 if you lay the <b>ski</b> or board on a table with no weight on it, there won&#39;t be any<br>\n&nbsp;...", 
+      "htmlTitle": "Rocker Guide - What is &quot;Rocker&quot; and why does it matter? | evo", 
       "kind": "customsearch#result", 
-      "link": "http://www.capitalfm.com/new-music/", 
+      "link": "http://www.evo.com/guides/what-is-ski-snowboard-rocker-and-why-does-it-matter", 
       "pagemap": {
         "cse_image": [
           {
-            "src": "http://assets5.capitalfm.com/2016/49/cruz-beckham-single-number-1481095973-editorial-expanding-form-0.jpg"
+            "src": "https://static.evo.com/content/2009-10-19_hero_kbi_v2.jpg"
           }
         ], 
         "cse_thumbnail": [
           {
-            "height": "127", 
-            "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQs0b_3NVCFBD9kWLJzfyCHu28eJJMTaPTWUq6Jctlr2t0W57g6K-l3FQ", 
-            "width": "397"
+            "height": "133", 
+            "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgw6IJjMIN4zcGwRt__6v_2J1ibOHBZdqVBkXXx9diz8KTtrUKSioyrP0", 
+            "width": "379"
           }
         ], 
         "metatags": [
           {
-            "apple-itunes-app": "app-id=297652751", 
-            "application-name": "Capital FM", 
-            "fb:admins": "551351399,1191061720,506268272,629227116,508902591,544850136,669788254,647915822,516067336,621995612,677149409,61310422,638591731,648380633,621995612,531059714,272200002", 
-            "fb:app_id": "184899318222048", 
-            "fb:page_id": "113220942069573", 
-            "og:description": "Catch up with the freshest new songs and albums to download and stream this month - get ready to update your playlist!", 
-            "og:domain": "www.capitalfm.com", 
-            "og:site_name": "Capital FM", 
-            "og:title": "Capital FM", 
-            "og:type": "article", 
-            "og:url": "http://www.capitalfm.com/new-music/", 
-            "parsely-link": "http://www.capitalfm.com/new-music/", 
-            "parsely-section": "/new-music/", 
-            "parsely-title": "Capital FM", 
-            "parsely-type": "sectionpage", 
-            "sailthru.tags": "new-music", 
-            "twitter:card": "summary", 
-            "twitter:description": "Catch up with the freshest new songs and albums to download and stream this month - get ready to update your playlist!", 
-            "twitter:site": "@CapitalOfficial", 
-            "twitter:title": "Capital FM", 
-            "twitter:url": "http://www.capitalfm.com/new-music/", 
-            "viewport": "width=device-width, initial-scale=1.0"
-          }
-        ], 
-        "musicrecording": [
-          {
-            "byartist": "Louisa Johnson", 
-            "image": "http://is3.mzstatic.com/image/thumb/Music71/v4/97/a4/0a/97a40aea-b13f-16b9-5724-8d704130a7b2/source/225x225bb.jpg", 
-            "name": "So Good", 
-            "url": "/artists/louisa-johnson/music/so-good/"
-          }, 
-          {
-            "byartist": "Chris Malinchak", 
-            "image": "http://is3.mzstatic.com/image/thumb/Music71/v4/56/2f/fc/562ffcbc-437a-d6af-ce55-a74b0bf20908/source/225x225bb.jpg", 
-            "name": "Happiness"
-          }, 
-          {
-            "byartist": "DJ Snake feat. Justin Bieber", 
-            "image": "http://is5.mzstatic.com/image/thumb/Music122/v4/a1/b2/2b/a1b22b77-0234-c3ac-85e6-a6f7c7ae9546/source/600x600bb.jpg", 
-            "name": "Let Me Love You (Zedd Remix)"
-          }, 
-          {
-            "byartist": "Galantis", 
-            "image": "http://is5.mzstatic.com/image/thumb/Music122/v4/e5/cc/59/e5cc5939-3bd6-e2a7-e545-92e797a22596/source/225x225bb.jpg", 
-            "name": "Pillow Fight"
-          }, 
-          {
-            "byartist": "Nathan Sykes", 
-            "image": "http://is4.mzstatic.com/image/thumb/Music111/v4/a6/39/89/a6398920-d039-bf71-52d2-3f241ea8f091/source/600x600bb.jpg", 
-            "name": "Have Yourself A Merry Little Christmas"
-          }, 
-          {
-            "byartist": "Nervo & Askery feat. Brielle von Hugel", 
-            "image": "http://is1.mzstatic.com/image/thumb/Music22/v4/55/7e/df/557edf56-4c7e-b33a-43c3-f7dd6da61f5e/source/225x225bb.jpg", 
-            "name": "Alone"
-          }, 
-          {
-            "byartist": "Nick Jonas", 
-            "image": "http://is1.mzstatic.com/image/thumb/Music71/v4/1c/80/ff/1c80ffc9-839b-20bb-ffca-d276b12d0d3a/source/225x225bb.jpg", 
-            "name": "Chainsaw (Sluggo x Patrick Russell Remix)"
-          }, 
-          {
-            "byartist": "Years & Years", 
-            "image": "http://is5.mzstatic.com/image/thumb/Music71/v4/e3/b7/a7/e3b7a78a-7179-01b5-e35a-b58af897119a/source/225x225bb.jpg", 
-            "name": "Both Sides Now (Torch Songs)"
-          }, 
-          {
-            "byartist": "Anne-Marie", 
-            "image": "http://is4.mzstatic.com/image/thumb/Music18/v4/52/a6/86/52a68640-02b6-344d-7ffd-527ae8bcf8cb/source/225x225bb.jpg", 
-            "name": "Breathing Fire"
-          }, 
-          {
-            "byartist": "Charlie Puth", 
-            "image": "http://is4.mzstatic.com/image/thumb/Music71/v4/12/ea/66/12ea663e-7d04-c6ac-b1b6-8e35fa11f242/source/225x225bb.jpg", 
-            "name": "Dangerously"
-          }, 
-          {
-            "byartist": "Daya", 
-            "image": "http://is5.mzstatic.com/image/thumb/Music62/v4/75/c1/95/75c195c2-08b0-509d-975d-80b0fb9afa33/source/225x225bb.jpg", 
-            "name": "Words"
-          }, 
-          {
-            "byartist": "Fifth Harmony", 
-            "image": "http://assets6.capitalfm.com/2016/47/fifth-harmony---thats-my-girl-single-cover-1479739405-track225-0.jpg", 
-            "url": "http://www.capitalfm.com/artists/fifth-harmony/music/thats-my-girl/"
-          }, 
-          {
-            "byartist": "JoJo feat. Alessia Cara", 
-            "image": "http://is1.mzstatic.com/image/thumb/Music62/v4/3a/85/5f/3a855f4c-73f1-ee60-dd9f-9d4eaf963d31/source/225x225bb.jpg", 
-            "name": "I Can Only"
-          }, 
-          {
-            "byartist": "Nickelback", 
-            "image": "http://is5.mzstatic.com/image/thumb/Music62/v4/6b/3c/5b/6b3c5b09-f72d-361f-3787-32b9afa13717/source/225x225bb.jpg", 
-            "name": "Dirty Laundry"
-          }, 
-          {
-            "byartist": "Sophie Ellis Bextor", 
-            "image": "http://is3.mzstatic.com/image/thumb/Music71/v4/22/90/1c/22901c55-efb3-4148-26a8-1cf9c031aa13/source/225x225bb.jpg", 
-            "name": "Wild Forever"
-          }, 
-          {
-            "byartist": "Tinie Tempah", 
-            "image": "http://assets5.capitalfm.com/2016/44/tinie-tempah---bounce-1478261261-track225-0.jpg", 
-            "url": "http://www.capitalfm.com/artists/tinie-tempah/music/bounce/"
-          }, 
-          {
-            "byartist": "ZAYN feat. Kehlani", 
-            "image": "http://is1.mzstatic.com/image/thumb/Music69/v4/3c/a0/76/3ca076fc-c0dc-b7bd-0971-b4b8f031d7c3/source/225x225bb.jpg", 
-            "url": "http://www.capitalfm.com/artists/one-direction/zayn-malik/music/wrong/"
-          }, 
-          {
-            "byartist": "Anne Marie", 
-            "image": "http://is1.mzstatic.com/image/thumb/Music18/v4/0e/0a/56/0e0a56bc-9aa8-2fac-a234-cebd47efa590/source/225x225bb.jpg", 
-            "url": "http://www.capitalfm.com/artists/anne-marie/music/alarm/"
-          }, 
-          {
-            "byartist": "Ariana Grande feat. Nicki Minaj", 
-            "image": "http://is4.mzstatic.com/image/thumb/Music49/v4/62/43/31/624331f1-024c-aefb-f3b6-aee95f3097f5/source/225x225bb.jpg", 
-            "url": "http://www.capitalfm.com/artists/ariana-grande/music/side-to-side/"
-          }, 
-          {
-            "byartist": "Bruno Mars", 
-            "image": "http://is4.mzstatic.com/image/thumb/Music71/v4/37/cc/eb/37cceb44-5eba-f9ef-f162-f94985cb6f53/source/225x225bb.jpg", 
-            "url": "http://www.capitalfm.com/artists/bruno-mars/music/24k-magic/"
-          }, 
-          {
-            "byartist": "Calum Scott", 
-            "image": "http://is5.mzstatic.com/image/thumb/Music30/v4/18/33/f3/1833f3d8-8278-2ff3-4728-f0689ba339c3/source/225x225bb.jpg", 
-            "url": "http://www.capitalfm.com/artists/calum-scott/music/dancing-on-my-own-16/"
+            "fb:page_id": "48764563504", 
+            "og:image": "//static.evo.com/content/evologo_v2.jpg", 
+            "p:domain_verify": "50180ee572d867c3e72375c08a4e7569", 
+            "twitter:account_id": "18686737", 
+            "viewport": "width=device-width, initial-scale=1, maximum-scale=1"
           }
         ]
       }, 
-      "snippet": "Catch up with the freshest new songs and albums to download and stream this \nmonth - get ready to update your playlist!", 
-      "title": "New Songs, Latest Music, Future Releases - Capital FM"
-    }, 
-    {
-      "cacheId": "GPGuPZNIR-sJ", 
-      "displayLink": "en.wikipedia.org", 
-      "formattedUrl": "https://en.wikipedia.org/wiki/New_Songs_from_the_Jade_Terrace", 
-      "htmlFormattedUrl": "https://en.wikipedia.org/wiki/<b>New</b>_<b>Songs</b>_from_the_Jade_Terrace", 
-      "htmlSnippet": "<b>New Songs</b> from the Jade Terrace is an anthology of early medieval Chinese <br>\npoetry in the romantic or semi-erotic &quot;palace style&quot; (gongti \u5bae\u9ad4) that dates to the&nbsp;...", 
-      "htmlTitle": "<b>New Songs</b> from the Jade Terrace - Wikipedia", 
-      "kind": "customsearch#result", 
-      "link": "https://en.wikipedia.org/wiki/New_Songs_from_the_Jade_Terrace", 
-      "pagemap": {
-        "metatags": [
-          {
-            "referrer": "origin-when-cross-origin"
-          }
-        ]
-      }, 
-      "snippet": "New Songs from the Jade Terrace is an anthology of early medieval Chinese \npoetry in the romantic or semi-erotic \"palace style\" (gongti \u5bae\u9ad4) that dates to the\u00a0...", 
-      "title": "New Songs from the Jade Terrace - Wikipedia"
-    }, 
-    {
-      "cacheId": "al00r1bWCHQJ", 
-      "displayLink": "www.capitalxtra.com", 
-      "formattedUrl": "www.capitalxtra.com/new-music/best-2016/rnb-songs/", 
-      "htmlFormattedUrl": "www.capitalxtra.com/<b>new</b>-music/best-2016/rnb-<b>songs</b>/", 
-      "htmlSnippet": "So far this year there&#39;s already been some huge <b>new songs</b> from Rihanna, who of <br>\ncourse dropped her highly anticipated &#39;ANTI&#39; album, featuring lead single&nbsp;...", 
-      "htmlTitle": "The Best R&amp;B <b>Songs</b> Of 2016 So Far | <b>New</b> Music - CAPITAL XTRA", 
-      "kind": "customsearch#result", 
-      "link": "http://www.capitalxtra.com/new-music/best-2016/rnb-songs/", 
-      "pagemap": {
-        "cse_image": [
-          {
-            "src": "http://assets2.capitalxtra.com/2015/34/fetty-wap-album-cover-1440672357-hero-promo-0.png"
-          }
-        ], 
-        "cse_thumbnail": [
-          {
-            "height": "225", 
-            "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRW3qv7O7XnXQGlfJyNDjv0S2E_OdZUA2mSGEdKqcM5Ookm-g-N3H_LmKPv", 
-            "width": "225"
-          }
-        ], 
-        "metatags": [
-          {
-            "apple-itunes-app": "app-id=356344777", 
-            "fb:admins": "695470561,551351399,837890453", 
-            "fb:app_id": "199049720274073", 
-            "fb:page_id": "19397821584", 
-            "og:description": "Get ready for the ultimate R&B playlist, filled with epic new music from Rihanna, Drake, Chris Brown and more.", 
-            "og:image": "http://assets2.capitalxtra.com/2016/50/childish-gambino-donald-glover-1481569865-list-handheld-0.jpg", 
-            "og:site_name": "Capital XTRA", 
-            "og:title": "The Best R&B Songs Of 2016 So Far", 
-            "og:type": "article", 
-            "og:url": "http://www.capitalxtra.com/new-music/best-2016/rnb-songs/", 
-            "parsely-author": "Michaela Walters", 
-            "parsely-image-url": "http://www.capitalxtra.com/2016/50/childish-gambino-donald-glover-1481569865-list-handheld-0.jpg", 
-            "parsely-link": "http://www.capitalxtra.com/new-music/best-2016/rnb-songs/", 
-            "parsely-post-id": "5933", 
-            "parsely-pub-date": "2016-12-12T17:43:14", 
-            "parsely-section": "/new-music/best-2016/", 
-            "parsely-title": "The Best R&B Songs Of 2016 So Far", 
-            "parsely-type": "post", 
-            "sailthru.tags": "new-music, best-2016, rnb-songs", 
-            "twitter:card": "summary_large_image", 
-            "twitter:description": "Get ready for the ultimate R&B playlist, filled with epic new music from Rihanna, Drake, Chris Brown and more.", 
-            "twitter:image:height": "360", 
-            "twitter:image:src": "http://assets2.capitalxtra.com/2016/50/childish-gambino-donald-glover-1481569865-list-handheld-0.jpg", 
-            "twitter:image:width": "640", 
-            "twitter:title": "The Best R&B Songs Of 2016 So Far"
-          }
-        ]
-      }, 
-      "snippet": "So far this year there's already been some huge new songs from Rihanna, who of \ncourse dropped her highly anticipated 'ANTI' album, featuring lead single\u00a0...", 
-      "title": "The Best R&B Songs Of 2016 So Far | New Music - CAPITAL XTRA"
-    }, 
-    {
-      "cacheId": "V6CmpDy6l8cJ", 
-      "displayLink": "en.wikipedia.org", 
-      "formattedUrl": "https://en.wikipedia.org/wiki/Songs_for_a_New_World", 
-      "htmlFormattedUrl": "https://en.wikipedia.org/wiki/<b>Songs</b>_for_a_<b>New</b>_World", 
-      "htmlSnippet": "<b>Songs</b> for a <b>New</b> World is a work of musical theatre written and composed by <br>\nJason Robert Brown. This was Jason Robert Brown&#39;s first produced show,&nbsp;...", 
-      "htmlTitle": "<b>Songs</b> for a <b>New</b> World - Wikipedia", 
-      "kind": "customsearch#result", 
-      "link": "https://en.wikipedia.org/wiki/Songs_for_a_New_World", 
-      "pagemap": {
-        "cse_image": [
-          {
-            "src": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0a/Songs_for_a_New_World_CD_Cover.jpg/220px-Songs_for_a_New_World_CD_Cover.jpg"
-          }
-        ], 
-        "cse_thumbnail": [
-          {
-            "height": "176", 
-            "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8-W1C1CERpmTArmNzPSrUzhjTp0Q_BtL1OC5njHko3uarLp76jedqu5TI", 
-            "width": "176"
-          }
-        ], 
-        "metatags": [
-          {
-            "referrer": "origin-when-cross-origin"
-          }
-        ]
-      }, 
-      "snippet": "Songs for a New World is a work of musical theatre written and composed by \nJason Robert Brown. This was Jason Robert Brown's first produced show,\u00a0...", 
-      "title": "Songs for a New World - Wikipedia"
-    }, 
-    {
-      "cacheId": "9ejGUZWfUpYJ", 
-      "displayLink": "www.jw.org", 
-      "formattedUrl": "https://www.jw.org/en/.../music-songs/sing-to-jehovah-new-songs/", 
-      "htmlFormattedUrl": "https://www.jw.org/en/.../music-<b>songs</b>/sing-to-jehovah-<b>new</b>-<b>songs</b>/", 
-      "htmlSnippet": "Sing to Jehovah\u2014<b>New Songs</b>. Enjoy <b>new songs</b> for the praise and worship of <br>\nJehovah God. Download the music and lyrics, and practice these beautiful songs.", 
-      "htmlTitle": "Sing to Jehovah\u2014<b>New Songs</b> | Sing to Jehovah", 
-      "kind": "customsearch#result", 
-      "link": "https://www.jw.org/en/publications/music-songs/sing-to-jehovah-new-songs/", 
-      "pagemap": {
-        "cse_image": [
-          {
-            "src": "https://assetsnffrgf-a.akamaihd.net/assets/a/snylpnw/E/wpub/snylpnw_E_md.jpg"
-          }
-        ], 
-        "cse_thumbnail": [
-          {
-            "height": "96", 
-            "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPpm1_91ucHOV3Kat9dsUb3N_RwVumR_fUfRIxgg4o9TUAjqAsmniyPg", 
-            "width": "96"
-          }
-        ], 
-        "metatags": [
-          {
-            "application-name": "JW.ORG", 
-            "google": "notranslate", 
-            "msapplication-square150x150logo": "https://assetsnffrgf-a.akamaihd.net/themes/content-theme/images/tile_squareMedium.png", 
-            "msapplication-square310x310logo": "https://assetsnffrgf-a.akamaihd.net/themes/content-theme/images/tile_squareLarge.png", 
-            "msapplication-square70x70logo": "https://assetsnffrgf-a.akamaihd.net/themes/content-theme/images/tile_squareSmall.png", 
-            "msapplication-tilecolor": "#ffffff", 
-            "msapplication-wide310x150logo": "https://assetsnffrgf-a.akamaihd.net/themes/content-theme/images/tile_landscape.png", 
-            "og:description": "These new Kingdom songs are a beautiful addition to the song book, Sing to Jehovah. Download music and lyrics.", 
-            "og:site_name": "JW.ORG", 
-            "og:title": "Sing to Jehovah\u2014New Songs | Sing to Jehovah", 
-            "og:type": "article", 
-            "og:url": "https://www.jw.org/en/publications/music-songs/sing-to-jehovah-new-songs/", 
-            "viewport": "width=device-width, initial-scale=1.0"
-          }
-        ]
-      }, 
-      "snippet": "Sing to Jehovah\u2014New Songs. Enjoy new songs for the praise and worship of \nJehovah God. Download the music and lyrics, and practice these beautiful songs.", 
-      "title": "Sing to Jehovah\u2014New Songs | Sing to Jehovah"
+      "snippet": "Flat is often found between the tip and the tail of the ski/snowboard. Flat means \nflat \u2013 if you lay the ski or board on a table with no weight on it, there won't be any\n\u00a0...", 
+      "title": "Rocker Guide - What is \"Rocker\" and why does it matter? | evo"
     }
   ], 
   "kind": "customsearch#search", 
@@ -504,10 +353,10 @@
         "inputEncoding": "utf8", 
         "outputEncoding": "utf8", 
         "safe": "off", 
-        "searchTerms": "new songs", 
+        "searchTerms": "what ski means?", 
         "startIndex": 11, 
-        "title": "Google Custom Search - new songs", 
-        "totalResults": "252000000"
+        "title": "Google Custom Search - what ski means?", 
+        "totalResults": "7480000"
       }
     ], 
     "request": [
@@ -517,18 +366,18 @@
         "inputEncoding": "utf8", 
         "outputEncoding": "utf8", 
         "safe": "off", 
-        "searchTerms": "new songs", 
+        "searchTerms": "what ski means?", 
         "startIndex": 1, 
-        "title": "Google Custom Search - new songs", 
-        "totalResults": "252000000"
+        "title": "Google Custom Search - what ski means?", 
+        "totalResults": "7480000"
       }
     ]
   }, 
   "searchInformation": {
-    "formattedSearchTime": "0.56", 
-    "formattedTotalResults": "252,000,000", 
-    "searchTime": 0.557689, 
-    "totalResults": "252000000"
+    "formattedSearchTime": "0.52", 
+    "formattedTotalResults": "7,480,000", 
+    "searchTime": 0.515588, 
+    "totalResults": "7480000"
   }, 
   "url": {
     "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&cref={cref?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json", 

@@ -18,9 +18,11 @@ def search(search_term):
 
     with open('results.json', 'w') as outfile:
         json.dump(response, outfile, sort_keys = True, indent = 2, ensure_ascii=True)
+		
+	return response
 
 if __name__ == "__main__":
-    search("pizza")
+    search("justin timberlake")
     with open('results.json') as data_file:
         data = json.load(data_file)
 
