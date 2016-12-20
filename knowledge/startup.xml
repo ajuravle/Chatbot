@@ -11,6 +11,7 @@
             <learn>knowledge/knowledge.aiml</learn>
             <learn>knowledge/music.aiml</learn>
             <learn>knowledge/biography.aiml</learn>
+			<learn>knowledge/bot_emotions.aiml</learn>
         </template>
     </category>
 </aiml>

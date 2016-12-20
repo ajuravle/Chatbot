@@ -26,7 +26,7 @@ filler_short_responses = ["Okay, I listen.", "Let's see...", "Bring it on!", "I 
 sessionId = 12345
 
 memory = dict()
-wait = dict()
+expect = dict()
 
 
 def dialogue_act_features(post):
@@ -94,6 +94,7 @@ class Brain:
                 response = "Hello! My name is Chad and I am passionate about music."
                 response += "We can share our experiences and maybe we can get along."
                 response += "Would you mind telling me your name first?"
+                expect[sessionId] = "name"
                 memory[sessionId] = dict()
             else:
                 response = "Welcome back!"
@@ -120,15 +121,35 @@ class Brain:
         aiml_sent_type = []
         aiml_responses = []
         memory_responses = []
+        sentence_types = []
+        emotions = []
 
         for sentence in s:
             sentence_type = self.instant_classifier.classify(dialogue_act_features(sentence))
+            sentence_types.append(sentence_type)
 
             polarity, subjective = pattern_en.sentiment(sentence)
             sent = pattern_en.parse(sentence, lemmata=True)
             sent = pattern_en.Sentence(sent)
             modality = pattern_en.modality(sent)
             mood = pattern_en.mood(sent)
+
+            if polarity > 0.8:
+                emotions.append("SUPER HAPPY")
+            elif polarity > 0.3:
+                emotions.append("GOOD SURPRISE")
+            elif polarity < -0.4:
+                emotions.append("FEAR")
+            elif polarity > 0.4:
+                emotions.append("COOL")
+            elif polarity < -0.1:
+                emotions.append("SAD")
+            elif polarity < -0.7:
+                emotions.append("ANGER")
+            else:
+                emotions.append("NEUTER")
+
+            print sentence_type, polarity, subjective, modality, mood
 
             try:
                 aiml_sent_type_res = self.kernel.respond(sentence_type, sessionId)
@@ -181,8 +202,10 @@ class Brain:
                                 for c_prep in c.children:
                                     if c_prep.dep in [dobj, pobj, attr]:
                                         memory[sessionId][vb][subj] += c_prep.text
+                                        memory_responses.append(self.kernel.respond("memorate", sessionId))
                             elif c.dep in [dobj, pobj, attr]:
                                 memory[sessionId][vb][subj] = c.text
+                                memory_responses.append(self.kernel.respond("memorate", sessionId))
             elif sentence_type == "whQuestion":
                 for i in verbs_subj:
                     subjs = []
@@ -226,9 +249,10 @@ class Brain:
                                     memory_msg += ", "
                                 elif num_subjs == 1:
                                     memory_msg += "and "
-                        memory_msg += verb + " "
-                        if num_subjs != len(subjs):
-                            memory_msg += memory[sessionId][verb][subjs[-1]] + "."
+                        if len(memory_msg) > 0:
+                            memory_msg += verb + " "
+                            if num_subjs != len(subjs):
+                                memory_msg += memory[sessionId][verb][subjs[-1]] + "."
             memory_responses.append(memory_msg)
 
         # tone generator : eg. concatenate : I'm not exactly sure, but ...
@@ -250,10 +274,36 @@ class Brain:
 
         response = ""
         for res in arr_response:
-            response += res
+            if len(res) > 1:
+                response += res + " "
+
+        # generic response, if no response
+        restoks = nlp.tokenize_text(response)
+        if len(restoks) == 0:
+            idx = random.randint(0, len(sentence_types) - 1)
+            try:
+                aiml_response = self.kernel.respond(sentence_types[idx], sessionId)
+            except:
+                aiml_response = ""
+            response = aiml_response
+
+        for i in emotions:
+            try:
+                emoi = self.kernel.respond(i, sessionId)
+            except:
+                emoi = None
+            if emoi is not None:
+                if random.randint(0, 100) < 50:
+                    response += " " + emoi
+                    break
+
         polarity, subjective = pattern_en.sentiment(response)
         sent = pattern_en.parse(sentence, lemmata=True)
         sent = pattern_en.Sentence(sent)
         modality = pattern_en.modality(sent)
         mood = pattern_en.mood(sent)
+        sentence_type = self.instant_classifier.classify(dialogue_act_features(response))
+
+        print sentence_type, response, polarity, subjective, modality, mood
+
         return response

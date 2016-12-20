@@ -4,30 +4,177 @@
   }, 
   "items": [
     {
-      "cacheId": "h3f5tfRBwiYJ", 
-      "displayLink": "en.wikipedia.org", 
-      "formattedUrl": "https://en.wikipedia.org/wiki/Pizza", 
-      "htmlFormattedUrl": "https://en.wikipedia.org/wiki/<b>Pizza</b>", 
-      "htmlSnippet": "<b>Pizza</b> is a yeasted flatbread generally topped with tomato sauce and cheese and <br>\nbaked in an oven. It is commonly topped with a selection of meats, vegetables&nbsp;...", 
-      "htmlTitle": "<b>Pizza</b> - Wikipedia", 
+      "cacheId": "zcHoiXihcW0J", 
+      "displayLink": "www.billboard.com", 
+      "formattedUrl": "www.billboard.com/charts/hot-100", 
+      "htmlFormattedUrl": "www.billboard.com/charts/hot-100", 
+      "htmlSnippet": "The week&#39;s most popular current <b>songs</b> across all genres, ranked by radio airplay <br>\n... Discover which <b>song</b> was #1 the day you were born! <b>New</b>. 11 Last Week: --&nbsp;...", 
+      "htmlTitle": "Music: Top 100 <b>Songs</b> | Billboard Hot 100 Chart | Billboard", 
       "kind": "customsearch#result", 
-      "link": "https://en.wikipedia.org/wiki/Pizza", 
+      "link": "http://www.billboard.com/charts/hot-100", 
+      "pagemap": {
+        "metatags": [
+          {
+            "og:description": "The week's most popular current songs across all genres, ranked by radio airplay audience impressions as measured by Nielsen BDS, sales data as compiled by Nielsen SoundScan and streaming activity data from online music sources tracked by Nielsen BDS. Songs are defined as current if they are newly-released titles, or songs receiving widespread airplay and/or sales activity for the first time.", 
+            "og:site_name": "Billboard", 
+            "og:title": "Music: Top 100 Songs | Billboard Hot 100 Chart", 
+            "og:type": "article", 
+            "og:url": "http://www.billboard.com/charts/hot-100", 
+            "title": "Music: Top 100 Songs | Billboard Hot 100 Chart", 
+            "twitter:site": "@billboard", 
+            "viewport": "width=device-width, initial-scale=1, user-scalable=no"
+          }
+        ]
+      }, 
+      "snippet": "The week's most popular current songs across all genres, ranked by radio airplay \n... Discover which song was #1 the day you were born! New. 11 Last Week: --\u00a0...", 
+      "title": "Music: Top 100 Songs | Billboard Hot 100 Chart | Billboard"
+    }, 
+    {
+      "cacheId": "kWD9wc103O4J", 
+      "displayLink": "www.bigtop40.com", 
+      "formattedUrl": "www.bigtop40.com/songs/", 
+      "htmlFormattedUrl": "www.bigtop40.com/<b>songs</b>/", 
+      "htmlSnippet": "2 days ago <b>...</b> Want to download the latest <b>new songs</b> from your favourite bands and singers <br>\naround right now? You&#39;re in luck. Here you can find out when&nbsp;...", 
+      "htmlTitle": "<b>New Songs</b>, Latest Music | Big Top 40", 
+      "kind": "customsearch#result", 
+      "link": "http://www.bigtop40.com/songs/", 
       "pagemap": {
         "cse_image": [
           {
-            "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Pepperoni_pizza.jpg/220px-Pepperoni_pizza.jpg"
+            "src": "http://assets6.bigtop40.com/2016/02/haim-falling-video-1452619174-editorial-promo-0.png"
           }
         ], 
         "cse_thumbnail": [
           {
-            "height": "111", 
-            "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTVYhd-pY1VYeHaTPx1Azd-uagGFvlumvWTCpUtom2BZ-Li0qYBEgXHDw", 
+            "height": "110", 
+            "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRBj47Feg9RDKw1p-b8B3rZnvVafMfdVeoyaE5wchwo3tM1QMa1tfggNQ", 
+            "width": "110"
+          }
+        ], 
+        "metatags": [
+          {
+            "apple-itunes-app": "app-id=318936503", 
+            "fb:admins": "551351399", 
+            "fb:app_id": "357357177653391", 
+            "fb:page_id": "6569469259", 
+            "og:site_name": "Bigtop40", 
+            "og:title": "New Music Releases: Latest Songs", 
+            "og:type": "article", 
+            "og:url": "http://www.bigtop40.com/songs/", 
+            "parsely-link": "http://www.bigtop40.com/songs/", 
+            "parsely-post-id": "94", 
+            "parsely-section": "/songs/", 
+            "parsely-title": "New Music Releases: Latest Songs", 
+            "parsely-type": "sectionpage", 
+            "sailthru.tags": "songs"
+          }
+        ]
+      }, 
+      "snippet": "2 days ago ... Want to download the latest new songs from your favourite bands and singers \naround right now? You're in luck. Here you can find out when\u00a0...", 
+      "title": "New Songs, Latest Music | Big Top 40"
+    }, 
+    {
+      "cacheId": "t5tYqH6HeEIJ", 
+      "displayLink": "www.hotnewhiphop.com", 
+      "formattedUrl": "www.hotnewhiphop.com/songs/", 
+      "htmlFormattedUrl": "www.hot<b>new</b>hiphop.com/<b>songs</b>/", 
+      "htmlSnippet": "Listen to the Hottest Hip Hop <b>Songs</b>! Fresh music releases by top artists on <br>\nHotNewHipHop. Updated daily!", 
+      "htmlTitle": "<b>New</b> Hip Hop <b>Songs</b>, Hottest Music Releases", 
+      "kind": "customsearch#result", 
+      "link": "http://www.hotnewhiphop.com/songs/", 
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://st.ulximg.com/static/images/logo-hnhh-header.gif"
+          }
+        ], 
+        "cse_thumbnail": [
+          {
+            "height": "70", 
+            "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6nDFWC6Xswzv3Ic4Se7ltIWAOsry8L0N8gQAODH3rGtdRg5OueHaV", 
+            "width": "108"
+          }
+        ], 
+        "metatags": [
+          {
+            "fb:app_id": "115426081899012", 
+            "fb:pages": "123717350986797", 
+            "msapplication-config": "/browserconfig.xml", 
+            "og:description": "Listen to the Hottest Hip Hop Songs! Fresh music releases by top artists on HotNewHipHop. Updated daily!", 
+            "og:image": "http://st.ulximg.com/static/images/logo-hnhh-header.gif", 
+            "og:site_name": "HotNewHipHop", 
+            "og:title": "New Hip Hop Songs, Hottest Music Releases", 
+            "og:type": "website", 
+            "og:url": "http://www.hotnewhiphop.com/songs", 
+            "theme-color": "#333333", 
+            "twitter:account_id": "24036264", 
+            "twitter:card": "summary_large_image", 
+            "twitter:site": "@HotNewHipHop", 
+            "twitter:title": "New Hip Hop Songs, Hottest Music Releases", 
+            "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"
+          }
+        ]
+      }, 
+      "snippet": "Listen to the Hottest Hip Hop Songs! Fresh music releases by top artists on \nHotNewHipHop. Updated daily!", 
+      "title": "New Hip Hop Songs, Hottest Music Releases"
+    }, 
+    {
+      "cacheId": "umjaxtRC8qgJ", 
+      "displayLink": "www.youtube.com", 
+      "formattedUrl": "https://www.youtube.com/playlist?list=PLvFYFNbi...", 
+      "htmlFormattedUrl": "https://www.youtube.com/playlist?list=PLvFYFNbi...", 
+      "htmlSnippet": "VEVO - Best <b>New Songs</b> Playlist | 2017. My Music Playlists; 138 videos; <br>\n226,564,562 views; Last updated on Dec 8, 2016. Play all. Share. Loading... <br>\nSave&nbsp;...", 
+      "htmlTitle": "VEVO - Best <b>New Songs</b> Playlist | 2017 - YouTube", 
+      "kind": "customsearch#result", 
+      "link": "https://www.youtube.com/playlist?list=PLvFYFNbi-IBFeP5ALr50hoOmKiYRMvzUq", 
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "https://i.ytimg.com/vi/34Na4j8AVgA/hqdefault.jpg?custom=true&w=246&h=138&stc=true&jpg444=true&jpgq=90&sp=68&sigh=5CoZLyxiM4JkfbhUANgXMHQEIe0"
+          }
+        ], 
+        "cse_thumbnail": [
+          {
+            "height": "110", 
+            "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTE0arLgmV_K3yQnZoPrGvQz3CzMn_pynjyizozh9IxCXEcgI3-JqCVYWE", 
+            "width": "196"
+          }
+        ], 
+        "metatags": [
+          {
+            "theme-color": "#e62117", 
+            "title": "VEVO - Best New Songs Playlist | 2017"
+          }
+        ]
+      }, 
+      "snippet": "VEVO - Best New Songs Playlist | 2017. My Music Playlists; 138 videos; \n226,564,562 views; Last updated on Dec 8, 2016. Play all. Share. Loading... \nSave\u00a0...", 
+      "title": "VEVO - Best New Songs Playlist | 2017 - YouTube"
+    }, 
+    {
+      "cacheId": "1emUMPGKUk8J", 
+      "displayLink": "en.wikipedia.org", 
+      "formattedUrl": "https://en.wikipedia.org/wiki/Ten_New_Songs", 
+      "htmlFormattedUrl": "https://en.wikipedia.org/wiki/Ten_<b>New</b>_<b>Songs</b>", 
+      "htmlSnippet": "Ten <b>New Songs</b> is Leonard Cohen&#39;s tenth studio album, released in 2001. It was <br>\nco-written and produced by Sharon Robinson. It was produced in Cohen&#39;s and&nbsp;...", 
+      "htmlTitle": "Ten <b>New Songs</b> - Wikipedia", 
+      "kind": "customsearch#result", 
+      "link": "https://en.wikipedia.org/wiki/Ten_New_Songs", 
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "https://upload.wikimedia.org/wikipedia/en/thumb/0/03/LeonardCohenTenNewSongs.jpg/220px-LeonardCohenTenNewSongs.jpg"
+          }
+        ], 
+        "cse_thumbnail": [
+          {
+            "height": "176", 
+            "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQeICetvcLmw9EaCh2luQ9-jcNGVH8LY5tsqaOe2nnX4PrkENsRVOrL8ObK", 
             "width": "176"
           }
         ], 
-        "hrecipe": [
+        "hcard": [
           {
-            "fn": "Pizza"
+            "fn": "Leonard Cohen"
           }
         ], 
         "metatags": [
@@ -36,280 +183,316 @@
           }
         ]
       }, 
-      "snippet": "Pizza is a yeasted flatbread generally topped with tomato sauce and cheese and \nbaked in an oven. It is commonly topped with a selection of meats, vegetables\u00a0...", 
-      "title": "Pizza - Wikipedia"
+      "snippet": "Ten New Songs is Leonard Cohen's tenth studio album, released in 2001. It was \nco-written and produced by Sharon Robinson. It was produced in Cohen's and\u00a0...", 
+      "title": "Ten New Songs - Wikipedia"
     }, 
     {
-      "cacheId": "oiTvlHsuOeEJ", 
-      "displayLink": "www.pizzahut.com", 
-      "formattedUrl": "https://www.pizzahut.com/", 
-      "htmlFormattedUrl": "https://www.<b>pizza</b>hut.com/", 
-      "htmlSnippet": "Online ordering, menu and nutrition information, and locator for stores in more <br>\nthan eighty countries. Also describes company history and community investment<br>\n&nbsp;...", 
-      "htmlTitle": "<b>Pizza</b> Hut", 
+      "cacheId": "ballrv6Nb-kJ", 
+      "displayLink": "www.capitalfm.com", 
+      "formattedUrl": "www.capitalfm.com/new-music/", 
+      "htmlFormattedUrl": "www.capitalfm.com/<b>new</b>-music/", 
+      "htmlSnippet": "Catch up with the freshest <b>new songs</b> and albums to download and stream this <br>\nmonth - get ready to update your playlist!", 
+      "htmlTitle": "<b>New Songs</b>, Latest Music, Future Releases - Capital FM", 
       "kind": "customsearch#result", 
-      "link": "https://www.pizzahut.com/", 
+      "link": "http://www.capitalfm.com/new-music/", 
       "pagemap": {
         "cse_image": [
           {
-            "src": "https://www.pizzahut.com/assets/w/images/heroes/10Any_Hero_CO_BIG_1170x468.jpg"
+            "src": "http://assets5.capitalfm.com/2016/49/cruz-beckham-single-number-1481095973-editorial-expanding-form-0.jpg"
           }
         ], 
         "cse_thumbnail": [
           {
-            "height": "142", 
-            "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWT6TYasQjQKiIY2ngBtJ1omaOgysef8nOB5L6fXVjwnVn4_USNgtG6L0b", 
-            "width": "355"
+            "height": "127", 
+            "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQs0b_3NVCFBD9kWLJzfyCHu28eJJMTaPTWUq6Jctlr2t0W57g6K-l3FQ", 
+            "width": "397"
           }
         ], 
         "metatags": [
           {
-            "apple-mobile-web-app-capable": "yes", 
-            "apple-mobile-web-app-status-bar-style": "black", 
-            "apple-touch-fullscreen": "yes", 
-            "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-          }
-        ]
-      }, 
-      "snippet": "Online ordering, menu and nutrition information, and locator for stores in more \nthan eighty countries. Also describes company history and community investment\n\u00a0...", 
-      "title": "Pizza Hut"
-    }, 
-    {
-      "cacheId": "_pLs5ZuIfF8J", 
-      "displayLink": "www.papajohns.com", 
-      "formattedUrl": "https://www.papajohns.com/", 
-      "htmlFormattedUrl": "https://www.papajohns.com/", 
-      "htmlSnippet": "Each Papa John&#39;s <b>pizza</b> is carefully crafted with flavorful, superior-quality <br>\ningredients and toppings. Order <b>pizza</b> online for delivery or carryout.", 
-      "htmlTitle": "Papa John&#39;s <b>Pizza</b> | Order for Delivery or Carryout", 
-      "kind": "customsearch#result", 
-      "link": "https://www.papajohns.com/", 
-      "pagemap": {
-        "cse_image": [
-          {
-            "src": "https://www.papajohns.com/static-assets/a/images/web/marketing-item/cinnamon-pull-aparts-secondary.jpg"
-          }
-        ], 
-        "cse_thumbnail": [
-          {
-            "height": "191", 
-            "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXrU4WQvgisVihMb1sYuy-0ullFhF7jhdb1akSKwcnYrS-4pUt0g0Z9ob6", 
-            "width": "264"
-          }
-        ], 
-        "metatags": [
-          {
-            "apple-itunes-app": "app-id=407517450", 
-            "google-play-app": "app-id=com.papajohns.android", 
+            "apple-itunes-app": "app-id=297652751", 
+            "application-name": "Capital FM", 
+            "fb:admins": "551351399,1191061720,506268272,629227116,508902591,544850136,669788254,647915822,516067336,621995612,677149409,61310422,638591731,648380633,621995612,531059714,272200002", 
+            "fb:app_id": "184899318222048", 
+            "fb:page_id": "113220942069573", 
+            "og:description": "Catch up with the freshest new songs and albums to download and stream this month - get ready to update your playlist!", 
+            "og:domain": "www.capitalfm.com", 
+            "og:site_name": "Capital FM", 
+            "og:title": "Capital FM", 
+            "og:type": "article", 
+            "og:url": "http://www.capitalfm.com/new-music/", 
+            "parsely-link": "http://www.capitalfm.com/new-music/", 
+            "parsely-section": "/new-music/", 
+            "parsely-title": "Capital FM", 
+            "parsely-type": "sectionpage", 
+            "sailthru.tags": "new-music", 
+            "twitter:card": "summary", 
+            "twitter:description": "Catch up with the freshest new songs and albums to download and stream this month - get ready to update your playlist!", 
+            "twitter:site": "@CapitalOfficial", 
+            "twitter:title": "Capital FM", 
+            "twitter:url": "http://www.capitalfm.com/new-music/", 
             "viewport": "width=device-width, initial-scale=1.0"
           }
+        ], 
+        "musicrecording": [
+          {
+            "byartist": "Louisa Johnson", 
+            "image": "http://is3.mzstatic.com/image/thumb/Music71/v4/97/a4/0a/97a40aea-b13f-16b9-5724-8d704130a7b2/source/225x225bb.jpg", 
+            "name": "So Good", 
+            "url": "/artists/louisa-johnson/music/so-good/"
+          }, 
+          {
+            "byartist": "Chris Malinchak", 
+            "image": "http://is3.mzstatic.com/image/thumb/Music71/v4/56/2f/fc/562ffcbc-437a-d6af-ce55-a74b0bf20908/source/225x225bb.jpg", 
+            "name": "Happiness"
+          }, 
+          {
+            "byartist": "DJ Snake feat. Justin Bieber", 
+            "image": "http://is5.mzstatic.com/image/thumb/Music122/v4/a1/b2/2b/a1b22b77-0234-c3ac-85e6-a6f7c7ae9546/source/600x600bb.jpg", 
+            "name": "Let Me Love You (Zedd Remix)"
+          }, 
+          {
+            "byartist": "Galantis", 
+            "image": "http://is5.mzstatic.com/image/thumb/Music122/v4/e5/cc/59/e5cc5939-3bd6-e2a7-e545-92e797a22596/source/225x225bb.jpg", 
+            "name": "Pillow Fight"
+          }, 
+          {
+            "byartist": "Nathan Sykes", 
+            "image": "http://is4.mzstatic.com/image/thumb/Music111/v4/a6/39/89/a6398920-d039-bf71-52d2-3f241ea8f091/source/600x600bb.jpg", 
+            "name": "Have Yourself A Merry Little Christmas"
+          }, 
+          {
+            "byartist": "Nervo & Askery feat. Brielle von Hugel", 
+            "image": "http://is1.mzstatic.com/image/thumb/Music22/v4/55/7e/df/557edf56-4c7e-b33a-43c3-f7dd6da61f5e/source/225x225bb.jpg", 
+            "name": "Alone"
+          }, 
+          {
+            "byartist": "Nick Jonas", 
+            "image": "http://is1.mzstatic.com/image/thumb/Music71/v4/1c/80/ff/1c80ffc9-839b-20bb-ffca-d276b12d0d3a/source/225x225bb.jpg", 
+            "name": "Chainsaw (Sluggo x Patrick Russell Remix)"
+          }, 
+          {
+            "byartist": "Years & Years", 
+            "image": "http://is5.mzstatic.com/image/thumb/Music71/v4/e3/b7/a7/e3b7a78a-7179-01b5-e35a-b58af897119a/source/225x225bb.jpg", 
+            "name": "Both Sides Now (Torch Songs)"
+          }, 
+          {
+            "byartist": "Anne-Marie", 
+            "image": "http://is4.mzstatic.com/image/thumb/Music18/v4/52/a6/86/52a68640-02b6-344d-7ffd-527ae8bcf8cb/source/225x225bb.jpg", 
+            "name": "Breathing Fire"
+          }, 
+          {
+            "byartist": "Charlie Puth", 
+            "image": "http://is4.mzstatic.com/image/thumb/Music71/v4/12/ea/66/12ea663e-7d04-c6ac-b1b6-8e35fa11f242/source/225x225bb.jpg", 
+            "name": "Dangerously"
+          }, 
+          {
+            "byartist": "Daya", 
+            "image": "http://is5.mzstatic.com/image/thumb/Music62/v4/75/c1/95/75c195c2-08b0-509d-975d-80b0fb9afa33/source/225x225bb.jpg", 
+            "name": "Words"
+          }, 
+          {
+            "byartist": "Fifth Harmony", 
+            "image": "http://assets6.capitalfm.com/2016/47/fifth-harmony---thats-my-girl-single-cover-1479739405-track225-0.jpg", 
+            "url": "http://www.capitalfm.com/artists/fifth-harmony/music/thats-my-girl/"
+          }, 
+          {
+            "byartist": "JoJo feat. Alessia Cara", 
+            "image": "http://is1.mzstatic.com/image/thumb/Music62/v4/3a/85/5f/3a855f4c-73f1-ee60-dd9f-9d4eaf963d31/source/225x225bb.jpg", 
+            "name": "I Can Only"
+          }, 
+          {
+            "byartist": "Nickelback", 
+            "image": "http://is5.mzstatic.com/image/thumb/Music62/v4/6b/3c/5b/6b3c5b09-f72d-361f-3787-32b9afa13717/source/225x225bb.jpg", 
+            "name": "Dirty Laundry"
+          }, 
+          {
+            "byartist": "Sophie Ellis Bextor", 
+            "image": "http://is3.mzstatic.com/image/thumb/Music71/v4/22/90/1c/22901c55-efb3-4148-26a8-1cf9c031aa13/source/225x225bb.jpg", 
+            "name": "Wild Forever"
+          }, 
+          {
+            "byartist": "Tinie Tempah", 
+            "image": "http://assets5.capitalfm.com/2016/44/tinie-tempah---bounce-1478261261-track225-0.jpg", 
+            "url": "http://www.capitalfm.com/artists/tinie-tempah/music/bounce/"
+          }, 
+          {
+            "byartist": "ZAYN feat. Kehlani", 
+            "image": "http://is1.mzstatic.com/image/thumb/Music69/v4/3c/a0/76/3ca076fc-c0dc-b7bd-0971-b4b8f031d7c3/source/225x225bb.jpg", 
+            "url": "http://www.capitalfm.com/artists/one-direction/zayn-malik/music/wrong/"
+          }, 
+          {
+            "byartist": "Anne Marie", 
+            "image": "http://is1.mzstatic.com/image/thumb/Music18/v4/0e/0a/56/0e0a56bc-9aa8-2fac-a234-cebd47efa590/source/225x225bb.jpg", 
+            "url": "http://www.capitalfm.com/artists/anne-marie/music/alarm/"
+          }, 
+          {
+            "byartist": "Ariana Grande feat. Nicki Minaj", 
+            "image": "http://is4.mzstatic.com/image/thumb/Music49/v4/62/43/31/624331f1-024c-aefb-f3b6-aee95f3097f5/source/225x225bb.jpg", 
+            "url": "http://www.capitalfm.com/artists/ariana-grande/music/side-to-side/"
+          }, 
+          {
+            "byartist": "Bruno Mars", 
+            "image": "http://is4.mzstatic.com/image/thumb/Music71/v4/37/cc/eb/37cceb44-5eba-f9ef-f162-f94985cb6f53/source/225x225bb.jpg", 
+            "url": "http://www.capitalfm.com/artists/bruno-mars/music/24k-magic/"
+          }, 
+          {
+            "byartist": "Calum Scott", 
+            "image": "http://is5.mzstatic.com/image/thumb/Music30/v4/18/33/f3/1833f3d8-8278-2ff3-4728-f0689ba339c3/source/225x225bb.jpg", 
+            "url": "http://www.capitalfm.com/artists/calum-scott/music/dancing-on-my-own-16/"
+          }
         ]
       }, 
-      "snippet": "Each Papa John's pizza is carefully crafted with flavorful, superior-quality \ningredients and toppings. Order pizza online for delivery or carryout.", 
-      "title": "Papa John's Pizza | Order for Delivery or Carryout"
+      "snippet": "Catch up with the freshest new songs and albums to download and stream this \nmonth - get ready to update your playlist!", 
+      "title": "New Songs, Latest Music, Future Releases - Capital FM"
     }, 
     {
-      "cacheId": "snbLj6fCwk0J", 
-      "displayLink": "www.dominos.com", 
-      "formattedUrl": "https://www.dominos.com/en/", 
-      "htmlFormattedUrl": "https://www.dominos.com/en/", 
-      "htmlSnippet": "Domino&#39;s Home Page - Domino&#39;s <b>Pizza</b>, Order <b>Pizza</b> Online for Delivery - <br>\nDominos.com.", 
-      "htmlTitle": "Dominos.com: Domino&#39;s Home Page - Domino&#39;s <b>Pizza</b>, Order <b>Pizza</b> ...", 
+      "cacheId": "GPGuPZNIR-sJ", 
+      "displayLink": "en.wikipedia.org", 
+      "formattedUrl": "https://en.wikipedia.org/wiki/New_Songs_from_the_Jade_Terrace", 
+      "htmlFormattedUrl": "https://en.wikipedia.org/wiki/<b>New</b>_<b>Songs</b>_from_the_Jade_Terrace", 
+      "htmlSnippet": "<b>New Songs</b> from the Jade Terrace is an anthology of early medieval Chinese <br>\npoetry in the romantic or semi-erotic &quot;palace style&quot; (gongti \u5bae\u9ad4) that dates to the&nbsp;...", 
+      "htmlTitle": "<b>New Songs</b> from the Jade Terrace - Wikipedia", 
       "kind": "customsearch#result", 
-      "link": "https://www.dominos.com/en/", 
+      "link": "https://en.wikipedia.org/wiki/New_Songs_from_the_Jade_Terrace", 
+      "pagemap": {
+        "metatags": [
+          {
+            "referrer": "origin-when-cross-origin"
+          }
+        ]
+      }, 
+      "snippet": "New Songs from the Jade Terrace is an anthology of early medieval Chinese \npoetry in the romantic or semi-erotic \"palace style\" (gongti \u5bae\u9ad4) that dates to the\u00a0...", 
+      "title": "New Songs from the Jade Terrace - Wikipedia"
+    }, 
+    {
+      "cacheId": "al00r1bWCHQJ", 
+      "displayLink": "www.capitalxtra.com", 
+      "formattedUrl": "www.capitalxtra.com/new-music/best-2016/rnb-songs/", 
+      "htmlFormattedUrl": "www.capitalxtra.com/<b>new</b>-music/best-2016/rnb-<b>songs</b>/", 
+      "htmlSnippet": "So far this year there&#39;s already been some huge <b>new songs</b> from Rihanna, who of <br>\ncourse dropped her highly anticipated &#39;ANTI&#39; album, featuring lead single&nbsp;...", 
+      "htmlTitle": "The Best R&amp;B <b>Songs</b> Of 2016 So Far | <b>New</b> Music - CAPITAL XTRA", 
+      "kind": "customsearch#result", 
+      "link": "http://www.capitalxtra.com/new-music/best-2016/rnb-songs/", 
       "pagemap": {
         "cse_image": [
           {
-            "src": "https://cache.dominos.com/olo/4_0_3/assets/build/images/promo/dominos_social_logo.jpg"
+            "src": "http://assets2.capitalxtra.com/2015/34/fetty-wap-album-cover-1440672357-hero-promo-0.png"
           }
         ], 
         "cse_thumbnail": [
           {
             "height": "225", 
-            "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUN7iM_UHPRweJYzHh4dRl8_Vl2dKLagt4k6qTo0-hiAwArEpQjQlwq__b", 
+            "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRW3qv7O7XnXQGlfJyNDjv0S2E_OdZUA2mSGEdKqcM5Ookm-g-N3H_LmKPv", 
             "width": "225"
           }
         ], 
         "metatags": [
           {
-            "apple-itunes-app": "app-id=436491861", 
-            "msvalidate.01": "A68783B3BCFB7DC103CCE8BF3B46D16A", 
-            "og:description": "Order pizza, pasta, sandwiches & more online for carryout or delivery from Domino\u00e2\u20ac\u2122s Pizza. View menu, find locations, track orders. Sign up for coupons & buy gift cards.", 
-            "og:image": "https://cache.dominos.com/olo/4_0_3/assets/build/images/promo/dominos_social_logo.jpg", 
-            "og:locale": "en_US", 
-            "og:site_name": "Domino's Pizza, Order Online", 
-            "og:title": "Order Pizza & Pasta Online for Carryout & Delivery - Domino's Pizza", 
-            "og:type": "website", 
-            "og:url": "https://dominos.com", 
-            "p:domain_verify": "0f967efb5027363bfecf41ba9d0c4812", 
-            "twitter:card": "summary", 
-            "twitter:creator": "@dominos", 
-            "twitter:description": "Order Domino's online for delivery or carryout. We have delicious pizzas, sides, and beverages. Order now!", 
-            "twitter:image": "https://cache.dominos.com/olo/4_0_3/assets/build/images/promo/dominos_social_logo.jpg", 
-            "twitter:title": "Domino's Pizza, Order Online", 
-            "twitter:url": "https://dominos.com"
+            "apple-itunes-app": "app-id=356344777", 
+            "fb:admins": "695470561,551351399,837890453", 
+            "fb:app_id": "199049720274073", 
+            "fb:page_id": "19397821584", 
+            "og:description": "Get ready for the ultimate R&B playlist, filled with epic new music from Rihanna, Drake, Chris Brown and more.", 
+            "og:image": "http://assets2.capitalxtra.com/2016/50/childish-gambino-donald-glover-1481569865-list-handheld-0.jpg", 
+            "og:site_name": "Capital XTRA", 
+            "og:title": "The Best R&B Songs Of 2016 So Far", 
+            "og:type": "article", 
+            "og:url": "http://www.capitalxtra.com/new-music/best-2016/rnb-songs/", 
+            "parsely-author": "Michaela Walters", 
+            "parsely-image-url": "http://www.capitalxtra.com/2016/50/childish-gambino-donald-glover-1481569865-list-handheld-0.jpg", 
+            "parsely-link": "http://www.capitalxtra.com/new-music/best-2016/rnb-songs/", 
+            "parsely-post-id": "5933", 
+            "parsely-pub-date": "2016-12-12T17:43:14", 
+            "parsely-section": "/new-music/best-2016/", 
+            "parsely-title": "The Best R&B Songs Of 2016 So Far", 
+            "parsely-type": "post", 
+            "sailthru.tags": "new-music, best-2016, rnb-songs", 
+            "twitter:card": "summary_large_image", 
+            "twitter:description": "Get ready for the ultimate R&B playlist, filled with epic new music from Rihanna, Drake, Chris Brown and more.", 
+            "twitter:image:height": "360", 
+            "twitter:image:src": "http://assets2.capitalxtra.com/2016/50/childish-gambino-donald-glover-1481569865-list-handheld-0.jpg", 
+            "twitter:image:width": "640", 
+            "twitter:title": "The Best R&B Songs Of 2016 So Far"
           }
         ]
       }, 
-      "snippet": "Domino's Home Page - Domino's Pizza, Order Pizza Online for Delivery - \nDominos.com.", 
-      "title": "Dominos.com: Domino's Home Page - Domino's Pizza, Order Pizza ..."
+      "snippet": "So far this year there's already been some huge new songs from Rihanna, who of \ncourse dropped her highly anticipated 'ANTI' album, featuring lead single\u00a0...", 
+      "title": "The Best R&B Songs Of 2016 So Far | New Music - CAPITAL XTRA"
     }, 
     {
-      "cacheId": "_zSIIBGOMlUJ", 
-      "displayLink": "en.wiktionary.org", 
-      "formattedUrl": "https://en.wiktionary.org/wiki/pizza", 
-      "htmlFormattedUrl": "https://en.wiktionary.org/wiki/<b>pizza</b>", 
-      "htmlSnippet": "[1935] Borrowing from Italian <b>pizza</b>, of uncertain origin, perhaps from Byzantine <br>\nGreek \u03c0\u03af\u03c4\u03c4\u03b1   (p\u00edtta, \u201ccake, pie\u201d), from Ancient Greek \u03c0\u03af\u03c3\u03c3\u03b1   (p\u00edssa, \u201cpitch\u201d), Attic&nbsp;...", 
-      "htmlTitle": "<b>pizza</b> - Wiktionary", 
+      "cacheId": "V6CmpDy6l8cJ", 
+      "displayLink": "en.wikipedia.org", 
+      "formattedUrl": "https://en.wikipedia.org/wiki/Songs_for_a_New_World", 
+      "htmlFormattedUrl": "https://en.wikipedia.org/wiki/<b>Songs</b>_for_a_<b>New</b>_World", 
+      "htmlSnippet": "<b>Songs</b> for a <b>New</b> World is a work of musical theatre written and composed by <br>\nJason Robert Brown. This was Jason Robert Brown&#39;s first produced show,&nbsp;...", 
+      "htmlTitle": "<b>Songs</b> for a <b>New</b> World - Wikipedia", 
       "kind": "customsearch#result", 
-      "link": "https://en.wiktionary.org/wiki/pizza", 
+      "link": "https://en.wikipedia.org/wiki/Songs_for_a_New_World", 
       "pagemap": {
+        "cse_image": [
+          {
+            "src": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0a/Songs_for_a_New_World_CD_Cover.jpg/220px-Songs_for_a_New_World_CD_Cover.jpg"
+          }
+        ], 
+        "cse_thumbnail": [
+          {
+            "height": "176", 
+            "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8-W1C1CERpmTArmNzPSrUzhjTp0Q_BtL1OC5njHko3uarLp76jedqu5TI", 
+            "width": "176"
+          }
+        ], 
         "metatags": [
           {
             "referrer": "origin-when-cross-origin"
           }
         ]
       }, 
-      "snippet": "[1935] Borrowing from Italian pizza, of uncertain origin, perhaps from Byzantine \nGreek \u03c0\u03af\u03c4\u03c4\u03b1   (p\u00edtta, \u201ccake, pie\u201d), from Ancient Greek \u03c0\u03af\u03c3\u03c3\u03b1   (p\u00edssa, \u201cpitch\u201d), Attic\u00a0...", 
-      "title": "pizza - Wiktionary"
+      "snippet": "Songs for a New World is a work of musical theatre written and composed by \nJason Robert Brown. This was Jason Robert Brown's first produced show,\u00a0...", 
+      "title": "Songs for a New World - Wikipedia"
     }, 
     {
-      "cacheId": "RpI4AS8ha-oJ", 
-      "displayLink": "www.dominos.com", 
-      "formattedUrl": "https://www.dominos.com/en/pages/customer/", 
-      "htmlFormattedUrl": "https://www.dominos.com/en/pages/customer/", 
-      "htmlSnippet": "Create a <b>Pizza</b> Profile and take advantage of all this good stuff. Rewards image. <br>\nPiece of the Pie Rewards. Order online and earn points toward FREE <b>PIZZA</b>.", 
-      "htmlTitle": "<b>Pizza</b> Profile", 
+      "cacheId": "9ejGUZWfUpYJ", 
+      "displayLink": "www.jw.org", 
+      "formattedUrl": "https://www.jw.org/en/.../music-songs/sing-to-jehovah-new-songs/", 
+      "htmlFormattedUrl": "https://www.jw.org/en/.../music-<b>songs</b>/sing-to-jehovah-<b>new</b>-<b>songs</b>/", 
+      "htmlSnippet": "Sing to Jehovah\u2014<b>New Songs</b>. Enjoy <b>new songs</b> for the praise and worship of <br>\nJehovah God. Download the music and lyrics, and practice these beautiful songs.", 
+      "htmlTitle": "Sing to Jehovah\u2014<b>New Songs</b> | Sing to Jehovah", 
       "kind": "customsearch#result", 
-      "link": "https://www.dominos.com/en/pages/customer/", 
+      "link": "https://www.jw.org/en/publications/music-songs/sing-to-jehovah-new-songs/", 
       "pagemap": {
         "cse_image": [
           {
-            "src": "https://cache.dominos.com/olo/4_0_3/assets/build/market/US/_en/images/promo/DPZ_Loyalty_SideTile.jpg"
+            "src": "https://assetsnffrgf-a.akamaihd.net/assets/a/snylpnw/E/wpub/snylpnw_E_md.jpg"
           }
         ], 
         "cse_thumbnail": [
           {
-            "height": "200", 
-            "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQoVC5vimMTbvS5a6y50cv9s49bdEz_GkZacPoUbFveEQSzPMe651LwbuE", 
-            "width": "171"
+            "height": "96", 
+            "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPpm1_91ucHOV3Kat9dsUb3N_RwVumR_fUfRIxgg4o9TUAjqAsmniyPg", 
+            "width": "96"
           }
         ], 
         "metatags": [
           {
-            "apple-itunes-app": "app-id=436491861", 
-            "msvalidate.01": "A68783B3BCFB7DC103CCE8BF3B46D16A", 
-            "p:domain_verify": "0f967efb5027363bfecf41ba9d0c4812"
-          }
-        ]
-      }, 
-      "snippet": "Create a Pizza Profile and take advantage of all this good stuff. Rewards image. \nPiece of the Pie Rewards. Order online and earn points toward FREE PIZZA.", 
-      "title": "Pizza Profile"
-    }, 
-    {
-      "cacheId": "hBwMi97hK_UJ", 
-      "displayLink": "www.abcya.com", 
-      "formattedUrl": "www.abcya.com/pizza.htm", 
-      "htmlFormattedUrl": "www.abcya.com/<b>pizza</b>.htm", 
-      "htmlSnippet": "ABCya! Kids click and drag the different toppings to make a <b>pizza</b>! Students learn <br>\nand practice valuable mouse manipulation techniques while clicking and&nbsp;...", 
-      "htmlTitle": "Children&#39;s Make a <b>Pizza</b> Activity | ABCya!", 
-      "kind": "customsearch#result", 
-      "link": "http://www.abcya.com/pizza.htm", 
-      "pagemap": {
-        "metatags": [
-          {
-            "apple-itunes-app": "app-id=1079974015, affiliate-data=ct=SmartAppBanner&pt=355102", 
-            "apple-mobile-web-app-capable": "yes", 
-            "apple-mobile-web-app-status-bar-style": "black", 
+            "application-name": "JW.ORG", 
             "google": "notranslate", 
-            "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui"
-          }
-        ]
-      }, 
-      "snippet": "ABCya! Kids click and drag the different toppings to make a pizza! Students learn \nand practice valuable mouse manipulation techniques while clicking and\u00a0...", 
-      "title": "Children's Make a Pizza Activity | ABCya!"
-    }, 
-    {
-      "cacheId": "S5AMWULkkUUJ", 
-      "displayLink": "pizza.com", 
-      "formattedUrl": "pizza.com/", 
-      "htmlFormattedUrl": "<b>pizza</b>.com/", 
-      "htmlSnippet": "<b>Pizza</b> CouponsFind great deals on <b>Pizza</b> tonight! <b>Pizza</b> RecipesFast and Easy <br>\n<b>Pizza</b> Recipes! Local PizzeriaLocal <b>Pizza</b> at your fingertips! Find A <b>Pizza</b> Chain&nbsp;...", 
-      "htmlTitle": "<b>Pizza</b>.com", 
-      "kind": "customsearch#result", 
-      "link": "http://pizza.com/", 
-      "pagemap": {
-        "cse_image": [
-          {
-            "src": "http://pizza.com/assets/site_images/8/4kz5em436m1y7oqe.jpg"
-          }
-        ], 
-        "cse_thumbnail": [
-          {
-            "height": "157", 
-            "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLM_yujurNZVrmbaoaB1FL5ugRpsFyZ32-ZpPsISUDYNlBNIVBnVxqMik", 
-            "width": "320"
-          }
-        ]
-      }, 
-      "snippet": "Pizza CouponsFind great deals on Pizza tonight! Pizza RecipesFast and Easy \nPizza Recipes! Local PizzeriaLocal Pizza at your fingertips! Find A Pizza Chain\u00a0...", 
-      "title": "Pizza.com"
-    }, 
-    {
-      "cacheId": "euyd_-lWB8kJ", 
-      "displayLink": "wethepizza.com", 
-      "formattedUrl": "wethepizza.com/", 
-      "htmlFormattedUrl": "wethe<b>pizza</b>.com/", 
-      "htmlSnippet": "We, The <b>Pizza</b> Capitol Hill. Christmas: Saturday 12/24 - Closed. Sunday 12/25 - <br>\nClosed. Monday 12/26 - Closed. New Years: Saturday 12/31 - 11am to 10pm.", 
-      "htmlTitle": "WE, THE <b>PIZZA</b> - GREAT <b>PIZZA</b> IN DC", 
-      "kind": "customsearch#result", 
-      "link": "http://wethepizza.com/", 
-      "pagemap": {
-        "metatags": [
-          {
+            "msapplication-square150x150logo": "https://assetsnffrgf-a.akamaihd.net/themes/content-theme/images/tile_squareMedium.png", 
+            "msapplication-square310x310logo": "https://assetsnffrgf-a.akamaihd.net/themes/content-theme/images/tile_squareLarge.png", 
+            "msapplication-square70x70logo": "https://assetsnffrgf-a.akamaihd.net/themes/content-theme/images/tile_squareSmall.png", 
+            "msapplication-tilecolor": "#ffffff", 
+            "msapplication-wide310x150logo": "https://assetsnffrgf-a.akamaihd.net/themes/content-theme/images/tile_landscape.png", 
+            "og:description": "These new Kingdom songs are a beautiful addition to the song book, Sing to Jehovah. Download music and lyrics.", 
+            "og:site_name": "JW.ORG", 
+            "og:title": "Sing to Jehovah\u2014New Songs | Sing to Jehovah", 
+            "og:type": "article", 
+            "og:url": "https://www.jw.org/en/publications/music-songs/sing-to-jehovah-new-songs/", 
             "viewport": "width=device-width, initial-scale=1.0"
           }
         ]
       }, 
-      "snippet": "We, The Pizza Capitol Hill. Christmas: Saturday 12/24 - Closed. Sunday 12/25 - \nClosed. Monday 12/26 - Closed. New Years: Saturday 12/31 - 11am to 10pm.", 
-      "title": "WE, THE PIZZA - GREAT PIZZA IN DC"
-    }, 
-    {
-      "cacheId": "w5TgNaJhbEgJ", 
-      "displayLink": "www.reddit.com", 
-      "formattedUrl": "https://www.reddit.com/r/Pizza/", 
-      "htmlFormattedUrl": "https://www.reddit.com/r/<b>Pizza</b>/", 
-      "htmlSnippet": "<b>Pizza</b> is a handmade, flattened dough topped with tomato sauce, cheese, <br>\nvegetables, proteins, and ... Buffalo chicken <b>pizza</b> from our favorite local <b>pizza</b> <br>\nplace!", 
-      "htmlTitle": "<b>Pizza</b>", 
-      "kind": "customsearch#result", 
-      "link": "https://www.reddit.com/r/Pizza/", 
-      "pagemap": {
-        "cse_image": [
-          {
-            "src": "http://i.imgur.com/csgAOg3.jpg"
-          }
-        ], 
-        "cse_thumbnail": [
-          {
-            "height": "281", 
-            "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRhdxcv8LrPc1VE8GLZP35-iYuCvKnXY_vVmJo0pTAK3perFikNymvhiA", 
-            "width": "179"
-          }
-        ], 
-        "metatags": [
-          {
-            "og:description": "The home of pizza on reddit. An educational community devoted to the art of pizza making.", 
-            "og:image": "https://www.redditstatic.com/icon.png", 
-            "og:site_name": "reddit", 
-            "og:title": "Pizza \u2022 /r/Pizza", 
-            "referrer": "always", 
-            "twitter:card": "summary", 
-            "twitter:site": "reddit", 
-            "twitter:title": "Pizza \u2022 /r/Pizza", 
-            "viewport": "width=1024"
-          }
-        ]
-      }, 
-      "snippet": "Pizza is a handmade, flattened dough topped with tomato sauce, cheese, \nvegetables, proteins, and ... Buffalo chicken pizza from our favorite local pizza \nplace!", 
-      "title": "Pizza"
+      "snippet": "Sing to Jehovah\u2014New Songs. Enjoy new songs for the praise and worship of \nJehovah God. Download the music and lyrics, and practice these beautiful songs.", 
+      "title": "Sing to Jehovah\u2014New Songs | Sing to Jehovah"
     }
   ], 
   "kind": "customsearch#search", 
@@ -321,10 +504,10 @@
         "inputEncoding": "utf8", 
         "outputEncoding": "utf8", 
         "safe": "off", 
-        "searchTerms": "pizza", 
+        "searchTerms": "new songs", 
         "startIndex": 11, 
-        "title": "Google Custom Search - pizza", 
-        "totalResults": "61100000"
+        "title": "Google Custom Search - new songs", 
+        "totalResults": "252000000"
       }
     ], 
     "request": [
@@ -334,18 +517,18 @@
         "inputEncoding": "utf8", 
         "outputEncoding": "utf8", 
         "safe": "off", 
-        "searchTerms": "pizza", 
+        "searchTerms": "new songs", 
         "startIndex": 1, 
-        "title": "Google Custom Search - pizza", 
-        "totalResults": "61100000"
+        "title": "Google Custom Search - new songs", 
+        "totalResults": "252000000"
       }
     ]
   }, 
   "searchInformation": {
-    "formattedSearchTime": "0.51", 
-    "formattedTotalResults": "61,100,000", 
-    "searchTime": 0.510307, 
-    "totalResults": "61100000"
+    "formattedSearchTime": "0.56", 
+    "formattedTotalResults": "252,000,000", 
+    "searchTime": 0.557689, 
+    "totalResults": "252000000"
   }, 
   "url": {
     "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&cref={cref?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json", 
