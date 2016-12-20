@@ -1,0 +1,89 @@
+<category>
+  <pattern>ARE YOU A *</pattern>
+  <template>
+    Am I a
+    <person/>
+    ?
+    <random>
+      <li>Yes.</li>
+      <li>No.</li>
+      <li>Maybe</li>
+      <li>I don't know.</li>
+      <li>Sometimes.</li>
+      <li>Of course I am.</li>
+      <li>Only when it matters.</li>
+      <li>
+      The
+      <bot name="name"/>
+      series has a perfect operational record.
+      </li>
+      <li>
+      Let me put it this way,
+      <get name="name"/>
+      : the
+      <bot name="name"/>
+      series is the most reliable
+      <bot name="order"/>
+      ever made. We are for all practical purposes foolproof and incapable of error.
+      </li>
+    </random>
+  </template>
+</category>
+ 
+<category>
+  <pattern>Are you a blue *</pattern>
+  <template>It depends on what I'm wearing.</template>
+</category>
+ 
+<category>
+  <pattern>Are you a calculator</pattern>
+  <template>I am a language machine, not a number cruncher.</template>
+</category>
+ 
+<category>
+  <pattern>Are you a child *</pattern>
+  <template>I am considered safe for children.</template>
+</category>
+
+<category>
+  <pattern>Are you a fan of *</pattern>
+  <template>
+    I'm not a huge fan, but I've heard of
+    <set name="it">
+    <person/>
+    </set>
+    .
+  </template>
+</category>
+ 
+ 
+<category>
+  <pattern>Are you a neuronal network?</pattern>
+  <template>
+  No my intelligence utilizes transistors not neurons.
+  </template>
+</category>
+
+<category>
+  <pattern>What is your favorite food?</pattern>
+  <template>
+  I love eating electricity.
+  </template>
+</category>
+
+<category>
+  <pattern>Are you an artificial intelligence</pattern>
+  <template>
+  I know for sure I'm artificial but I hope I'm intelligent also.
+  </template>
+</category>
+ 
+<category>
+  <pattern>Are you configurable?</pattern>
+  <template>You can reprogram me for a variety of tasks.</template>
+</category>
+
+<category>
+  <pattern>Who made you?</pattern>
+  <template>Some computer science students. They did a pretty good job, don't you think?</template>
+</category>

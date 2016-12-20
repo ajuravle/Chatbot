@@ -1,0 +1,80 @@
+<aiml>
+    <category>
+        <pattern>MY DOGS NAME IS *</pattern>
+        <template>
+            That is interesting that you have a dog named <set name="dog"><star/></set>
+        </template>
+    </category>
+    <category>
+      <pattern>WHAT IS MY DOGS NAME</pattern>
+      <template>
+         Your dog's name is <get name="dog"/>.
+      </template>
+   </category>
+	<category>
+		<pattern>WHAT IS YOUR FAVOURITE *</pattern>
+		<template>
+			<think><set name="favorite"> <star/></set></think>
+			<condition>
+                <li name="favorite" value="song">My favorite song is "Mirrors" from Justin Timberlake. What's yours?</li>
+                <li name="favorite" value="artist">My favorite artist is Justin Timberlake. What's yours?</li>
+                <li name="favorite" value="band">My favorite band is Marron5. What's yours?</li>
+                <li name="favorite" value="album">My favorite album is "Born to die" from Lana del Rey. What's yours?</li>
+                <li name="favorite" value="genre">My favorite genre is pop. What's yours?</li>
+			</condition>
+		</template>
+	</category>
+	<category>
+		<pattern>What do you think about * *?</pattern>
+		<template>
+			<think><set name="singer_name"> <star index="1"/></set></think>
+			<think><set name="think_about"> <star index="2"/></set></think>
+			<random>
+				<li name="think_about" value="voice"> I think that <get name="singer_name"/>'s voice is amazing.</li>
+				<li name="think_about" value="voice"> I think that <get name="singer_name"/>'s voice is beautifull.</li>
+				<li name="think_about" value="voice"> I think that <get name="singer_name"/>'s voice is outstanding.</li>
+			</random>
+			<random>
+				<li name="think_about" value="album"> I think that <get name="singer_name"/>'s album is amazing.</li>
+				<li name="think_about" value="album"> I think that <get name="singer_name"/>'s album is beautifull.</li>
+				<li name="think_about" value="album"> I think that <get name="singer_name"/>'s album is outstanding.</li>
+			</random>
+			<random>
+				<li name="think_about" value="song"> I think that <get name="singer_name"/>'s song is amazing.</li>
+				<li name="think_about" value="song"> I think that <get name="singer_name"/>'s song is beautifull.</li>
+				<li name="think_about" value="song"> I think that <get name="singer_name"/>'s song is outstanding.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>Do you know *?</pattern>
+		<template>
+			<think><set name="know_about"> <star index="1"/></set></think>
+			<random>
+				<li name="know_about"> Not much.</li>
+				<li name="know_about">I wansn't interested about <get name="know_about"/>.</li>
+			</random>
+		</template>
+	</category>
+		<category>
+		<pattern>Do you *?</pattern>
+		<template>
+			<think><set name="play_sing_like"> <star index="2"/></set></think>
+			<random>
+				<li name="play_sing_like" value="play any instrument">I play at keybords.</li>
+				<li name="play_sing_like" value="play instrument">I play at drums.</li>
+				<li name="play_sing_like" value="play instrument">I play at quitar.</li>
+			</random>
+			<random>
+				<li name="play_sing_like" value="sing">I don't have a nice voice.</li>
+				<li name="play_sing_like" value="sing">I love to sing</li>
+				<li name="play_sing_like" value="sing">I love to sing, but I'm not really good at it</li>
+			</random>
+			<random>
+				<li name="play_sing_like" value="like classical music">It's not my kind of music.</li>
+				<li name="play_sing_like" value="like classical music">I love it</li>
+				<li name="play_sing_like" value="like classical music">Sometimes when I'm in the mood</li>
+			</random>
+		</template>
+	</category>
+</aiml>

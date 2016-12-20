@@ -40,6 +40,7 @@ def dialogue_act_features(post):
     # print(features)
     return features
 
+
 first_person = ["me", "i", "mine", "my", "we", "ours"]
 pron_translate = dict()
 pron_translate["me"] = "you"
@@ -48,6 +49,7 @@ pron_translate["mine"] = "your"
 pron_translate["my"] = "your"
 pron_translate["ours"] = "your"
 pron_translate["we"] = "you"
+
 
 class Brain:
     def __init__(self):
@@ -94,99 +96,119 @@ class Brain:
 
         s = nlp.get_sentences(message)
 
+        doc = spacy_nlp(message)
+        for w in doc:
+            print "(", w, w.dep_, w.pos_, w.head, ")"
+
         for sentence in s:
             sentence_type = self.instant_classifier.classify(dialogue_act_features(sentence))
 
             verbs_subj = set()
-            sentence = sentence[0].upper()+sentence[1:]
+            sentence = sentence[0].upper() + sentence[1:]
             doc = spacy_nlp(sentence)
             for possible_subject in doc:
                 if (
-                        possible_subject.dep == nsubj or possible_subject.dep == nsubjpass) and possible_subject.head.pos == VERB:
+                                possible_subject.dep == nsubj or possible_subject.dep == nsubjpass) and possible_subject.head.pos == VERB:
                     verbs_subj.add((possible_subject, possible_subject.head))
-
-            print str(verbs_subj)
-
-            is_first_person = False
 
             # MEMORY MODULE
             if sentence_type == "Statement":
                 # insert into memory
                 for i in verbs_subj:
-                    subjs = [i[0].lower_]
-                    for tok in i[0].subtree:
-                        if tok.pos == NOUN or tok.pos == PRON:
-                            subjs.append(tok.lower_)
 
-                    is_first_person = False
+                    subjs = []
+
+                    subjects = [i[0]]
+                    for tok in i[0].children:
+                        if tok.dep == conj:
+                            subjects.append(tok)
+
+                    for subj in subjects:
+                        predec = ""
+                        for tok in subj.children:
+                            if tok.dep_ == "poss" or tok.dep == amod:
+                                predec += tok.lower_
+                        if len(predec) > 0:
+                            subjs.append(predec + " " + subj.lower_)
+                        else:
+                            subjs.append(subj.lower_)
+
+                    vb = i[1].lower_
+                    if vb not in memory[sessionId]:
+                        memory[sessionId][vb] = dict()
                     for subj in subjs:
-                        if subj in first_person:
-                            is_first_person = True
-
-                    if is_first_person is True:
-                        vb = i[1].lower_
-                        if vb not in memory[sessionId]:
-                            memory[sessionId][vb] = dict()
-                        for subj in subjs:
-                            for c in i[1].children:
-                                if c.dep in [prep]:
-                                    memory[sessionId][vb][subj] = c.lower_ + " "
-                                    for c_prep in c.children:
-                                        if c_prep.dep in [dobj, pobj, attr]:
-                                            memory[sessionId][vb][subj] += c_prep.text
-                                            memorate = True
-                                elif c.dep in [dobj, pobj, attr]:
-                                    memory[sessionId][vb][subj] = c.text
-                                    memorate = True
+                        for c in i[1].children:
+                            if c.dep in [prep]:
+                                memory[sessionId][vb][subj] = c.lower_ + " "
+                                for c_prep in c.children:
+                                    if c_prep.dep in [dobj, pobj, attr]:
+                                        memory[sessionId][vb][subj] += c_prep.text
+                                        memorate = True
+                            elif c.dep in [dobj, pobj, attr]:
+                                memory[sessionId][vb][subj] = c.text
+                                memorate = True
                 print str(memory)
             elif sentence_type == "whQuestion":
                 for i in verbs_subj:
-                    subjs = [i[0].lower_]
-                    for tok in i[0].subtree:
-                        if tok.pos == NOUN or tok.pos == PRON:
-                            subjs.append(tok.lower_)
+                    subjs = []
 
-                    is_first_person = False
-                    for subj in subjs:
-                        if subj in ["me", "i", "mine", "my", "we"]:
-                            is_first_person = True
+                    subjects = [i[0]]
+                    for tok in i[0].children:
+                        if tok.dep == conj:
+                            subjects.append(tok)
 
-                    if is_first_person is True:
-                        max_similarity = 0
-                        verb = i[1].lower_
-                        for j in memory[sessionId]:
-                            p_word = spacy_nlp(j)
-                            similarity = i[1].similarity(p_word[0])
-                            if similarity > max_similarity:
-                                max_similarity = similarity
-                                verb = j
-                        print max_similarity
-                        print verb
-                        if max_similarity > 0.5:
-                            if verb in memory[sessionId]:
-                                for subj in subjs:
-                                    if subj in memory[sessionId][verb]:
-                                        if subj in ["me", "i", "mine", "my", "we"]:
-                                            memory_msg = pron_translate[subj] + " " + verb + " "
-                                            memory_msg += memory[sessionId][verb][subj]
-                                        else:
-                                            memory_msg = subj + " " + verb + " "
-                                            memory_msg += memory[sessionId][verb][subj]
+                    for subj in subjects:
+                        predec = ""
+                        for tok in subj.children:
+                            if tok.dep_ == "poss" or tok.dep == amod:
+                                predec += tok.lower_
+                        if len(predec) > 0:
+                            subjs.append(predec + " " + subj.lower_)
+                        else:
+                            subjs.append(subj.lower_)
 
-            # aiml_response = self.kernel.respond(sentence_type, sessionId)
-            print(sentence_type)
+                    max_similarity = 0
+                    verb = i[1].lower_
+                    for j in memory[sessionId]:
+                        p_word = spacy_nlp(j)
+                        similarity = i[1].similarity(p_word[0])
+                        if similarity > max_similarity:
+                            max_similarity = similarity
+                            verb = j
+                    if max_similarity > 0.5 and verb in memory[sessionId]:
+                        num_subjs = len(subjs)
+                        for subj in subjs:
+                            if subj in memory[sessionId][verb]:
+                                toks = nlp.tokenize_text(subj)
+                                memory_msg = ""
+                                for t in toks:
+                                    if t in first_person:
+                                        memory_msg += pron_translate[t] + " "
+                                    else:
+                                        memory_msg += t + " "
+                                num_subjs -= 1
+                                if num_subjs > 2:
+                                    memory_msg += ", "
+                                elif num_subjs == 1:
+                                    memory_msg += "and "
+                        memory_msg += verb + " "
+                        if num_subjs != len(subjs):
+                            memory_msg += memory[sessionId][verb][subjs[-1]] + "."
 
-        # tone generator : eg. concatenate : I'm not exactly sure, but ...
+    # tone generator : eg. concatenate : I'm not exactly sure, but ...
         s = pattern_en.parse(message, lemmata=True)
         s = pattern_en.Sentence(s)
         print pattern_en.modality(s)
 
-        if len(memory_msg) > 0:
-            response = "You told me that " + memory_msg
-        elif is_first_person is False:
-            response = "I don't really care that much."
-        elif memorate is False:
+        aiml_response = self.kernel.respond(message, sessionId)
+        if len(aiml_response) < 3:
             response = "I don't know that...but maybe you can teach me."
         else:
-            response = "Sure, I'll remember that. Thanks for the information."
+            response = aiml_response
+
+        if len(response) < 2:
+            if len(memory_msg) > 0:
+                response = "You told me that " + memory_msg
+            elif memorate is True:
+                response = "Sure, I'll remember that. Thanks for the information."
         return response

@@ -36,7 +36,7 @@
                         var x = JSON.stringify(jsonData)
                         x = JSON.parse(x)["response"]
                         console.log(x)
-                        var ret = "<li class=\"chat__list__item chat__list__item-new\"><a target=\"_blank\" href=\"#\" class=\"chat__list__item__author\">Chad</a><a target=\"_blank\" href=\"#\"><img class=\"chat__avatar\" src=\"{{ url_for('static', filename='img/avatar.png') }}\"></a><div class=\"chat__bubble\"><span>" + x + "</span></div></li>"
+                        var ret = $("<li class=\"chat__list__item chat__list__item-new\"><a target=\"_blank\" href=\"#\" class=\"chat__list__item__author\">Chad</a><a target=\"_blank\" href=\"#\"><img class=\"chat__avatar\" src=\"{{ url_for('static', filename='img/avatar.png') }}\"></a><div class=\"chat__bubble\"><span>" + x + "</span></div></li>")
                         chatlist.append(ret);
                         div.animate({scrollTop: height}, 500);
                         height += div.height();
