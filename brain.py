@@ -303,13 +303,12 @@ class Brain:
                 aiml_response = ""
             response += aiml_response
 
-        polarity, subjective = pattern_en.sentiment(response)
-        sent = pattern_en.parse(sentence, lemmata=True)
-        sent = pattern_en.Sentence(sent)
-        modality = pattern_en.modality(sent)
-        mood = pattern_en.mood(sent)
-        sentence_type = self.instant_classifier.classify(dialogue_act_features(response))
-
-        print sentence_type, response, polarity, subjective, modality, mood
+        # polarity, subjective = pattern_en.sentiment(response)
+        # sent = pattern_en.parse(sentence, lemmata=True)
+        # sent = pattern_en.Sentence(sent)
+        # modality = pattern_en.modality(sent)
+        # mood = pattern_en.mood(sent)
+        # sentence_type = self.instant_classifier.classify(dialogue_act_features(response))
+        # print response, polarity, subjective, modality, mood
 
         return response

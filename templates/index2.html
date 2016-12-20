@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>B1 CHAT BOT</title>
+        <meta name="description" content="An interactive chat bot.">
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename='style/style.css') }}">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+        <script type="text/javascript" src="{{url_for('static', filename='js/front.js')}}"></script>
+		
+		<script type="text/javascript">
+		
+		var chatlist = $('#chat__list');
+		
+		$(document).keyup(function(e){
+    if(e.keyCode== 13 || e.which== 13) { //if enter key is pressed
+        var contentEditableValue=$('#placeholder').text(); //get the div value
+        $('.send').append('<input type="hidden" value="'+contentEditableValue+'" id="valueToSend">'); //add a dummy input to the form to send the value
+        $('.send').submit(function(e2){
+					console.log("form submit");
+                    e2.preventDefault();
+                    $.post("/send", $(this).serialize(), function(jsonData){
+                        var x = JSON.stringify(jsonData)
+                        x = JSON.parse(x)["message"]
+                        var ret = "<li class=\"chat__list__item\"><div class=\"chat__bubble chat__bubble-response\"><span>" + x + "</span></div></li>"
+                        chatlist.append(ret);
+                        div.animate({scrollTop: height}, 500);
+                        height += div.height();
+                    }, "json");
+                    $.post("/respond", $(this).serialize(), function(jsonData){
+                        var x = JSON.stringify(jsonData)
+                        x = JSON.parse(x)["response"]
+                        console.log(x)
+                        var ret = $("<li class=\"chat__list__item chat__list__item-new\"><a target=\"_blank\" href=\"#\" class=\"chat__list__item__author\">Chad</a><a target=\"_blank\" href=\"#\"><img class=\"chat__avatar\" src=\"{{ url_for('static', filename='img/avatar.png') }}\"></a><div class=\"chat__bubble\"><span>" + x + "</span></div></li>")
+                        chatlist.append(ret);
+                        div.animate({scrollTop: height}, 500);
+                        height += div.height();
+                    }, "json");
+                });
+				
+		$('#placeholder').empty();
+		$("#placeholder").addClass("chat__input__placeholder");
+	}
+	});
+			
+		
+				
+	
+				
+			
+		</script>
+		
+    </head>
+    <body>
+        <div class="container">
+            <div class="chat">
+                <ul class="chat__list">
+<!--
+                    <li class="chat__list__item chat__list__item-new">
+                        <a target="_blank" href="#" class="chat__list__item__author">Chad</a>
+                        <a target="_blank" href="#">
+                            <img class="chat__avatar" src="img/Untitled-2.jpg">
+                        </a>
+                        <div class="chat__bubble chat__bubble--bot chat__bubble--typing">
+                        </div>
+                    </li>
+                    <li class="chat__list__item">
+                        <div class="chat__bubble chat__bubble--bot">
+                            <span>Hello, I am Chad, the B1 group's chat bot.</span>
+                        </div>
+                    </li>
+                    <li class="chat__list__item">
+                        <div class="chat__bubble chat__bubble--response">
+                            <span>Hello, Chad!</span>
+                        </div>
+                    </li>
+-->
+                </ul>
+               
+				<form class="send" method="POST">
+				 <div class="chat__input">
+                    <div class="chat__bubble chat__bubble--response chat__input__placeholder" id="placeholder" contenteditable="true"></div>
+                </div>
+				<input type="submit" value="send"  style="display:none;" />
+				</form>
+            </div>
+        </div>
+        
+        
+    </body>
+</html>

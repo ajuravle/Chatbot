@@ -57,6 +57,9 @@ body {
                     &__avatar {
                         opacity: 1;
                     }
+//                    &__bubble {
+//                        animation: item-fade 0.8s ease-in-out;
+//                    }
                 }
             }
             &__author {
@@ -84,30 +87,61 @@ body {
         max-width: 90%;
         min-width: 44px;
         min-height: 12px;
-        &-response {
+        transform: translate3d(-96px, 0, 0);
+        transition: transform 0.85s cubic-bezier(0.68, 0.01, 0.245, 1.13) 0.35s,color 0.3s ease-in-out 0.25s,min-width 0.35s ease-in-out,min-height 0.35s ease-in-out;
+        &--response {
             background: #27ae60;
             color: #fff;
             float: right;
             clear: both;
+            transform: translate3d(0, 0, 0);
+            transition: transform 0.5s cubic-bezier(0.68, 0.01, 0.245, 1.13) 0s;
+        }
+        &--fade {
+            animation: font-fade .75s ease-in-out;
+        }
+        &--slideIn {
+            transform: translate3d(0, 0, 0);
+        }
+        &--typing {
+            &>*{
+                display:none !important;
+            }
+            &:before {
+                content:'...';
+                color:#000;
+            }
+            &:after{
+                animation:loading 1s infinite;
+                color:#fff;
+                content:'.';
+                position:absolute;
+                left:0px;
+            }
         }
     }
     &__input {
         position: fixed;
-        background-color: #fafafa;
-        padding: 0px 0px 23px 0px;
         bottom: 0;
         left: 0;
         right: 0;
-        margin: 0 auto;
-        max-width: 640px;
-        z-index: 100;
-        .input-group-btn {
-            &>.btn {
-                background: #fff;
-                color: #27ae60;
-                border: 1px solid #ccc;
-                border-left: none;
-            }
+        margin:0;
+        padding: 6px;
+        text-align: center;
+        z-index: 110;
+        .chat__bubble{
+            margin: 12px 6px;
+            cursor: pointer;
+            float: none;
+        }
+        &__placeholder:before {
+            content: 'Type and hit RETURN...';
+            display: inline-block;
+            opacity: 0.5;
         }
     }
 }
+
+@keyframes font-fade{50%{color:transparent}100%{color:"inherit"}}
+@keyframes loading{0%{left:12px}33.3331%{left:12px}33.3333%{left:17px}66.6661%{left:17px}66.6666%{left:21px}99.99%{left:21px}100%{left:12px}}
+//@keyframes item-fade{0%{opacity:0}80%{opacity:0}100%{opacity:1}}
