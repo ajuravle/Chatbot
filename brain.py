@@ -260,21 +260,35 @@ class Brain:
         arr_response = []
 
         for i in aiml_sent_type:
-            arr_response.append(i)
+            if len(i) > 0:
+                arr_response.append(i)
 
         for i in aiml_responses:
-            arr_response.append(i)
+            if len(i) > 0:
+                arr_response.append(i)
 
         for i in memory_responses:
-            arr_response.append(i)
+            if len(i) > 0:
+                arr_response.append(i)
 
-        data = search.search(message)
-        snip = data['items'][0]['snippet']
-        newsnip = nlp.check_grammar(snip)
-        sents = nlp.get_sentences(newsnip)
-        arr_response.append(sents[0])
+        if len(arr_response) == 0:
+            data = search.search(message)
+            snip = data['items'][0]['snippet']
+            sents = nlp.get_sentences(snip)
+            arr_response.append(sents[0])
 
         response = ""
+
+        for i in emotions:
+            try:
+                emoi = self.kernel.respond(i, sessionId)
+            except:
+                emoi = None
+            if emoi is not None:
+                if random.randint(0, 100) < 50:
+                    response += " " + emoi + "."
+                    break
+
         for res in arr_response:
             if len(res) > 1:
                 response += res + " "
@@ -288,16 +302,6 @@ class Brain:
             except:
                 aiml_response = ""
             response += aiml_response
-
-        for i in emotions:
-            try:
-                emoi = self.kernel.respond(i, sessionId)
-            except:
-                emoi = None
-            if emoi is not None:
-                if random.randint(0, 100) < 50:
-                    response += " " + emoi
-                    break
 
         polarity, subjective = pattern_en.sentiment(response)
         sent = pattern_en.parse(sentence, lemmata=True)
