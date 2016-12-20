@@ -3,3 +3,4 @@ langdetect
 3to2
 language_check
 nltk
+google-api-python-client

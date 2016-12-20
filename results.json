@@ -1,0 +1,354 @@
+{
+  "context": {
+    "title": "Google"
+  }, 
+  "items": [
+    {
+      "cacheId": "h3f5tfRBwiYJ", 
+      "displayLink": "en.wikipedia.org", 
+      "formattedUrl": "https://en.wikipedia.org/wiki/Pizza", 
+      "htmlFormattedUrl": "https://en.wikipedia.org/wiki/<b>Pizza</b>", 
+      "htmlSnippet": "<b>Pizza</b> is a yeasted flatbread generally topped with tomato sauce and cheese and <br>\nbaked in an oven. It is commonly topped with a selection of meats, vegetables&nbsp;...", 
+      "htmlTitle": "<b>Pizza</b> - Wikipedia", 
+      "kind": "customsearch#result", 
+      "link": "https://en.wikipedia.org/wiki/Pizza", 
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Pepperoni_pizza.jpg/220px-Pepperoni_pizza.jpg"
+          }
+        ], 
+        "cse_thumbnail": [
+          {
+            "height": "111", 
+            "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTVYhd-pY1VYeHaTPx1Azd-uagGFvlumvWTCpUtom2BZ-Li0qYBEgXHDw", 
+            "width": "176"
+          }
+        ], 
+        "hrecipe": [
+          {
+            "fn": "Pizza"
+          }
+        ], 
+        "metatags": [
+          {
+            "referrer": "origin-when-cross-origin"
+          }
+        ]
+      }, 
+      "snippet": "Pizza is a yeasted flatbread generally topped with tomato sauce and cheese and \nbaked in an oven. It is commonly topped with a selection of meats, vegetables\u00a0...", 
+      "title": "Pizza - Wikipedia"
+    }, 
+    {
+      "cacheId": "oiTvlHsuOeEJ", 
+      "displayLink": "www.pizzahut.com", 
+      "formattedUrl": "https://www.pizzahut.com/", 
+      "htmlFormattedUrl": "https://www.<b>pizza</b>hut.com/", 
+      "htmlSnippet": "Online ordering, menu and nutrition information, and locator for stores in more <br>\nthan eighty countries. Also describes company history and community investment<br>\n&nbsp;...", 
+      "htmlTitle": "<b>Pizza</b> Hut", 
+      "kind": "customsearch#result", 
+      "link": "https://www.pizzahut.com/", 
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "https://www.pizzahut.com/assets/w/images/heroes/10Any_Hero_CO_BIG_1170x468.jpg"
+          }
+        ], 
+        "cse_thumbnail": [
+          {
+            "height": "142", 
+            "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWT6TYasQjQKiIY2ngBtJ1omaOgysef8nOB5L6fXVjwnVn4_USNgtG6L0b", 
+            "width": "355"
+          }
+        ], 
+        "metatags": [
+          {
+            "apple-mobile-web-app-capable": "yes", 
+            "apple-mobile-web-app-status-bar-style": "black", 
+            "apple-touch-fullscreen": "yes", 
+            "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+          }
+        ]
+      }, 
+      "snippet": "Online ordering, menu and nutrition information, and locator for stores in more \nthan eighty countries. Also describes company history and community investment\n\u00a0...", 
+      "title": "Pizza Hut"
+    }, 
+    {
+      "cacheId": "_pLs5ZuIfF8J", 
+      "displayLink": "www.papajohns.com", 
+      "formattedUrl": "https://www.papajohns.com/", 
+      "htmlFormattedUrl": "https://www.papajohns.com/", 
+      "htmlSnippet": "Each Papa John&#39;s <b>pizza</b> is carefully crafted with flavorful, superior-quality <br>\ningredients and toppings. Order <b>pizza</b> online for delivery or carryout.", 
+      "htmlTitle": "Papa John&#39;s <b>Pizza</b> | Order for Delivery or Carryout", 
+      "kind": "customsearch#result", 
+      "link": "https://www.papajohns.com/", 
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "https://www.papajohns.com/static-assets/a/images/web/marketing-item/cinnamon-pull-aparts-secondary.jpg"
+          }
+        ], 
+        "cse_thumbnail": [
+          {
+            "height": "191", 
+            "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXrU4WQvgisVihMb1sYuy-0ullFhF7jhdb1akSKwcnYrS-4pUt0g0Z9ob6", 
+            "width": "264"
+          }
+        ], 
+        "metatags": [
+          {
+            "apple-itunes-app": "app-id=407517450", 
+            "google-play-app": "app-id=com.papajohns.android", 
+            "viewport": "width=device-width, initial-scale=1.0"
+          }
+        ]
+      }, 
+      "snippet": "Each Papa John's pizza is carefully crafted with flavorful, superior-quality \ningredients and toppings. Order pizza online for delivery or carryout.", 
+      "title": "Papa John's Pizza | Order for Delivery or Carryout"
+    }, 
+    {
+      "cacheId": "snbLj6fCwk0J", 
+      "displayLink": "www.dominos.com", 
+      "formattedUrl": "https://www.dominos.com/en/", 
+      "htmlFormattedUrl": "https://www.dominos.com/en/", 
+      "htmlSnippet": "Domino&#39;s Home Page - Domino&#39;s <b>Pizza</b>, Order <b>Pizza</b> Online for Delivery - <br>\nDominos.com.", 
+      "htmlTitle": "Dominos.com: Domino&#39;s Home Page - Domino&#39;s <b>Pizza</b>, Order <b>Pizza</b> ...", 
+      "kind": "customsearch#result", 
+      "link": "https://www.dominos.com/en/", 
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "https://cache.dominos.com/olo/4_0_3/assets/build/images/promo/dominos_social_logo.jpg"
+          }
+        ], 
+        "cse_thumbnail": [
+          {
+            "height": "225", 
+            "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUN7iM_UHPRweJYzHh4dRl8_Vl2dKLagt4k6qTo0-hiAwArEpQjQlwq__b", 
+            "width": "225"
+          }
+        ], 
+        "metatags": [
+          {
+            "apple-itunes-app": "app-id=436491861", 
+            "msvalidate.01": "A68783B3BCFB7DC103CCE8BF3B46D16A", 
+            "og:description": "Order pizza, pasta, sandwiches & more online for carryout or delivery from Domino\u00e2\u20ac\u2122s Pizza. View menu, find locations, track orders. Sign up for coupons & buy gift cards.", 
+            "og:image": "https://cache.dominos.com/olo/4_0_3/assets/build/images/promo/dominos_social_logo.jpg", 
+            "og:locale": "en_US", 
+            "og:site_name": "Domino's Pizza, Order Online", 
+            "og:title": "Order Pizza & Pasta Online for Carryout & Delivery - Domino's Pizza", 
+            "og:type": "website", 
+            "og:url": "https://dominos.com", 
+            "p:domain_verify": "0f967efb5027363bfecf41ba9d0c4812", 
+            "twitter:card": "summary", 
+            "twitter:creator": "@dominos", 
+            "twitter:description": "Order Domino's online for delivery or carryout. We have delicious pizzas, sides, and beverages. Order now!", 
+            "twitter:image": "https://cache.dominos.com/olo/4_0_3/assets/build/images/promo/dominos_social_logo.jpg", 
+            "twitter:title": "Domino's Pizza, Order Online", 
+            "twitter:url": "https://dominos.com"
+          }
+        ]
+      }, 
+      "snippet": "Domino's Home Page - Domino's Pizza, Order Pizza Online for Delivery - \nDominos.com.", 
+      "title": "Dominos.com: Domino's Home Page - Domino's Pizza, Order Pizza ..."
+    }, 
+    {
+      "cacheId": "_zSIIBGOMlUJ", 
+      "displayLink": "en.wiktionary.org", 
+      "formattedUrl": "https://en.wiktionary.org/wiki/pizza", 
+      "htmlFormattedUrl": "https://en.wiktionary.org/wiki/<b>pizza</b>", 
+      "htmlSnippet": "[1935] Borrowing from Italian <b>pizza</b>, of uncertain origin, perhaps from Byzantine <br>\nGreek \u03c0\u03af\u03c4\u03c4\u03b1   (p\u00edtta, \u201ccake, pie\u201d), from Ancient Greek \u03c0\u03af\u03c3\u03c3\u03b1   (p\u00edssa, \u201cpitch\u201d), Attic&nbsp;...", 
+      "htmlTitle": "<b>pizza</b> - Wiktionary", 
+      "kind": "customsearch#result", 
+      "link": "https://en.wiktionary.org/wiki/pizza", 
+      "pagemap": {
+        "metatags": [
+          {
+            "referrer": "origin-when-cross-origin"
+          }
+        ]
+      }, 
+      "snippet": "[1935] Borrowing from Italian pizza, of uncertain origin, perhaps from Byzantine \nGreek \u03c0\u03af\u03c4\u03c4\u03b1   (p\u00edtta, \u201ccake, pie\u201d), from Ancient Greek \u03c0\u03af\u03c3\u03c3\u03b1   (p\u00edssa, \u201cpitch\u201d), Attic\u00a0...", 
+      "title": "pizza - Wiktionary"
+    }, 
+    {
+      "cacheId": "RpI4AS8ha-oJ", 
+      "displayLink": "www.dominos.com", 
+      "formattedUrl": "https://www.dominos.com/en/pages/customer/", 
+      "htmlFormattedUrl": "https://www.dominos.com/en/pages/customer/", 
+      "htmlSnippet": "Create a <b>Pizza</b> Profile and take advantage of all this good stuff. Rewards image. <br>\nPiece of the Pie Rewards. Order online and earn points toward FREE <b>PIZZA</b>.", 
+      "htmlTitle": "<b>Pizza</b> Profile", 
+      "kind": "customsearch#result", 
+      "link": "https://www.dominos.com/en/pages/customer/", 
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "https://cache.dominos.com/olo/4_0_3/assets/build/market/US/_en/images/promo/DPZ_Loyalty_SideTile.jpg"
+          }
+        ], 
+        "cse_thumbnail": [
+          {
+            "height": "200", 
+            "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQoVC5vimMTbvS5a6y50cv9s49bdEz_GkZacPoUbFveEQSzPMe651LwbuE", 
+            "width": "171"
+          }
+        ], 
+        "metatags": [
+          {
+            "apple-itunes-app": "app-id=436491861", 
+            "msvalidate.01": "A68783B3BCFB7DC103CCE8BF3B46D16A", 
+            "p:domain_verify": "0f967efb5027363bfecf41ba9d0c4812"
+          }
+        ]
+      }, 
+      "snippet": "Create a Pizza Profile and take advantage of all this good stuff. Rewards image. \nPiece of the Pie Rewards. Order online and earn points toward FREE PIZZA.", 
+      "title": "Pizza Profile"
+    }, 
+    {
+      "cacheId": "hBwMi97hK_UJ", 
+      "displayLink": "www.abcya.com", 
+      "formattedUrl": "www.abcya.com/pizza.htm", 
+      "htmlFormattedUrl": "www.abcya.com/<b>pizza</b>.htm", 
+      "htmlSnippet": "ABCya! Kids click and drag the different toppings to make a <b>pizza</b>! Students learn <br>\nand practice valuable mouse manipulation techniques while clicking and&nbsp;...", 
+      "htmlTitle": "Children&#39;s Make a <b>Pizza</b> Activity | ABCya!", 
+      "kind": "customsearch#result", 
+      "link": "http://www.abcya.com/pizza.htm", 
+      "pagemap": {
+        "metatags": [
+          {
+            "apple-itunes-app": "app-id=1079974015, affiliate-data=ct=SmartAppBanner&pt=355102", 
+            "apple-mobile-web-app-capable": "yes", 
+            "apple-mobile-web-app-status-bar-style": "black", 
+            "google": "notranslate", 
+            "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui"
+          }
+        ]
+      }, 
+      "snippet": "ABCya! Kids click and drag the different toppings to make a pizza! Students learn \nand practice valuable mouse manipulation techniques while clicking and\u00a0...", 
+      "title": "Children's Make a Pizza Activity | ABCya!"
+    }, 
+    {
+      "cacheId": "S5AMWULkkUUJ", 
+      "displayLink": "pizza.com", 
+      "formattedUrl": "pizza.com/", 
+      "htmlFormattedUrl": "<b>pizza</b>.com/", 
+      "htmlSnippet": "<b>Pizza</b> CouponsFind great deals on <b>Pizza</b> tonight! <b>Pizza</b> RecipesFast and Easy <br>\n<b>Pizza</b> Recipes! Local PizzeriaLocal <b>Pizza</b> at your fingertips! Find A <b>Pizza</b> Chain&nbsp;...", 
+      "htmlTitle": "<b>Pizza</b>.com", 
+      "kind": "customsearch#result", 
+      "link": "http://pizza.com/", 
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://pizza.com/assets/site_images/8/4kz5em436m1y7oqe.jpg"
+          }
+        ], 
+        "cse_thumbnail": [
+          {
+            "height": "157", 
+            "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLM_yujurNZVrmbaoaB1FL5ugRpsFyZ32-ZpPsISUDYNlBNIVBnVxqMik", 
+            "width": "320"
+          }
+        ]
+      }, 
+      "snippet": "Pizza CouponsFind great deals on Pizza tonight! Pizza RecipesFast and Easy \nPizza Recipes! Local PizzeriaLocal Pizza at your fingertips! Find A Pizza Chain\u00a0...", 
+      "title": "Pizza.com"
+    }, 
+    {
+      "cacheId": "euyd_-lWB8kJ", 
+      "displayLink": "wethepizza.com", 
+      "formattedUrl": "wethepizza.com/", 
+      "htmlFormattedUrl": "wethe<b>pizza</b>.com/", 
+      "htmlSnippet": "We, The <b>Pizza</b> Capitol Hill. Christmas: Saturday 12/24 - Closed. Sunday 12/25 - <br>\nClosed. Monday 12/26 - Closed. New Years: Saturday 12/31 - 11am to 10pm.", 
+      "htmlTitle": "WE, THE <b>PIZZA</b> - GREAT <b>PIZZA</b> IN DC", 
+      "kind": "customsearch#result", 
+      "link": "http://wethepizza.com/", 
+      "pagemap": {
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1.0"
+          }
+        ]
+      }, 
+      "snippet": "We, The Pizza Capitol Hill. Christmas: Saturday 12/24 - Closed. Sunday 12/25 - \nClosed. Monday 12/26 - Closed. New Years: Saturday 12/31 - 11am to 10pm.", 
+      "title": "WE, THE PIZZA - GREAT PIZZA IN DC"
+    }, 
+    {
+      "cacheId": "w5TgNaJhbEgJ", 
+      "displayLink": "www.reddit.com", 
+      "formattedUrl": "https://www.reddit.com/r/Pizza/", 
+      "htmlFormattedUrl": "https://www.reddit.com/r/<b>Pizza</b>/", 
+      "htmlSnippet": "<b>Pizza</b> is a handmade, flattened dough topped with tomato sauce, cheese, <br>\nvegetables, proteins, and ... Buffalo chicken <b>pizza</b> from our favorite local <b>pizza</b> <br>\nplace!", 
+      "htmlTitle": "<b>Pizza</b>", 
+      "kind": "customsearch#result", 
+      "link": "https://www.reddit.com/r/Pizza/", 
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://i.imgur.com/csgAOg3.jpg"
+          }
+        ], 
+        "cse_thumbnail": [
+          {
+            "height": "281", 
+            "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRhdxcv8LrPc1VE8GLZP35-iYuCvKnXY_vVmJo0pTAK3perFikNymvhiA", 
+            "width": "179"
+          }
+        ], 
+        "metatags": [
+          {
+            "og:description": "The home of pizza on reddit. An educational community devoted to the art of pizza making.", 
+            "og:image": "https://www.redditstatic.com/icon.png", 
+            "og:site_name": "reddit", 
+            "og:title": "Pizza \u2022 /r/Pizza", 
+            "referrer": "always", 
+            "twitter:card": "summary", 
+            "twitter:site": "reddit", 
+            "twitter:title": "Pizza \u2022 /r/Pizza", 
+            "viewport": "width=1024"
+          }
+        ]
+      }, 
+      "snippet": "Pizza is a handmade, flattened dough topped with tomato sauce, cheese, \nvegetables, proteins, and ... Buffalo chicken pizza from our favorite local pizza \nplace!", 
+      "title": "Pizza"
+    }
+  ], 
+  "kind": "customsearch#search", 
+  "queries": {
+    "nextPage": [
+      {
+        "count": 10, 
+        "cx": "010780822262881999248:0j5wzz3i4xc", 
+        "inputEncoding": "utf8", 
+        "outputEncoding": "utf8", 
+        "safe": "off", 
+        "searchTerms": "pizza", 
+        "startIndex": 11, 
+        "title": "Google Custom Search - pizza", 
+        "totalResults": "61100000"
+      }
+    ], 
+    "request": [
+      {
+        "count": 10, 
+        "cx": "010780822262881999248:0j5wzz3i4xc", 
+        "inputEncoding": "utf8", 
+        "outputEncoding": "utf8", 
+        "safe": "off", 
+        "searchTerms": "pizza", 
+        "startIndex": 1, 
+        "title": "Google Custom Search - pizza", 
+        "totalResults": "61100000"
+      }
+    ]
+  }, 
+  "searchInformation": {
+    "formattedSearchTime": "0.51", 
+    "formattedTotalResults": "61,100,000", 
+    "searchTime": 0.510307, 
+    "totalResults": "61100000"
+  }, 
+  "url": {
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&cref={cref?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json", 
+    "type": "application/json"
+  }
+}

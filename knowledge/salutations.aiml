@@ -27,4 +27,16 @@
 		</random>
 	</template>
 </category>
+<category>
+	<pattern>REJECT</pattern>
+	<template>
+		<random>
+			<li>Not so nice of you.</li>
+			<li>I was beeing polite.</li>
+			<li>You should apologize for the language.</li>
+			<li>I hope you have a bad day.</li>
+			<li>Thanks for chatting :|</li>
+		</random>
+	</template>
+</category>
 </aiml>
