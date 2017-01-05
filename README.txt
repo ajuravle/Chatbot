@@ -43,10 +43,9 @@ aici ar trebui sa se deschida o noua fereastra, daca se intampla asta
 daca nu se deschide o noua fereastra ci apare nltk downloader si un meniu cu mai multe optiuni (in aceasi fereastra) urmeaza pasul VIII A 
 
 PAS VIII A 
-Descarca urmatoarele 2 arhive de pe wetransfer
-https://wetransfer.com/downloads/9546a1e85517bb15153e18d3b3ebea1b20161227201605/8e9b6a
-https://wetransfer.com/downloads/d3d927efef88c91b32f76d77cd6e6ba320161227202259/ca8648
-ATENTIE EXPIRA IN 7 ZILE. dupa le puteti cere de la Cristi sau de la mine. 
+Descarca urmatoarele 2 arhive de pe wetransfer (nlp si corpus)
+UPDATE!!! https://wetransfer.com/downloads/f03164ab1b9b81344c1d69abd74936bb20170105122549/19c190
+UPDATE!!! ATENTIE EXPIRA IN 7 ZILE (au fost incarcate pe 05.01) . dupa le puteti cere de la Cristi sau de la mine. 
 dearhiveaza fisierele in dosarul nlp din bot el urmand sa aiba urmatoarele foldere si fisiere 
 	->chunkers
 	->corpora
