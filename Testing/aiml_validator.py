@@ -11,10 +11,6 @@ def validate_aiml_document(path):
     except Exception as e:
         print type(e),str(e)
 
-    except Exception as e:
-        print type(e),str(e)
-
-
 def main():
     print validate_aiml_document("../knowledge/Computers.aiml")
     print validate_aiml_document("../knowledge/geography.aiml")
