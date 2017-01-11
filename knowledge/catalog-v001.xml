@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1482151129644" name="duplicate:http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6" uri="food.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1482151129644" name="duplicate:http://www.semanticweb.org/acasa/ontologies/2016/11/untitled-ontology-6" uri="food_drinks.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1482151129644" name="http://www.semanticweb.org/nicoletatanasa/ontologies/2016/11/untitled-ontology-3" uri="animals.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1482151129644" name="http://www.semanticweb.org/nicoletatanasa/ontologies/2016/11/untitled-ontology-5" uri="artist.owl"/>
-    </group>
-</catalog>

@@ -1,0 +1,48 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+	<category>
+		<pattern>WHAT IS YOUR FAVORITE *</pattern>
+		<template>
+				<think><set name="favorite"><star index="1"/></set></think>
+				<condition name="favorite" value="SONG">My favorite song is "Damn you eyes" from Alex Clare. What's yours?</condition>
+				<condition name="favorite" value="ARTIST">My favorite artist is Ed Sheeran. What's yours?</condition>
+				<condition name="favorite" value="BAND">My favorite band is Marron5. What's yours?</condition>
+				<condition name="favorite" value="ALBUM">My favorite album is "X" from Ed Sheeran. What's yours?</condition>
+				<condition name="favorite" value="MUSIC GENRE">My favorite music genre is pop. What's yours?</condition>
+				<condition name="favorite" value="BOOK">My favorite book is "One hundred years of solitude". What's yours?</condition>
+				<condition name="favorite" value="AUTHOR">My favorite author is Gabriel Garcia Marchez. What's yours?</condition>			
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT DO YOU THINK ABOUT * S *</pattern>
+		<template>
+			<think><set name="singer_name"> <star index="1"/></set></think>
+			<think><set name="think_about"> <star index="2"/></set></think>
+			<get name="singer_name"/>'S <get name="think_about"/> IS AMAZING.
+		</template>
+	</category>
+    	<category>
+		<pattern>DO YOU KNOW *</pattern>
+		<template>
+			<think><set name="know_about"> <star index="1"/></set></think>
+			<random>
+				<li name="know_about"> Not much.</li>
+				<li name="know_about">I wasn't interested about <get name="know_about"/>.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>DO YOU *</pattern>
+		<template>
+			<think><set name="play_sing"><star index="1"/></set></think>
+			<condition name="play_sing" value="SING">I love to sing, but I'm not really good at it</condition>
+			<condition name="play_sing" value="PLAY ANY INSTRUMENT">I play at keybords.</condition>
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT BOOK DO YOU READ LATELY</pattern>
+		<template>The last book I read is "The name of the rose". It's a historical mureder mystery set in an Italian monastery.</template>
+	</category> 
+ 
+</aiml>
+
