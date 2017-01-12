@@ -8,7 +8,7 @@
       "displayLink": "www.billboard.com", 
       "formattedUrl": "www.billboard.com/charts/hot-100", 
       "htmlFormattedUrl": "www.billboard.com/charts/hot-100", 
-      "htmlSnippet": "The week&#39;s most popular current <b>songs</b> across all genres, ranked by radio airplay <br>\n... Discover which <b>song</b> was #1 the day you were born! <b>New</b>. 11 Last Week: --&nbsp;...", 
+      "htmlSnippet": "The week&#39;s most popular current <b>songs</b> across all genres, ranked by radio airplay <br>\naudience impressions as measured by Nielsen BDS, sales data as compiled&nbsp;...", 
       "htmlTitle": "Music: Top 100 <b>Songs</b> | Billboard Hot 100 Chart | Billboard", 
       "kind": "customsearch#result", 
       "link": "http://www.billboard.com/charts/hot-100", 
@@ -26,52 +26,8 @@
           }
         ]
       }, 
-      "snippet": "The week's most popular current songs across all genres, ranked by radio airplay \n... Discover which song was #1 the day you were born! New. 11 Last Week: --\u00a0...", 
+      "snippet": "The week's most popular current songs across all genres, ranked by radio airplay \naudience impressions as measured by Nielsen BDS, sales data as compiled\u00a0...", 
       "title": "Music: Top 100 Songs | Billboard Hot 100 Chart | Billboard"
-    }, 
-    {
-      "cacheId": "kWD9wc103O4J", 
-      "displayLink": "www.bigtop40.com", 
-      "formattedUrl": "www.bigtop40.com/songs/", 
-      "htmlFormattedUrl": "www.bigtop40.com/<b>songs</b>/", 
-      "htmlSnippet": "2 days ago <b>...</b> Want to download the latest <b>new songs</b> from your favourite bands and singers <br>\naround right now? You&#39;re in luck. Here you can find out when&nbsp;...", 
-      "htmlTitle": "<b>New Songs</b>, Latest Music | Big Top 40", 
-      "kind": "customsearch#result", 
-      "link": "http://www.bigtop40.com/songs/", 
-      "pagemap": {
-        "cse_image": [
-          {
-            "src": "http://assets6.bigtop40.com/2016/02/haim-falling-video-1452619174-editorial-promo-0.png"
-          }
-        ], 
-        "cse_thumbnail": [
-          {
-            "height": "110", 
-            "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRBj47Feg9RDKw1p-b8B3rZnvVafMfdVeoyaE5wchwo3tM1QMa1tfggNQ", 
-            "width": "110"
-          }
-        ], 
-        "metatags": [
-          {
-            "apple-itunes-app": "app-id=318936503", 
-            "fb:admins": "551351399", 
-            "fb:app_id": "357357177653391", 
-            "fb:page_id": "6569469259", 
-            "og:site_name": "Bigtop40", 
-            "og:title": "New Music Releases: Latest Songs", 
-            "og:type": "article", 
-            "og:url": "http://www.bigtop40.com/songs/", 
-            "parsely-link": "http://www.bigtop40.com/songs/", 
-            "parsely-post-id": "94", 
-            "parsely-section": "/songs/", 
-            "parsely-title": "New Music Releases: Latest Songs", 
-            "parsely-type": "sectionpage", 
-            "sailthru.tags": "songs"
-          }
-        ]
-      }, 
-      "snippet": "2 days ago ... Want to download the latest new songs from your favourite bands and singers \naround right now? You're in luck. Here you can find out when\u00a0...", 
-      "title": "New Songs, Latest Music | Big Top 40"
     }, 
     {
       "cacheId": "t5tYqH6HeEIJ", 
@@ -119,36 +75,95 @@
       "title": "New Hip Hop Songs, Hottest Music Releases"
     }, 
     {
-      "cacheId": "umjaxtRC8qgJ", 
-      "displayLink": "www.youtube.com", 
-      "formattedUrl": "https://www.youtube.com/playlist?list=PLvFYFNbi...", 
-      "htmlFormattedUrl": "https://www.youtube.com/playlist?list=PLvFYFNbi...", 
-      "htmlSnippet": "VEVO - Best <b>New Songs</b> Playlist | 2017. My Music Playlists; 138 videos; <br>\n226,564,562 views; Last updated on Dec 8, 2016. Play all. Share. Loading... <br>\nSave&nbsp;...", 
-      "htmlTitle": "VEVO - Best <b>New Songs</b> Playlist | 2017 - YouTube", 
+      "cacheId": "kWD9wc103O4J", 
+      "displayLink": "www.bigtop40.com", 
+      "formattedUrl": "www.bigtop40.com/songs/", 
+      "htmlFormattedUrl": "www.bigtop40.com/<b>songs</b>/", 
+      "htmlSnippet": "Want to download the latest <b>new songs</b> from your favourite bands and singers <br>\naround right now? You&#39;re in luck. Here you can find out when you can get your&nbsp;...", 
+      "htmlTitle": "<b>New Songs</b>, Latest Music | Big Top 40", 
       "kind": "customsearch#result", 
-      "link": "https://www.youtube.com/playlist?list=PLvFYFNbi-IBFeP5ALr50hoOmKiYRMvzUq", 
+      "link": "http://www.bigtop40.com/songs/", 
       "pagemap": {
         "cse_image": [
           {
-            "src": "https://i.ytimg.com/vi/34Na4j8AVgA/hqdefault.jpg?custom=true&w=246&h=138&stc=true&jpg444=true&jpgq=90&sp=68&sigh=5CoZLyxiM4JkfbhUANgXMHQEIe0"
+            "src": "http://assets8.bigtop40.com/2017/01/zara-larsson-instagram-new-years-eve-1483281216-hero-promo-0.png"
           }
         ], 
         "cse_thumbnail": [
           {
-            "height": "110", 
-            "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTE0arLgmV_K3yQnZoPrGvQz3CzMn_pynjyizozh9IxCXEcgI3-JqCVYWE", 
-            "width": "196"
+            "height": "225", 
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjwcVfDHb53wVHVvnL-6JQFF5AKX-1EuNk3Cc3D0fFLSL2auLI4ctOct8", 
+            "width": "225"
           }
         ], 
         "metatags": [
           {
-            "theme-color": "#e62117", 
-            "title": "VEVO - Best New Songs Playlist | 2017"
+            "apple-itunes-app": "app-id=318936503", 
+            "fb:admins": "551351399", 
+            "fb:app_id": "357357177653391", 
+            "fb:page_id": "6569469259", 
+            "og:site_name": "Bigtop40", 
+            "og:title": "New Music Releases: Latest Songs", 
+            "og:type": "article", 
+            "og:url": "http://www.bigtop40.com/songs/", 
+            "parsely-link": "http://www.bigtop40.com/songs/", 
+            "parsely-post-id": "94", 
+            "parsely-section": "/songs/", 
+            "parsely-title": "New Music Releases: Latest Songs", 
+            "parsely-type": "sectionpage", 
+            "sailthru.tags": "songs"
           }
         ]
       }, 
-      "snippet": "VEVO - Best New Songs Playlist | 2017. My Music Playlists; 138 videos; \n226,564,562 views; Last updated on Dec 8, 2016. Play all. Share. Loading... \nSave\u00a0...", 
-      "title": "VEVO - Best New Songs Playlist | 2017 - YouTube"
+      "snippet": "Want to download the latest new songs from your favourite bands and singers \naround right now? You're in luck. Here you can find out when you can get your\u00a0...", 
+      "title": "New Songs, Latest Music | Big Top 40"
+    }, 
+    {
+      "cacheId": "mWLRo4RiCI4J", 
+      "displayLink": "www.billboard.com", 
+      "formattedUrl": "www.billboard.com/.../ed-sheeran-new-songs-memes-shape-of-you-castle-on -the-hill", 
+      "htmlFormattedUrl": "www.billboard.com/.../ed-sheeran-<b>new</b>-<b>songs</b>-memes-shape-of-you-castle-on -the-hill", 
+      "htmlSnippet": "2 days ago <b>...</b> Ed Sheeran fans patiently waited two years for <b>new</b> music and after the singer <br>\ndropped &quot;Castle on the Hill&quot; and &quot;Shape of You&quot; early Friday&nbsp;...", 
+      "htmlTitle": "Ed Sheeran&#39;s <b>New Songs</b> Spawn Meme-Alanche of Joy | Billboard", 
+      "kind": "customsearch#result", 
+      "link": "http://www.billboard.com/articles/columns/pop/7647598/ed-sheeran-new-songs-memes-shape-of-you-castle-on-the-hill", 
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "http://www.billboard.com/files/media/ed-sheeran-dec-2015-live-billboard-1548.jpg"
+          }
+        ], 
+        "cse_thumbnail": [
+          {
+            "height": "182", 
+            "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBgmpUek2yKSh2KC2OVKvE_d_zZu4w-rpumBsZvOxWvMa5O8i5wgGn28E3", 
+            "width": "276"
+          }
+        ], 
+        "metatags": [
+          {
+            "og:description": "Ed Sheeran fans patiently waited two years for new music and after the singer dropped &quot;Castle on the Hill&quot; and &quot;Shape of You&quot; early Friday morning (Jan. 6) they could hardly contain themselves. The results are a meme-alanche of joy and excitement.", 
+            "og:image": "http://www.billboard.com/files/media/ed-sheeran-dec-2015-live-billboard-1548.jpg", 
+            "og:image:height": "1024", 
+            "og:image:type": "image/jpeg", 
+            "og:image:width": "1548", 
+            "og:site_name": "Billboard", 
+            "og:title": "Ed Sheeran's New Songs Spawn Meme-Alanche of Joy", 
+            "og:type": "article", 
+            "og:url": "http://www.billboard.com/articles/columns/pop/7647598/ed-sheeran-new-songs-memes-shape-of-you-castle-on-the-hill", 
+            "title": "Ed Sheeran's New Songs Spawn Meme-Alanche of Joy", 
+            "twitter:card": "summary_large_image", 
+            "twitter:description": "Ed Sheeran fans patiently waited two years for new music and after the singer dropped &quot;Castle on the Hill&quot; and &quot;Shape of You&quot; early Friday morning (Jan. 6) they could hardly contain themselves. The results are a meme-alanche of joy and excitement.", 
+            "twitter:image": "http://www.billboard.com/files/media/ed-sheeran-dec-2015-live-billboard-1548.jpg", 
+            "twitter:site": "@billboard", 
+            "twitter:title": "Ed Sheeran's New Songs Spawn Meme-Alanche of Joy", 
+            "twitter:url": "http://www.billboard.com/articles/columns/pop/7647598/ed-sheeran-new-songs-memes-shape-of-you-castle-on-the-hill", 
+            "viewport": "width=device-width, initial-scale=1, user-scalable=no"
+          }
+        ]
+      }, 
+      "snippet": "2 days ago ... Ed Sheeran fans patiently waited two years for new music and after the singer \ndropped \"Castle on the Hill\" and \"Shape of You\" early Friday\u00a0...", 
+      "title": "Ed Sheeran's New Songs Spawn Meme-Alanche of Joy | Billboard"
     }, 
     {
       "cacheId": "1emUMPGKUk8J", 
@@ -187,25 +202,57 @@
       "title": "Ten New Songs - Wikipedia"
     }, 
     {
+      "cacheId": "umjaxtRC8qgJ", 
+      "displayLink": "www.youtube.com", 
+      "formattedUrl": "https://www.youtube.com/playlist?list=PLvFYFNbi...", 
+      "htmlFormattedUrl": "https://www.youtube.com/playlist?list=PLvFYFNbi...", 
+      "htmlSnippet": "Best <b>New Songs</b> Playlist | 2017. #RedMusic: FreshVibes; 155 videos; <br>\n233,538,652 views; Updated yesterday. &quot;Music can change the world because it <br>\ncan&nbsp;...", 
+      "htmlTitle": "Best <b>New Songs</b> Playlist | 2017 - YouTube", 
+      "kind": "customsearch#result", 
+      "link": "https://www.youtube.com/playlist?list=PLvFYFNbi-IBFeP5ALr50hoOmKiYRMvzUq", 
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "https://i.ytimg.com/vi/34Na4j8AVgA/hqdefault.jpg?custom=true&w=246&h=138&stc=true&jpg444=true&jpgq=90&sp=68&sigh=5CoZLyxiM4JkfbhUANgXMHQEIe0"
+          }
+        ], 
+        "cse_thumbnail": [
+          {
+            "height": "110", 
+            "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTE0arLgmV_K3yQnZoPrGvQz3CzMn_pynjyizozh9IxCXEcgI3-JqCVYWE", 
+            "width": "196"
+          }
+        ], 
+        "metatags": [
+          {
+            "theme-color": "#e62117", 
+            "title": "Best New Songs Playlist | 2017"
+          }
+        ]
+      }, 
+      "snippet": "Best New Songs Playlist | 2017. #RedMusic: FreshVibes; 155 videos; \n233,538,652 views; Updated yesterday. \"Music can change the world because it \ncan\u00a0...", 
+      "title": "Best New Songs Playlist | 2017 - YouTube"
+    }, 
+    {
       "cacheId": "ballrv6Nb-kJ", 
       "displayLink": "www.capitalfm.com", 
       "formattedUrl": "www.capitalfm.com/new-music/", 
       "htmlFormattedUrl": "www.capitalfm.com/<b>new</b>-music/", 
-      "htmlSnippet": "Catch up with the freshest <b>new songs</b> and albums to download and stream this <br>\nmonth - get ready to update your playlist!", 
+      "htmlSnippet": "Catch up with the freshest <b>new songs</b> and albums to download and stream this <br>\nmonth and the rest of 2017 - get ready to update your playlist!", 
       "htmlTitle": "<b>New Songs</b>, Latest Music, Future Releases - Capital FM", 
       "kind": "customsearch#result", 
       "link": "http://www.capitalfm.com/new-music/", 
       "pagemap": {
         "cse_image": [
           {
-            "src": "http://is2.mzstatic.com/image/thumb/Music71/v4/40/98/ef/4098ef5b-8cd3-fcc2-38e0-1cf17d182994/source/225x225bb.jpg"
+            "src": "http://assets1.capitalfm.com/2017/01/ed-sheeran-2015-1483642670-editorial-expanding-form-0.jpg"
           }
         ], 
         "cse_thumbnail": [
           {
-            "height": "180", 
-            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcowlDrc55rhRwJbzL5fZGLHFdNy-WjO4w0jO5eTAdJ5OcrxTv0GvQI3M", 
-            "width": "180"
+            "height": "127", 
+            "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwVkxcqpJD-TmDtrvJ1LwNAJfCOmVZc5dVkyM0PzmS47onvXLYeg7jhmE", 
+            "width": "397"
           }
         ], 
         "metatags": [
@@ -215,7 +262,7 @@
             "fb:admins": "551351399,1191061720,506268272,629227116,508902591,544850136,669788254,647915822,516067336,621995612,677149409,61310422,638591731,648380633,621995612,531059714,272200002", 
             "fb:app_id": "184899318222048", 
             "fb:page_id": "113220942069573", 
-            "og:description": "Catch up with the freshest new songs and albums to download and stream this month - get ready to update your playlist!", 
+            "og:description": "Catch up with the freshest new songs and albums to download and stream this month and the rest of 2017 - get ready to update your playlist!", 
             "og:domain": "www.capitalfm.com", 
             "og:site_name": "Capital FM", 
             "og:title": "Capital FM", 
@@ -227,7 +274,7 @@
             "parsely-type": "sectionpage", 
             "sailthru.tags": "new-music", 
             "twitter:card": "summary", 
-            "twitter:description": "Catch up with the freshest new songs and albums to download and stream this month - get ready to update your playlist!", 
+            "twitter:description": "Catch up with the freshest new songs and albums to download and stream this month and the rest of 2017 - get ready to update your playlist!", 
             "twitter:site": "@CapitalOfficial", 
             "twitter:title": "Capital FM", 
             "twitter:url": "http://www.capitalfm.com/new-music/", 
@@ -236,45 +283,49 @@
         ], 
         "musicrecording": [
           {
-            "byartist": "Jonas Blue", 
-            "image": "http://is2.mzstatic.com/image/thumb/Music71/v4/40/98/ef/4098ef5b-8cd3-fcc2-38e0-1cf17d182994/source/225x225bb.jpg", 
-            "name": "By Your Side", 
-            "url": "/artists/jonas-blue/music/by-your-side/"
+            "byartist": "James Arthur", 
+            "image": "http://is5.mzstatic.com/image/thumb/Music62/v4/d1/e9/c3/d1e9c3d8-094e-b1b1-318b-f25949815bff/source/225x225bb.jpg", 
+            "name": "Say You Won't Let Go"
           }, 
           {
-            "byartist": "Chris Malinchak", 
-            "image": "http://is3.mzstatic.com/image/thumb/Music71/v4/56/2f/fc/562ffcbc-437a-d6af-ce55-a74b0bf20908/source/225x225bb.jpg", 
-            "name": "Happiness"
+            "byartist": "Afrojack & Jay Karama", 
+            "image": "http://is3.mzstatic.com/image/thumb/Music111/v4/b3/4d/6c/b34d6c2b-2416-6a11-9d38-69777ff2b049/source/600x600bb.jpg", 
+            "url": "http://www.capitalfm.com/artists/afrojack/music/diamonds/"
           }, 
           {
-            "byartist": "DJ Snake feat. Justin Bieber", 
-            "image": "http://is5.mzstatic.com/image/thumb/Music122/v4/a1/b2/2b/a1b22b77-0234-c3ac-85e6-a6f7c7ae9546/source/600x600bb.jpg", 
-            "name": "Let Me Love You (Zedd Remix)"
+            "byartist": "Beyonce", 
+            "image": "http://assets5.capitalfm.com/2016/47/beyonce---all-night-1479810690-track225-0.jpg", 
+            "url": "http://www.capitalfm.com/artists/beyonce-knowles/music/all-night/"
           }, 
           {
-            "byartist": "Galantis", 
-            "image": "http://is5.mzstatic.com/image/thumb/Music122/v4/e5/cc/59/e5cc5939-3bd6-e2a7-e545-92e797a22596/source/225x225bb.jpg", 
-            "name": "Pillow Fight"
+            "byartist": "Dua Lipa", 
+            "image": "http://is3.mzstatic.com/image/thumb/Music42/v4/b1/ff/f7/b1fff773-326d-c6a4-57ce-7c5e59fb82de/source/225x225bb.jpg", 
+            "url": "http://www.capitalfm.com/artists/dua-lipa/music/thinking-bout-you/"
           }, 
           {
-            "byartist": "Nathan Sykes", 
-            "image": "http://is4.mzstatic.com/image/thumb/Music111/v4/a6/39/89/a6398920-d039-bf71-52d2-3f241ea8f091/source/600x600bb.jpg", 
-            "name": "Have Yourself A Merry Little Christmas"
+            "byartist": "Ed Sheeran", 
+            "image": "http://is2.mzstatic.com/image/thumb/Music122/v4/a1/fc/b9/a1fcb9ef-c3fa-5e73-08f9-5eca1179dd5a/source/225x225bb.jpg", 
+            "url": "http://www.capitalfm.com/artists/ed-sheeran/music/-2/"
           }, 
           {
-            "byartist": "Nervo & Askery feat. Brielle von Hugel", 
-            "image": "http://is1.mzstatic.com/image/thumb/Music22/v4/55/7e/df/557edf56-4c7e-b33a-43c3-f7dd6da61f5e/source/225x225bb.jpg", 
-            "name": "Alone"
+            "byartist": "Ed Sheeran", 
+            "image": "http://is5.mzstatic.com/image/thumb/Music122/v4/bc/71/5d/bc715db4-d0e5-4fe2-fb11-cd82b3c4c861/source/225x225bb.jpg", 
+            "url": "http://www.capitalfm.com/artists/ed-sheeran/music/shape-of-you/"
           }, 
           {
-            "byartist": "Nick Jonas", 
-            "image": "http://is1.mzstatic.com/image/thumb/Music71/v4/1c/80/ff/1c80ffc9-839b-20bb-ffca-d276b12d0d3a/source/225x225bb.jpg", 
-            "name": "Chainsaw (Sluggo x Patrick Russell Remix)"
+            "byartist": "Kiesza", 
+            "image": "http://is2.mzstatic.com/image/thumb/Music111/v4/6a/03/91/6a0391f7-c864-3e5c-478b-aa8bdfc261c5/source/225x225bb.jpg", 
+            "url": "http://www.capitalfm.com/artists/kiesza/music/dearly-beloved/"
           }, 
           {
-            "byartist": "Years & Years", 
-            "image": "http://is5.mzstatic.com/image/thumb/Music71/v4/e3/b7/a7/e3b7a78a-7179-01b5-e35a-b58af897119a/source/225x225bb.jpg", 
-            "name": "Both Sides Now (Torch Songs)"
+            "byartist": "Sia", 
+            "image": "http://assets7.capitalfm.com/2017/01/sia---move-your-body-1483696964-track225-0.jpg", 
+            "url": "http://www.capitalfm.com/artists/sia/music/move-your-body/"
+          }, 
+          {
+            "byartist": "Snakehips & MO", 
+            "image": "http://is4.mzstatic.com/image/thumb/Music122/v4/a0/e7/35/a0e7355b-ac2b-dd3d-c78b-d1219c25d124/source/225x225bb.jpg", 
+            "url": "http://www.capitalfm.com/artists/snakehips/music/dont-leave/"
           }, 
           {
             "byartist": "Anne-Marie", 
@@ -282,9 +333,9 @@
             "name": "Breathing Fire"
           }, 
           {
-            "byartist": "Charlie Puth", 
-            "image": "http://is4.mzstatic.com/image/thumb/Music71/v4/12/ea/66/12ea663e-7d04-c6ac-b1b6-8e35fa11f242/source/225x225bb.jpg", 
-            "name": "Dangerously"
+            "byartist": "Ariana Grande feat. 1Future", 
+            "image": "http://is4.mzstatic.com/image/thumb/Music49/v4/62/43/31/624331f1-024c-aefb-f3b6-aee95f3097f5/source/225x225bb.jpg", 
+            "url": "http://www.capitalfm.com/artists/ariana-grande/music/everyday/"
           }, 
           {
             "byartist": "Daya", 
@@ -292,19 +343,18 @@
             "name": "Words"
           }, 
           {
-            "byartist": "Fifth Harmony", 
-            "image": "http://assets6.capitalfm.com/2016/47/fifth-harmony---thats-my-girl-single-cover-1479739405-track225-0.jpg", 
-            "url": "http://www.capitalfm.com/artists/fifth-harmony/music/thats-my-girl/"
-          }, 
-          {
             "byartist": "JoJo feat. Alessia Cara", 
             "image": "http://is1.mzstatic.com/image/thumb/Music62/v4/3a/85/5f/3a855f4c-73f1-ee60-dd9f-9d4eaf963d31/source/225x225bb.jpg", 
             "name": "I Can Only"
           }, 
           {
-            "byartist": "Nickelback", 
-            "image": "http://is5.mzstatic.com/image/thumb/Music62/v4/6b/3c/5b/6b3c5b09-f72d-361f-3787-32b9afa13717/source/225x225bb.jpg", 
-            "name": "Dirty Laundry"
+            "byartist": "Major Lazer feat. Nicki Minaj &...", 
+            "url": "http://www.capitalfm.com/artists/major-lazer/music/ring-her-up/"
+          }, 
+          {
+            "byartist": "Nathan Sykes", 
+            "image": "http://is2.mzstatic.com/image/thumb/Music62/v4/a4/8a/8a/a48a8ac9-ce0d-2f11-de6f-d96c02a07895/source/225x225bb.jpg", 
+            "url": "http://www.capitalfm.com/artists/nathan-sykes/music/theres-only-one-of-you/"
           }, 
           {
             "byartist": "Sophie Ellis Bextor", 
@@ -312,19 +362,14 @@
             "name": "Wild Forever"
           }, 
           {
-            "byartist": "Tinie Tempah", 
-            "image": "http://assets5.capitalfm.com/2016/44/tinie-tempah---bounce-1478261261-track225-0.jpg", 
-            "url": "http://www.capitalfm.com/artists/tinie-tempah/music/bounce/"
+            "byartist": "Tinie Tempah feat. Tinashe", 
+            "image": "http://assets5.capitalfm.com/2016/43/tinie-tempah---youth-album-cover-1477405065-track225-0.jpeg", 
+            "url": "http://www.capitalfm.com/artists/tinie-tempah/music/text-from-my-ex/"
           }, 
           {
-            "byartist": "ZAYN feat. Kehlani", 
-            "image": "http://is1.mzstatic.com/image/thumb/Music69/v4/3c/a0/76/3ca076fc-c0dc-b7bd-0971-b4b8f031d7c3/source/225x225bb.jpg", 
-            "url": "http://www.capitalfm.com/artists/one-direction/zayn-malik/music/wrong/"
-          }, 
-          {
-            "byartist": "Anne Marie", 
-            "image": "http://is1.mzstatic.com/image/thumb/Music18/v4/0e/0a/56/0e0a56bc-9aa8-2fac-a234-cebd47efa590/source/225x225bb.jpg", 
-            "url": "http://www.capitalfm.com/artists/anne-marie/music/alarm/"
+            "byartist": "Yes Lad", 
+            "image": "http://assets7.capitalfm.com/2017/01/yes-lad-1483696805-track225-0.png", 
+            "name": "Walk Away"
           }, 
           {
             "byartist": "Ariana Grande feat. Nicki Minaj", 
@@ -337,14 +382,109 @@
             "url": "http://www.capitalfm.com/artists/bruno-mars/music/24k-magic/"
           }, 
           {
-            "byartist": "Calum Scott", 
-            "image": "http://is5.mzstatic.com/image/thumb/Music30/v4/18/33/f3/1833f3d8-8278-2ff3-4728-f0689ba339c3/source/225x225bb.jpg", 
-            "url": "http://www.capitalfm.com/artists/calum-scott/music/dancing-on-my-own-16/"
+            "byartist": "The Chainsmokers", 
+            "image": "http://is1.mzstatic.com/image/thumb/Music18/v4/6e/0b/17/6e0b1715-b5a4-44a7-ca4f-5715e36253d0/source/225x225bb.jpg", 
+            "url": "http://www.capitalfm.com/artists/the-chainsmokers/music/closer/"
+          }, 
+          {
+            "byartist": "Charli XCX feat. Lil Yachty", 
+            "image": "http://is1.mzstatic.com/image/thumb/Music71/v4/49/2b/64/492b64e3-4837-91b1-b3db-9aca0e5bc265/source/225x225bb.jpg", 
+            "url": "http://www.capitalfm.com/artists/charli-xcx/music/after-the-afterparty/"
           }
         ]
       }, 
-      "snippet": "Catch up with the freshest new songs and albums to download and stream this \nmonth - get ready to update your playlist!", 
+      "snippet": "Catch up with the freshest new songs and albums to download and stream this \nmonth and the rest of 2017 - get ready to update your playlist!", 
       "title": "New Songs, Latest Music, Future Releases - Capital FM"
+    }, 
+    {
+      "cacheId": "fXR5TsxRV3IJ", 
+      "displayLink": "www.youtube.com", 
+      "formattedUrl": "https://www.youtube.com/watch?v=9p7TiGx7b-4", 
+      "htmlFormattedUrl": "https://www.youtube.com/watch?v=9p7TiGx7b-4", 
+      "htmlSnippet": "Sep 8, 2016 <b>...</b> T-Series brings to you Sukh-E latest punjabi <b>song</b> &quot;Suicide&quot; composed and <br>\npenned by Jaani. The video is directed by Arvindr Khaira. <b>Song</b>&nbsp;...", 
+      "htmlTitle": "Sukhe SUICIDE Full Video Song | T-Series | <b>New Songs</b> 2016 ...", 
+      "kind": "customsearch#result", 
+      "link": "https://www.youtube.com/watch?v=9p7TiGx7b-4", 
+      "pagemap": {
+        "cse_image": [
+          {
+            "src": "https://i.ytimg.com/vi/9p7TiGx7b-4/maxresdefault.jpg"
+          }
+        ], 
+        "cse_thumbnail": [
+          {
+            "height": "168", 
+            "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWWP1oLEMy4SutP2uEyEU8pOxF7SKKinvhsHBvZjxbiv2X4eOCtboainY", 
+            "width": "299"
+          }
+        ], 
+        "imageobject": [
+          {
+            "height": "720", 
+            "url": "https://i.ytimg.com/vi/9p7TiGx7b-4/maxresdefault.jpg", 
+            "width": "1280"
+          }
+        ], 
+        "metatags": [
+          {
+            "al:android:app_name": "YouTube", 
+            "al:android:package": "com.google.android.youtube", 
+            "al:android:url": "vnd.youtube://www.youtube.com/watch?v=9p7TiGx7b-4&feature=applinks", 
+            "al:ios:app_name": "YouTube", 
+            "al:ios:app_store_id": "544007664", 
+            "al:ios:url": "vnd.youtube://www.youtube.com/watch?v=9p7TiGx7b-4&feature=applinks", 
+            "al:web:url": "https://www.youtube.com/watch?v=9p7TiGx7b-4&feature=applinks", 
+            "fb:app_id": "87741124305", 
+            "og:description": "T-Series brings to you Sukh-E latest punjabi song \"Suicide\" composed and penned by Jaani. The video is directed by Arvindr Khaira. Song \u266bAlso Available On: i...", 
+            "og:image": "https://i.ytimg.com/vi/9p7TiGx7b-4/maxresdefault.jpg", 
+            "og:site_name": "YouTube", 
+            "og:title": "Sukhe SUICIDE Full Video Song | T-Series | New Songs 2016 | Jaani | B Praak", 
+            "og:type": "video", 
+            "og:url": "https://www.youtube.com/watch?v=9p7TiGx7b-4", 
+            "og:video:height": "720", 
+            "og:video:secure_url": "https://www.youtube.com/embed/9p7TiGx7b-4", 
+            "og:video:tag": "suicide punjabi song", 
+            "og:video:type": "text/html", 
+            "og:video:url": "https://www.youtube.com/embed/9p7TiGx7b-4", 
+            "og:video:width": "1280", 
+            "theme-color": "#e62117", 
+            "title": "Sukhe SUICIDE Full Video Song | T-Series | New Songs 2016 | Jaani | B Praak", 
+            "twitter:card": "player"
+          }
+        ], 
+        "person": [
+          {
+            "url": "http://www.youtube.com/user/tseries"
+          }, 
+          {
+            "url": "https://plus.google.com/115156822320080163368"
+          }
+        ], 
+        "videoobject": [
+          {
+            "channelid": "UCq-Fj5jknLsUf-MWSy4_brA", 
+            "datepublished": "2016-09-08", 
+            "description": "T-Series brings to you Sukh-E latest punjabi song \"Suicide\" composed and penned by Jaani. The video is directed by Arvindr Khaira. Song \u266bAlso Available On: i...", 
+            "duration": "PT3M28S", 
+            "embedurl": "https://www.youtube.com/embed/9p7TiGx7b-4", 
+            "genre": "Music", 
+            "height": "720", 
+            "interactioncount": "35501660", 
+            "isfamilyfriendly": "True", 
+            "name": "Sukhe SUICIDE Full Video Song | T-Series | New Songs 2016 | Jaani | B Praak", 
+            "paid": "False", 
+            "playertype": "HTML5 Flash", 
+            "regionsallowed": "AD,AE,AF,AG,AI,AL,AM,AO,AQ,AR,AS,AT,AU,AW,AX,AZ,BA,BB,BD,BE,BF,BG,BH,BI,BJ,BL,BM,BN,BO,BQ,BR,BS,BT,BV,BW,BY,BZ,CA,CC,CD,CF,CG,CH,CI,CK,CL,CM,CN,CO,CR,CU,CV,CW,CX,CY,CZ,DE,DJ,DK,DM,DO,DZ,EC,EE,EG,EH...", 
+            "thumbnailurl": "https://i.ytimg.com/vi/9p7TiGx7b-4/maxresdefault.jpg", 
+            "unlisted": "False", 
+            "url": "https://www.youtube.com/watch?v=9p7TiGx7b-4", 
+            "videoid": "9p7TiGx7b-4", 
+            "width": "1280"
+          }
+        ]
+      }, 
+      "snippet": "Sep 8, 2016 ... T-Series brings to you Sukh-E latest punjabi song \"Suicide\" composed and \npenned by Jaani. The video is directed by Arvindr Khaira. Song\u00a0...", 
+      "title": "Sukhe SUICIDE Full Video Song | T-Series | New Songs 2016 ..."
     }, 
     {
       "cacheId": "GPGuPZNIR-sJ", 
@@ -366,133 +506,24 @@
       "title": "New Songs from the Jade Terrace - Wikipedia"
     }, 
     {
-      "cacheId": "al00r1bWCHQJ", 
-      "displayLink": "www.capitalxtra.com", 
-      "formattedUrl": "www.capitalxtra.com/new-music/best-2016/rnb-songs/", 
-      "htmlFormattedUrl": "www.capitalxtra.com/<b>new</b>-music/best-2016/rnb-<b>songs</b>/", 
-      "htmlSnippet": "So far this year there&#39;s already been some huge <b>new songs</b> from Rihanna, who of <br>\ncourse dropped her highly anticipated &#39;ANTI&#39; album, featuring lead single&nbsp;...", 
-      "htmlTitle": "The Best R&amp;B <b>Songs</b> Of 2016 So Far | <b>New</b> Music - CAPITAL XTRA", 
+      "cacheId": "jgpaD2xsu-4J", 
+      "displayLink": "bossmp3.me", 
+      "formattedUrl": "bossmp3.me/category/.../New_Bollywood_Movie_Song_(2016).html", 
+      "htmlFormattedUrl": "bossmp3.me/category/.../<b>New</b>_Bollywood_Movie_<b>Song</b>_(2016).html", 
+      "htmlSnippet": "Tags: <b>New</b> Bollywood Movie <b>Song</b> (2016) Mp3 <b>Songs</b> Download, <b>New</b> Bollywood <br>\nMovie <b>Song</b> (2016) iTunes Rip Mp3 <b>Songs</b> Download, <b>New</b> Bollywood Movie&nbsp;...", 
+      "htmlTitle": "<b>New</b> Bollywood Movie <b>Song</b> (2016) <b>Song</b> Free Download ...", 
       "kind": "customsearch#result", 
-      "link": "http://www.capitalxtra.com/new-music/best-2016/rnb-songs/", 
+      "link": "http://bossmp3.me/category/1458/New_Bollywood_Movie_Song_(2016).html", 
       "pagemap": {
-        "cse_image": [
-          {
-            "src": "http://assets2.capitalxtra.com/2016/50/childish-gambino-donald-glover-1481569865-list-handheld-0.jpg"
-          }
-        ], 
-        "cse_thumbnail": [
-          {
-            "height": "168", 
-            "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3uCRFb8XNRsRHTabcoOsEY2LoZ8f5J9F1EwebDGSF1CcxCXb2hoXr2x1I", 
-            "width": "300"
-          }
-        ], 
         "metatags": [
           {
-            "apple-itunes-app": "app-id=356344777", 
-            "fb:admins": "695470561,551351399,837890453", 
-            "fb:app_id": "199049720274073", 
-            "fb:page_id": "19397821584", 
-            "og:description": "Get ready for the ultimate R&B playlist, filled with epic new music from Rihanna, Drake, Chris Brown and more.", 
-            "og:image": "http://assets2.capitalxtra.com/2016/50/childish-gambino-donald-glover-1481569865-list-handheld-0.jpg", 
-            "og:site_name": "Capital XTRA", 
-            "og:title": "The Best R&B Songs Of 2016 So Far", 
-            "og:type": "article", 
-            "og:url": "http://www.capitalxtra.com/new-music/best-2016/rnb-songs/", 
-            "parsely-author": "Michaela Walters", 
-            "parsely-image-url": "http://www.capitalxtra.com/2016/50/childish-gambino-donald-glover-1481569865-list-handheld-0.jpg", 
-            "parsely-link": "http://www.capitalxtra.com/new-music/best-2016/rnb-songs/", 
-            "parsely-post-id": "5933", 
-            "parsely-pub-date": "2016-12-12T17:43:14", 
-            "parsely-section": "/new-music/best-2016/", 
-            "parsely-title": "The Best R&B Songs Of 2016 So Far", 
-            "parsely-type": "post", 
-            "sailthru.tags": "new-music, best-2016, rnb-songs", 
-            "twitter:card": "summary_large_image", 
-            "twitter:description": "Get ready for the ultimate R&B playlist, filled with epic new music from Rihanna, Drake, Chris Brown and more.", 
-            "twitter:image:height": "360", 
-            "twitter:image:src": "http://assets2.capitalxtra.com/2016/50/childish-gambino-donald-glover-1481569865-list-handheld-0.jpg", 
-            "twitter:image:width": "640", 
-            "twitter:title": "The Best R&B Songs Of 2016 So Far"
+            "author": "text", 
+            "language": "english"
           }
         ]
       }, 
-      "snippet": "So far this year there's already been some huge new songs from Rihanna, who of \ncourse dropped her highly anticipated 'ANTI' album, featuring lead single\u00a0...", 
-      "title": "The Best R&B Songs Of 2016 So Far | New Music - CAPITAL XTRA"
-    }, 
-    {
-      "cacheId": "V6CmpDy6l8cJ", 
-      "displayLink": "en.wikipedia.org", 
-      "formattedUrl": "https://en.wikipedia.org/wiki/Songs_for_a_New_World", 
-      "htmlFormattedUrl": "https://en.wikipedia.org/wiki/<b>Songs</b>_for_a_<b>New</b>_World", 
-      "htmlSnippet": "<b>Songs</b> for a <b>New</b> World is a work of musical theatre written and composed by <br>\nJason Robert Brown. This was Jason Robert Brown&#39;s first produced show,&nbsp;...", 
-      "htmlTitle": "<b>Songs</b> for a <b>New</b> World - Wikipedia", 
-      "kind": "customsearch#result", 
-      "link": "https://en.wikipedia.org/wiki/Songs_for_a_New_World", 
-      "pagemap": {
-        "cse_image": [
-          {
-            "src": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0a/Songs_for_a_New_World_CD_Cover.jpg/220px-Songs_for_a_New_World_CD_Cover.jpg"
-          }
-        ], 
-        "cse_thumbnail": [
-          {
-            "height": "176", 
-            "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8-W1C1CERpmTArmNzPSrUzhjTp0Q_BtL1OC5njHko3uarLp76jedqu5TI", 
-            "width": "176"
-          }
-        ], 
-        "metatags": [
-          {
-            "referrer": "origin-when-cross-origin"
-          }
-        ]
-      }, 
-      "snippet": "Songs for a New World is a work of musical theatre written and composed by \nJason Robert Brown. This was Jason Robert Brown's first produced show,\u00a0...", 
-      "title": "Songs for a New World - Wikipedia"
-    }, 
-    {
-      "displayLink": "www.complex.com", 
-      "formattedUrl": "www.complex.com/music/top-new-songs/", 
-      "htmlFormattedUrl": "www.complex.com/music/top-<b>new</b>-<b>songs</b>/", 
-      "htmlSnippet": "Aug 26, 2016 <b>...</b> The best of popular music of the moment all in one place. From hip-hop, to pop, <br>\nhere are the best <b>new songs</b> you should listen to.", 
-      "htmlTitle": "25 Top <b>New Songs</b> Right Now | Complex", 
-      "kind": "customsearch#result", 
-      "link": "http://www.complex.com/music/top-new-songs/", 
-      "pagemap": {
-        "cse_image": [
-          {
-            "src": "http://images.complex.com/complex/images/c_limit,w_680/f_auto,fl_lossy,q_70/xix2tbbhzacacxa4jmee/top-new-songs-gif"
-          }
-        ], 
-        "cse_thumbnail": [
-          {
-            "height": "180", 
-            "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBPJPjhU2Vasaf6Sml4NWUQGMJfTa56bRQvSWV9osehLCgOBjmNvDQdcHg", 
-            "width": "279"
-          }
-        ], 
-        "metatags": [
-          {
-            "fb:app_id": "685812641524750", 
-            "og:description": "The best of popular music of the moment all in one place. From hip-hop, to pop, here are the best new songs you should listen to.", 
-            "og:image": "http://images.complex.com/complex/images/c_limit,w_680/f_auto,fl_lossy,q_70/xix2tbbhzacacxa4jmee/top-new-songs-gif", 
-            "og:site_name": "Complex", 
-            "og:title": "The Top New Songs You Should Listen to Right Now", 
-            "og:type": "website", 
-            "og:url": "http://www.complex.com/music/top-new-songs/", 
-            "twitter:card": "summary", 
-            "twitter:description": "The best of popular music of the moment all in one place. From hip-hop, to pop, here are the best new songs you should listen to.", 
-            "twitter:image": "http://images.complex.com/complex/images/c_limit,w_680/f_auto,fl_lossy,q_70/xix2tbbhzacacxa4jmee/top-new-songs-gif", 
-            "twitter:site:id": "13049362", 
-            "twitter:title": "The Top New Songs You Should Listen to Right Now", 
-            "twitter:url": "http://www.complex.com/music/top-new-songs/", 
-            "viewport": "width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1"
-          }
-        ]
-      }, 
-      "snippet": "Aug 26, 2016 ... The best of popular music of the moment all in one place. From hip-hop, to pop, \nhere are the best new songs you should listen to.", 
-      "title": "25 Top New Songs Right Now | Complex"
+      "snippet": "Tags: New Bollywood Movie Song (2016) Mp3 Songs Download, New Bollywood \nMovie Song (2016) iTunes Rip Mp3 Songs Download, New Bollywood Movie\u00a0...", 
+      "title": "New Bollywood Movie Song (2016) Song Free Download ..."
     }
   ], 
   "kind": "customsearch#search", 
@@ -507,7 +538,7 @@
         "searchTerms": "new songs", 
         "startIndex": 11, 
         "title": "Google Custom Search - new songs", 
-        "totalResults": "251000000"
+        "totalResults": "246000000"
       }
     ], 
     "request": [
@@ -520,15 +551,15 @@
         "searchTerms": "new songs", 
         "startIndex": 1, 
         "title": "Google Custom Search - new songs", 
-        "totalResults": "251000000"
+        "totalResults": "246000000"
       }
     ]
   }, 
   "searchInformation": {
-    "formattedSearchTime": "0.47", 
-    "formattedTotalResults": "251,000,000", 
-    "searchTime": 0.471919, 
-    "totalResults": "251000000"
+    "formattedSearchTime": "0.61", 
+    "formattedTotalResults": "246,000,000", 
+    "searchTime": 0.613158, 
+    "totalResults": "246000000"
   }, 
   "url": {
     "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&cref={cref?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json", 

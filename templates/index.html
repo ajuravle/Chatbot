@@ -59,35 +59,37 @@
                 $("form").submit(function(e){
                     e.preventDefault();
 					
-					
-                    $.post("/send", $(this).serialize(), function(jsonData){
-                        var x = JSON.stringify(jsonData)
-                        x = JSON.parse(x)["message"]
-                        var ret = "<li class=\"chat__list__item\"><div class=\"chat__bubble chat__bubble--response\"><span>" + x + "</span></div></li>"
-                        chatlist.append(ret);
-                        div.animate({scrollTop: height}, 500);
-                        height += div.height();
-						chatlist.append("<li class=\"chat__list__item chat__list__item-new\"><a target=\"_blank\" href=\"#\" class=\"chat__list__item__author\">Chad</a> <a target=\"_blank\" href=\"#\"><img class=\"chat__avatar\" src=\"{{ url_for('static', filename='img/Untitled-2.jpg') }}\">  </a>   <div class=\"chat__bubble chat__bubble--bot chat__bubble--typing\">  </div> </li>")
-						var elem = $('.chat__bubble--typing');
-						window.setTimeout(function(){elem.addClass("chat__bubble--slideIn");}, 100);
-						window.setTimeout(function(){elem.addClass("chat__bubble--fade");}, 500);
-                    }, "json");
-                    $.post("/respond", $(this).serialize(), function(jsonData){
-                        var x = JSON.stringify(jsonData)
-                        x = JSON.parse(x)["response"]
-                        console.log(x)
-						var elem = $('.chat__bubble--typing');
-						window.setTimeout(function(){elem.addClass("chat__bubble--slideIn");}, 100);
-						window.setTimeout(function(){elem.addClass("chat__bubble--fade");}, 500);
-						window.setTimeout(function(){
-							elem.removeClass('chat__bubble--typing')
-							elem.append('<span>' + x + '</span>');
-						}, 1000)
-						
-						
-                        div.animate({scrollTop: height}, 500);
-                        height += div.height();
-                    }, "json");
+					var input_value = $("#user-input").val()
+					if (input_value.length > 0){
+                        $.post("/send", $(this).serialize(), function(jsonData){
+                            var x = JSON.stringify(jsonData)
+                            x = JSON.parse(x)["message"]
+                            var ret = "<li class=\"chat__list__item\"><div class=\"chat__bubble chat__bubble--response\"><span>" + x + "</span></div></li>"
+                            chatlist.append(ret);
+                            div.animate({scrollTop: height}, 500);
+                            height += div.height();
+                            chatlist.append("<li class=\"chat__list__item chat__list__item-new\"><a target=\"_blank\" href=\"#\" class=\"chat__list__item__author\">Chad</a> <a target=\"_blank\" href=\"#\"><img class=\"chat__avatar\" src=\"{{ url_for('static', filename='img/Untitled-2.jpg') }}\">  </a>   <div class=\"chat__bubble chat__bubble--bot chat__bubble--typing\">  </div> </li>")
+                            var elem = $('.chat__bubble--typing');
+                            window.setTimeout(function(){elem.addClass("chat__bubble--slideIn");}, 100);
+                            window.setTimeout(function(){elem.addClass("chat__bubble--fade");}, 500);
+                        }, "json");
+                        $.post("/respond", $(this).serialize(), function(jsonData){
+                            var x = JSON.stringify(jsonData)
+                            x = JSON.parse(x)["response"]
+                            console.log(x)
+                            var elem = $('.chat__bubble--typing');
+                            window.setTimeout(function(){elem.addClass("chat__bubble--slideIn");}, 100);
+                            window.setTimeout(function(){elem.addClass("chat__bubble--fade");}, 500);
+                            window.setTimeout(function(){
+                                elem.removeClass('chat__bubble--typing')
+                                elem.append('<span>' + x + '</span>');
+                            }, 1000)
+
+
+                            div.animate({scrollTop: height}, 500);
+                            height += div.height();
+                        }, "json");
+                    }
                     $('input[type="text"], textarea').val('');
                 });
             });

@@ -12,6 +12,21 @@ from spacy.tokens.token import Token
 import search
 import json
 import random
+import pickle
+from memory import memory
+
+
+def dialogue_act_features(post):
+    stemmer = SnowballStemmer("english")
+    features = {}
+    lems = nlp.lemmatize_text(post)
+    words = nlp.tokenize_text(lems)
+    for i in range(len(words)):
+        new_word = stemmer.stem(words[i])
+        new_word = re.sub(r"(.)\1+", r"\1", new_word)
+        features['contains({})'.format(new_word.lower())] = True
+    return features
+
 
 spacy_nlp = spacy.load('en')
 
@@ -25,25 +40,7 @@ filler_short_responses = ["Okay, I listen.", "Let's see...", "Bring it on!", "I 
 
 sessionId = 12345
 
-memory = dict()
 expect = dict()
-
-
-def dialogue_act_features(post):
-    features = {}
-    lems = nlp.lemmatize_text(post)
-    words = nlp.tokenize_text(lems)
-    for i in range(len(words)):
-        new_word = stemmer.stem(words[i])
-        new_word = re.sub(r"(.)\1+", r"\1", new_word)
-        features['contains({})'.format(new_word.lower())] = True
-    # for i in range(len(words) - 1):
-    #    stems = [porter_stemmer.stem(words[i]), porter_stemmer.stem(words[i + 1])]
-    #    new_word = re.sub(r"(.)\1+", r"\1", stems[0] + ' ' + stems[1])
-    #    features['contains({})'.format(new_word.lower())] = True
-    # print(features)
-    return features
-
 
 first_person = ["me", "i", "mine", "my", "we", "ours"]
 pron_translate = dict()
@@ -55,6 +52,23 @@ pron_translate["ours"] = "your"
 pron_translate["we"] = "you"
 
 
+def get_emotion(polarity):
+    emotion = "NEUTER"
+    if polarity > 0.8:
+        emotion = "SUPER HAPPY"
+    elif polarity > 0.3:
+        emotion = "GOOD SURPRISE"
+    elif polarity < -0.4:
+        emotion = "FEAR"
+    elif polarity > 0.4:
+        emotion = "COOL"
+    elif polarity < -0.1:
+        emotion = "SAD"
+    elif polarity < -0.7:
+        emotion = "ANGER"
+    return emotion
+
+
 class Brain:
     def __init__(self):
         self.instant_classifier = None
@@ -64,17 +78,14 @@ class Brain:
         else:
             self.kernel.bootstrap(learnFiles="./knowledge/startup.xml", commands="load aiml b")
             self.kernel.saveBrain("bot_brain.brn")
-        self.train()
+        self.load_classifier()
         self.interest = 10
+        self.memory = memory.Memory(spacy_nlp)
 
-    def train(self):
-        posts = nltk.corpus.nps_chat.xml_posts()[:]
-        featuresets = [(dialogue_act_features(post.text), post.get('class')) for post in posts]
-        size = int(len(featuresets) * 0.1)
-        train_set, test_set = featuresets[size:], featuresets[:size]
-        self.instant_classifier = nltk.NaiveBayesClassifier.train(featuresets)
-        self.instant_classifier.show_most_informative_features()
-        print(nltk.classify.accuracy(self.instant_classifier, test_set))
+    def load_classifier(self):
+        f = open('sent_classifier.pickle', 'rb')
+        self.instant_classifier = pickle.load(f)
+        f.close()
 
     def process_sentiment(self, message):
         client_sentiment = pattern_en.sentiment(message)
@@ -87,18 +98,16 @@ class Brain:
             self.train()
             return "It is nice to learn new stuff."
         if message == ">!forget":
-            memory.clear()
+            memory.forget()
             return "I am reborn. So much free space :) maybe you will use files to store memory and not RAM..."
         if message == ">!load_page":
-            if sessionId not in memory:
+            if memory.contains(sessionId) is False:
                 response = "Hello! My name is Chad and I am passionate about music."
                 response += "We can share our experiences and maybe we can get along."
                 response += "Would you mind telling me your name first?"
                 expect[sessionId] = "name"
-                memory[sessionId] = dict()
             else:
                 response = "Welcome back!"
-                search.search("new songs")
                 with open('results.json') as data_file:
                     data = json.load(data_file)
                     for i in range(10):
@@ -118,46 +127,22 @@ class Brain:
         for w in doc:
             print "(", w, w.dep_, w.pos_, w.head, ")"
 
-        aiml_sent_type = []
-        aiml_responses = []
-        memory_responses = []
-        sentence_types = []
-        emotions = []
+        data = []
 
         for sentence in s:
             sentence_type = self.instant_classifier.classify(dialogue_act_features(sentence))
-
-            sentence_types.append(sentence_type)
-
+            new_data = dict()
+            new_data["type"] = sentence_type
             polarity, subjective = pattern_en.sentiment(sentence)
             sent = pattern_en.parse(sentence, lemmata=True)
             sent = pattern_en.Sentence(sent)
             modality = pattern_en.modality(sent)
             mood = pattern_en.mood(sent)
-
-            if polarity > 0.8:
-                emotions.append("SUPER HAPPY")
-            elif polarity > 0.3:
-                emotions.append("GOOD SURPRISE")
-            elif polarity < -0.4:
-                emotions.append("FEAR")
-            elif polarity > 0.4:
-                emotions.append("COOL")
-            elif polarity < -0.1:
-                emotions.append("SAD")
-            elif polarity < -0.7:
-                emotions.append("ANGER")
-            else:
-                emotions.append("NEUTER")
-
-            print sentence_type, polarity, subjective, modality, mood
-
-            if sentence_type not in ["whQuestion", "ynQuestion"]:
-                try:
-                    aiml_sent_type_res = self.kernel.respond(sentence_type, sessionId)
-                except:
-                    aiml_sent_type_res = ""
-                aiml_sent_type.append(aiml_sent_type_res)
+            new_data["polarity"] = polarity
+            new_data["subjective"] = subjective
+            new_data["modality"] = modality
+            new_data["mood"] = mood
+            new_data["emotion"] = get_emotion(polarity)
 
             verbs_subj = set()
             sentence = sentence[0].upper() + sentence[1:]
@@ -171,144 +156,41 @@ class Brain:
                 aiml_response = self.kernel.respond(sentence, sessionId)
             except:
                 aiml_response = ""
-            aiml_responses.append(aiml_response)
-
-            # MEMORY MODULE
-            memory_msg = ""
-            if sentence_type == "Statement":
-                # insert into memory
-                for i in verbs_subj:
-                    subjs = []
-                    subjects = [i[0]]
-                    for tok in i[0].children:
-                        if tok.dep == conj:
-                            subjects.append(tok)
-
-                    for subj in subjects:
-                        predec = ""
-                        for tok in subj.children:
-                            if tok.dep_ == "poss" or tok.dep == amod:
-                                predec += tok.lower_
-                        if len(predec) > 0:
-                            subjs.append(predec + " " + subj.lower_)
-                        else:
-                            subjs.append(subj.lower_)
-
-                    vb = i[1].lower_
-                    if vb not in memory[sessionId]:
-                        memory[sessionId][vb] = dict()
-                    for subj in subjs:
-                        for c in i[1].children:
-                            if c.dep in [prep]:
-                                memory[sessionId][vb][subj] = c.lower_ + " "
-                                for c_prep in c.children:
-                                    if c_prep.dep in [dobj, pobj, attr]:
-                                        memory[sessionId][vb][subj] += c_prep.text
-                                        memory_responses.append(self.kernel.respond("memorate", sessionId))
-                            elif c.dep in [dobj, pobj, attr]:
-                                memory[sessionId][vb][subj] = c.text
-                                memory_responses.append(self.kernel.respond("memorate", sessionId))
-            elif sentence_type == "whQuestion":
-                for i in verbs_subj:
-                    subjs = []
-                    subjects = [i[0]]
-                    for tok in i[0].children:
-                        if tok.dep == conj:
-                            subjects.append(tok)
-
-                    for subj in subjects:
-                        predec = ""
-                        for tok in subj.children:
-                            if tok.dep_ == "poss" or tok.dep == amod:
-                                predec += tok.lower_
-                        if len(predec) > 0:
-                            subjs.append(predec + " " + subj.lower_)
-                        else:
-                            subjs.append(subj.lower_)
-
-                    max_similarity = 0
-                    verb = i[1].lower_
-                    for j in memory[sessionId]:
-                        p_word = spacy_nlp(j)
-                        similarity = i[1].similarity(p_word[0])
-                        if similarity > max_similarity:
-                            max_similarity = similarity
-                            verb = j
-                    if max_similarity > 0.5 and verb in memory[sessionId]:
-                        num_subjs = len(subjs)
-                        memory_msg = ""
-                        for subj in subjs:
-                            if subj in memory[sessionId][verb]:
-                                toks = nlp.tokenize_text(subj)
-                                memory_msg = ""
-                                for t in toks:
-                                    if t in first_person:
-                                        memory_msg += pron_translate[t] + " "
-                                    else:
-                                        memory_msg += t + " "
-                                num_subjs -= 1
-                                if num_subjs > 2:
-                                    memory_msg += ", "
-                                elif num_subjs == 1:
-                                    memory_msg += "and "
-                        if len(memory_msg) > 0:
-                            memory_msg += verb + " "
-                            if num_subjs != len(subjs):
-                                memory_msg += memory[sessionId][verb][subjs[-1]] + "."
-            memory_responses.append(memory_msg)
+            new_data["aiml"] = aiml_response
+            new_data["memory"] = memory.respond(verbs_subj, sentence_type, sessionId)
+            data.append(new_data)
 
         arr_response = []
 
-        for i in aiml_sent_type:
-            if len(i) > 0:
-                arr_response.append(i)
+        for sent in data:
+            sentence_response = ""
+            if len(sent["aiml"]) > 0:
+                sentence_response += aiml_response
+            elif len(sent["memory"]) > 0:
+                if sent["memory"] == "memorate":
+                    sentence_response += self.kernel.respond("memorate", sessionId)
+                else:
+                    sentence_response += sent["memory"]
 
-        for i in aiml_responses:
-            if len(i) > 0:
-                arr_response.append(i)
-
-        for i in memory_responses:
-            if len(i) > 0:
-                arr_response.append(i)
-
-        if len(arr_response) == 0:
-            data = search.search(message)
-            snip = data['items'][0]['snippet']
-            sents = nlp.get_sentences(snip)
-            arr_response.append(sents[0])
+            emoi = self.kernel.respond(sent["emotion"])
+            if random.random() <= 0.5:
+                sentence_response += emoi
+            sentence_type = sent["type"]
+            if sentence_type not in ["whQuestion", "ynQuestion", "Statement"]:
+                try:
+                    aiml_sent_type_res = self.kernel.respond(sentence_type, sessionId)
+                except:
+                    aiml_sent_type_res = ""
+                if random.random() <= 0.5:
+                    sentence_response += " " + aiml_sent_type_res
+            sentence_response = sentence_response[0].upper() + sentence_response[1:]
+            arr_response.append(sentence_response)
 
         response = ""
 
-        for i in emotions:
-            try:
-                emoi = self.kernel.respond(i, sessionId)
-            except:
-                emoi = None
-            if emoi is not None:
-                if random.randint(0, 100) < 50:
-                    response += " " + emoi + "."
-                    break
-
+        if len(arr_response) == 0:
+            response = "Don't know that'"
         for res in arr_response:
-            if len(res) > 1:
-                response += res + " "
-
-        # generic response, if no response
-        restoks = nlp.tokenize_text(response)
-        if len(restoks) == 0:
-            idx = random.randint(0, len(sentence_types) - 1)
-            try:
-                aiml_response = self.kernel.respond(sentence_types[idx], sessionId)
-            except:
-                aiml_response = ""
-            response += aiml_response
-
-        # polarity, subjective = pattern_en.sentiment(response)
-        # sent = pattern_en.parse(sentence, lemmata=True)
-        # sent = pattern_en.Sentence(sent)
-        # modality = pattern_en.modality(sent)
-        # mood = pattern_en.mood(sent)
-        # sentence_type = self.instant_classifier.classify(dialogue_act_features(response))
-        # print response, polarity, subjective, modality, mood
+            response += res + ". "
 
         return response
