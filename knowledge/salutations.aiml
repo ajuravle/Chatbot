@@ -11,7 +11,7 @@
 	</template>
 </category>
 <category>
-	<pattern>bye</pattern>
+	<pattern>BYE</pattern>
 	<template>
 		<random>
 			<li>See you later</li>
@@ -38,12 +38,9 @@
 	<pattern>STATEMENT</pattern>
 	<template>
 		<random>
-			<li>This is interesting.</li>
-			<li>I might too.</li>
-			<li>Maybe we shall talk more.</li>
-			<li>Ok.</li>
-			<li>Thanks for the info.</li>
-			<li>No way!</li>
+			<li>Hmm...</li>
+			<li>Let's see...</li>
+			<li>Ok...</li>
 		</random>
 	</template>
 </category>
@@ -79,10 +76,9 @@
 	<pattern>WHQUESTION</pattern>
 	<template>
 		<random>
-			<li>That's all i know...</li>
-			<li>That's private :P</li>
-			<li>We must get to know each other before i tell you :P</li>
-			<li>I might know...but might take a while.</li>
+			<li>Lets see...</li>
+			<li>Good question.</li>
+			<li>Hmm...</li>
 		</random>
 	</template>
 </category>
@@ -105,10 +101,11 @@
 	<pattern>MEMORATE</pattern>
 	<template>
 		<random>
-			<li>I'll try to remember.</li>
-			<li>This is interesting.</li>
-			<li>Nice to know.</li>
-			<li>Awesome.</li>
+			<li>This is very interesting. Now I get to know you!</li>
+			<li>Nice to know!</li>
+			<li>Awesome!</li>
+			<li>We are getting to know each other :D I am glad!</li>
+			<li>It is nice you share that with me</li>
 		</random>
 	</template>
 </category>

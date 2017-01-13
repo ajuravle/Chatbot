@@ -4,3 +4,4 @@ langdetect
 language_check
 nltk
 google-api-python-client
+Flask

@@ -19,7 +19,7 @@ class Memory:
     def forget(self):
         self.memory.clear()
 
-    def contains(self, sessionId):
+    def contains_id(self, sessionId):
         return sessionId in self.memory
 
     def respond(self, verbs_subj, sentence_type, sessionId):
@@ -96,9 +96,9 @@ class Memory:
                             memory_msg = ""
                             for t in toks:
                                 if t.lower_ in first_person:
-                                    memory_msg += pron_translate[t] + " "
+                                    memory_msg += pron_translate[t.lower_] + " "
                                 else:
-                                    memory_msg += t + " "
+                                    memory_msg += t.lower_ + " "
                             num_subjs -= 1
                             if num_subjs > 2:
                                 memory_msg += ", "

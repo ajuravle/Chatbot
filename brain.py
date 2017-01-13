@@ -1,36 +1,26 @@
-import aiml
-import os
-from nlp import preprocess as nlp
-import nltk
-import re
-from nltk.stem.porter import PorterStemmer
+import aiml, os, re
 import pattern.en as pattern_en
-from nltk.stem.snowball import SnowballStemmer
 import spacy
 from spacy.symbols import *
 from spacy.tokens.token import Token
 import search
-import json
-import random
+import json, random
 import pickle
 from memory import memory
 
 
-def dialogue_act_features(post):
-    stemmer = SnowballStemmer("english")
-    features = {}
-    lems = nlp.lemmatize_text(post)
-    words = nlp.tokenize_text(lems)
-    for i in range(len(words)):
-        new_word = stemmer.stem(words[i])
-        new_word = re.sub(r"(.)\1+", r"\1", new_word)
-        features['contains({})'.format(new_word.lower())] = True
-    return features
-
-
 spacy_nlp = spacy.load('en')
 
-stemmer = SnowballStemmer("english")
+
+def dialogue_act_features(post):
+    tokens = spacy_nlp(unicode(post))
+    features = {}
+    for tok in tokens:
+        if not tok.is_space:
+            new_word = tok.lemma_.lower()
+            features['contains({})'.format(new_word)] = True
+            features['contains({})'.format('>>>>'+tok.dep_ + ' ' + tok.tag_)] = True
+    return features
 
 dialog_tags = """Accept, Bye, Clarify, Continuer, Emotion, Emphasis,
 Greet, No Answer, Other, Reject, Statement, System, Wh-Question, Yes Answer,
@@ -98,10 +88,10 @@ class Brain:
             self.train()
             return "It is nice to learn new stuff."
         if message == ">!forget":
-            memory.forget()
+            self.memory.forget()
             return "I am reborn. So much free space :) maybe you will use files to store memory and not RAM..."
         if message == ">!load_page":
-            if memory.contains(sessionId) is False:
+            if self.memory.contains_id(sessionId) is False:
                 response = "Hello! My name is Chad and I am passionate about music."
                 response += "We can share our experiences and maybe we can get along."
                 response += "Would you mind telling me your name first?"
@@ -121,16 +111,20 @@ class Brain:
                                             mr[which]['byartist']
             return response
 
-        s = nlp.get_sentences(message)
-
         doc = spacy_nlp(message)
-        for w in doc:
-            print "(", w, w.dep_, w.pos_, w.head, ")"
+        '''for w in doc:
+            print "(", w, w.dep_, w.pos_, w.head, ")"'''
 
         data = []
 
-        for sentence in s:
-            sentence_type = self.instant_classifier.classify(dialogue_act_features(sentence))
+        for span in doc.sents:
+            tokens = [doc[i] for i in range(span.start, span.end)]
+            sentence = ''.join(doc[i].text_with_ws for i in range(span.start, span.end)).strip()
+
+            sentence_type = self.instant_classifier.classify(dialogue_act_features(tokens))
+            print(sentence_type)
+            print(sentence)
+
             new_data = dict()
             new_data["type"] = sentence_type
             polarity, subjective = pattern_en.sentiment(sentence)
@@ -152,18 +146,30 @@ class Brain:
                                 possible_subject.dep == nsubj or possible_subject.dep == nsubjpass) and possible_subject.head.pos == VERB:
                     verbs_subj.add((possible_subject, possible_subject.head))
 
-            try:
-                aiml_response = self.kernel.respond(sentence, sessionId)
-            except:
-                aiml_response = ""
-            new_data["aiml"] = aiml_response
-            new_data["memory"] = memory.respond(verbs_subj, sentence_type, sessionId)
+            if sentence_type not in ["Greet", "Bye", "Reject"]:
+                try:
+                    aiml_response = self.kernel.respond(sentence, sessionId)
+                except:
+                    aiml_response = ""
+                new_data["aiml"] = aiml_response
+            else:
+                new_data["aiml"] = ""
+            new_data["memory"] = self.memory.respond(verbs_subj, sentence_type, sessionId)
             data.append(new_data)
 
         arr_response = []
 
         for sent in data:
             sentence_response = ""
+
+            sentence_type = sent["type"]
+            try:
+                aiml_sent_type_res = self.kernel.respond(sentence_type, sessionId)
+            except:
+                aiml_sent_type_res = ""
+            if random.random() <= 0.3 or sentence_type in ["Greet", "Bye", "Reject"]:
+                sentence_response += " " + aiml_sent_type_res
+
             if len(sent["aiml"]) > 0:
                 sentence_response += aiml_response
             elif len(sent["memory"]) > 0:
@@ -173,24 +179,18 @@ class Brain:
                     sentence_response += sent["memory"]
 
             emoi = self.kernel.respond(sent["emotion"])
-            if random.random() <= 0.5:
+            if random.random() <= 0.8:
                 sentence_response += emoi
-            sentence_type = sent["type"]
-            if sentence_type not in ["whQuestion", "ynQuestion", "Statement"]:
-                try:
-                    aiml_sent_type_res = self.kernel.respond(sentence_type, sessionId)
-                except:
-                    aiml_sent_type_res = ""
-                if random.random() <= 0.5:
-                    sentence_response += " " + aiml_sent_type_res
-            sentence_response = sentence_response[0].upper() + sentence_response[1:]
-            arr_response.append(sentence_response)
+            
+            if len(sentence_response) > 0:
+                sentence_response = sentence_response[0].upper() + sentence_response[1:]
+                arr_response.append(sentence_response)
 
         response = ""
 
         if len(arr_response) == 0:
             response = "Don't know that'"
         for res in arr_response:
-            response += res + ". "
+            response += res + " "
 
         return response

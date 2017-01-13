@@ -3,16 +3,18 @@ import pickle
 from nlp import preprocess as nlp
 from nltk.stem.snowball import SnowballStemmer
 import re
+import spacy
+
+spacy_nlp = spacy.load('en')
 
 def dialogue_act_features(post):
-    stemmer = SnowballStemmer("english")
+    tokens = spacy_nlp(unicode(post))
     features = {}
-    lems = nlp.lemmatize_text(post)
-    words = nlp.tokenize_text(lems)
-    for i in range(len(words)):
-        new_word = stemmer.stem(words[i])
-        new_word = re.sub(r"(.)\1+", r"\1", new_word)
-        features['contains({})'.format(new_word.lower())] = True
+    for tok in tokens:
+        if not tok.is_space:
+            new_word = tok.lemma_.lower()
+            features['contains({})'.format(new_word)] = True
+            features['contains({})'.format('>>>>'+tok.dep_ + ' ' + tok.tag_)] = True
     return features
     
 def train():
