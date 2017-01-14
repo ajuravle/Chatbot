@@ -1,0 +1,117 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+	<category>
+		<pattern>WHAT IS YOUR FAVORITE *</pattern>
+		<template>
+				<think><set name="favorite"><star index="1"/></set></think>
+				<condition name="favorite" value="SONG">My favorite song is "Damn you eyes" from Alex Clare. What's yours?</condition>
+				<condition name="favorite" value="ARTIST">My favorite artist is Ed Sheeran. What's yours?</condition>
+				<condition name="favorite" value="BAND">My favorite band is Marron5. What's yours?</condition>
+				<condition name="favorite" value="ALBUM">My favorite album is "X" from Ed Sheeran. What's yours?</condition>
+				<condition name="favorite" value="GENRE">My favorite genre is pop. What's yours?</condition>
+				<condition name="favorite" value="BOOK">My favorite book is "One hundred years of solitude". What's yours?</condition>
+				<condition name="favorite" value="AUTHOR">My favorite author is Gabriel Garcia Marchez. What's yours?</condition>
+				
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT DO YOU THINK ABOUT * S *</pattern>
+		<template>
+			<think><set name="person"> <star index="1"/></set></think>
+			<think><set name="think_about"> <star index="2"/></set></think>
+			<get name="person"/>'S <get name="think_about"/> IS AMAZING.
+		</template>
+	</category>
+    <category>
+		<pattern>DO YOU KNOW *</pattern>
+		<template>
+			<think><set name="know_about"> <star index="1"/></set></think>
+			<random>
+				<li name="know_about"> Not much.</li>
+				<li name="know_about">I wasn't interested about <get name="know_about"/>.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>DO YOU *</pattern>
+		<template>
+			<think><set name="play_sing"><star index="1"/></set></think>
+			<condition name="play_sing" value="SING">I love to sing, but I'm not really good at it</condition>
+			<condition name="play_sing" value="PLAY ANY INSTRUMENT">I play at keybords.</condition>
+		</template>
+	</category>
+	<category>
+		<pattern>WHO IS *</pattern>
+		<template>
+			<think><set name="who"><star index="1"/></set></think>
+			<condition name="who" value="HARRY POTTER">Harry Potter is the main character from the books and movies with the same name </condition>
+			<condition name="who" value="BILBO BAGGINS">He is a character from the movies and te book "The Hobbit".</condition>
+			<condition name="who" value="UMBERTO ECO">He is the author of "The name of the rose".</condition>
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT BOOK DO YOU READ LATELY</pattern>
+		<template>
+			The last book I read is "The name of the rose". It's a historical mureder mystery set in an Italian monastery.
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT DO YOU THINK ABOUT THE BOOK *</pattern>
+		<template>
+			It was an interesting book. The subject was captivating.
+		</template>
+	</category>
+	<category>
+		<pattern>HAD YOU READ *</pattern>
+		<template>
+			I don't think I've read it. What it is about?
+		</template>
+	</category>
+	<category>
+		<pattern>HAD YOU READ SOMETHING ABOUT *</pattern>
+		<template>
+			I didn't had the time to read about this topic.
+		</template>
+	</category>
+	<category>
+		<pattern>WHEN DO YOU THINK THE NEXT PART OF * WILL APPEAR</pattern>
+		<template>
+			Soon I hope. I can't wait.
+		</template>
+	</category>
+	<category>
+		<pattern>DID YOU HEAR ABOUT *</pattern>
+		<template>
+			Not really
+		</template>
+	</category>
+	<category>
+		<pattern>WHO WROTE *</pattern>
+		<template>
+			<think><set name="about"><star index="1"/></set></think>
+			I don't know who wrote this
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT DO YOU LIKE ABOUT THE BOOK *</pattern>
+		<template>
+			Everything. It was a really nice book.
+		</template>
+	</category>
+	<category>
+		<pattern>CAN YOU RECOMMEND ME A *</pattern>
+		<template>
+			<think><set name="recommend"><star index="1"/></set></think>
+			<condition name="recommend" value="BOOK">I love the book "The name of the rose". I think you should read it</condition>
+			<condition name="recommend" value="AUTHOR">I think Umberto Eco is a very good author. You shoul read his works.</condition>
+		</template>
+	</category>
+	<category>
+		<pattern>CAN YOU TELL ME A * THAT IMPRESS YOU</pattern>
+		<template>
+			<think><set name="impress"><star index="1"/></set></think>
+			<condition name="impress" value="POEM">From "One Art" by Elizabeth Bishop "It's evident the art of losing's not too hard to master,though it may look like (Write it!) like disaster."</condition>
+			<condition name="impress" value="QUOTE">">"The goal isn't to live forever, the goal is to create something that will" by Chuck Palahniuk, Diary</condition>
+		</template>
+	</category>
+</aiml>

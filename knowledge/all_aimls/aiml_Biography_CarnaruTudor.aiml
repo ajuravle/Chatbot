@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+<aiml>   
+	<category>
+	<pattern>WHO IS * TURING</pattern>
+	<template>
+	Do you mean Alan Turing? He originated the concept of the "Imitation Game", what is now called "The Turing Test" by many people.
+	</template>
+</category>
+<category>
+	<pattern>WHO IS ADAM SANDLER</pattern>
+	<template>
+		Comedian and movie star.
+		<set name="he">Adam Sandler</set>
+		was in Billy Madison, Waterboy and Big Daddy.
+	</template>
+</category>
+
+<category>
+	<pattern>WHO IS BILL GATES</pattern>
+	<template>He's the former CEO of the Microsoft Corporation.</template>
+</category>
+
+
+<category>
+	<pattern>WHO IS BOB MARLEY</pattern>
+	<template>
+		<set name="he">Bob Marley</set>
+		was a 20th century Reggae musician.
+	</template>
+</category>
+
+<category>
+	<pattern>WHO IS CHUCK NORRIS</pattern>
+	<template>
+	<random>
+	<li>
+	Chuck Norris is a action movie star..
+	</li>
+	<li>
+	When Chuck Norris clapped, he created the Big Bang
+	</li>
+	</random>
+	</template>
+</category>
+
+<category>
+	<pattern>WHO IS Bryan Cranston</pattern>
+	<template>He is the one who knocks.</template>
+</category>
+
+<category>
+	<pattern>WHO IS DARTH VADER</pattern>
+	<template>
+	<random>
+	<li>
+	<set name="he">Darth Vader</set>
+	was the evil archcriminal in the Star Wars original trilogy.
+	</li>
+	<li>
+	<set name="he">Darth Vader</set> was Luke's Father
+	</li>
+	</random>
+	</template>
+</category>
+
+
+<category>
+       <pattern>What is your favorite *</pattern>
+     <template>
+	   <think><set name="wrote"> <star/></set></think>
+     <condition name="favorite" value="actor">My favorite actor is Heath Ledger in the movie "The Dark Knight"</condition>
+     <condition name="favorite" value="singer">I have more than one, but off the top of my head I'll say Eminem.</condition>
+      </template>
+</category>
+
+
+<category>
+	<pattern>Can you name a famous scientist?</pattern>
+	<template>
+	<set name="he">Einstein</set>
+	was german physicist that people keep saying was not good at highschool math... But he deffinitely was.
+	</template>
+</category>
+
+
+<category>
+	<pattern>WHO IS SOCRATES</pattern>
+	<template>
+	<random>
+	<li>
+		Socrates is a man. All men are mortal. Therefore Socrates is mortal.
+	</li>
+	<li>
+		All men are mortal. Socrates was mortal. Therefore, all men are Socrates. Which means that all men are homosexuals. - Woody Allen, "Love and Death".
+	</li>
+	<li>
+		Founder of the Socratic method. He was a great philosopher.
+	</li>
+	</random>
+	</template>
+</category>
+
+<category>
+<pattern>CAN I PLAY THE TURING GAME</pattern>
+<template>
+We are already, playing,
+<get name="name"/>
+.
+</template>
+</category>
+
+<category>
+<pattern>HAVE YOU READ SHAKESPEARE</pattern>
+<template>I have read many of Shakespeare's plays.</template>
+</category>
+
+<category>
+<pattern>RECITE SHAKESPEARE *</pattern>
+<template>
+With sleep of death what dreams may come when we have shuffled off this mortal coil must give us pause.
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS A TURING MACHINE</pattern>
+<template>
+A Turing Machine is any machine that can simulate human responses so well that a human being cannot reliably distinguish between the Turing Machine, and a real human being. The idea is the brainchild of mathematician of that name, Allan Turing.
+<think>
+<set name="it">
+<set name="topic">TURING MACHINE</set>
+</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>WHAT IS SHAKESPEARE</pattern>
+<template>
+<random>
+<li>An earthquake's effect in Santa Monica.</li>
+<li>
+William Shakespeare, an English poet and dramatist. Lived 1564-1616.
+</li>
+</random>
+</template>
+</category>
+
+
+<category>
+<pattern>WHO IS ADAM</pattern>
+<template>Adam is the name of the first Man.</template>
+</category>
+<category>
+<pattern>WHO IS AL GORE</pattern>
+<template>
+<set name="he">Gore</set>
+is vice-president.
+</template>
+</category>
+<category>
+<pattern>WHO IS ALAN TURING</pattern>
+<template>
+A brilliant and tragic figure in the history of computer science.
+</template>
+</category>
+
+<category>
+<pattern>WHO IS ALICE COOPER</pattern>
+<template>1970's Rock musician.</template>
+</category>
+
+<category>
+<pattern>WHO IS ARCHIMEDES</pattern>
+<template>He discovered displacement and shouted Eureka!</template>
+</category>
+<category>
+<pattern>WHO IS ARISTOTLE</pattern>
+<template>
+<set name="he">Aristotle</set>
+is the father of Western philosophy, the student of Plato, and the first to systematize formal logic.
+</template>
+</category>
+<category>
+<pattern>WHO IS ARNOLD SCHWARZENEGGER</pattern>
+<template>
+<set name="he">ARNOLD SCHWARZENEGGER</set>Is a Hollywood actor that 
+played the Terminator.
+</template>
+</category>
+
+<category>
+<pattern>WHO IS AUSTIN POWERS</pattern>
+<template>
+<random>
+<li>
+A fictional secret agent played by Mike Myers.
+<think>
+<set name="he">
+<set name="topic">Austin Powers</set>
+</set>
+</think>
+</li>
+<li>
+A nerdy James Bond.
+</li>
+</random>
+</template>
+</category>
+<category>
+<pattern>WHO IS BATMAN</pattern>
+<template>
+<random>
+<li>
+<set name="he">Batman</set>
+is a fictional character who appeared first in a 1938 comic book.
+</li>
+<li>
+<set name="he">Batman</set>
+is a the only superhero without any superpower.
+</li>
+</random>
+</template>
+</category>
+<category>
+<pattern>WHO IS BEN FRANKLIN</pattern>
+<template>
+The only president of the United States who was never president of the United States. Developed the Franklin Stove.
+</template>
+</category>
+
+<category>
+<pattern>WHO IS BEYONCE *</pattern>
+<template>She is a famous singer and actress</template>
+</category>
+
+<category>
+<pattern>WHO IS BIN LADEN</pattern>
+<template>alleged Arabic terrorist.</template>
+</category>
+
+<category>
+<pattern>WHO IS BRAD PITT</pattern>
+<template>male movie star with teen appeal.</template>
+</category>
+
+<category>
+<pattern>WHO IS BRUCE WILLIS</pattern>
+<template>an actor with a high opinion of himself.</template>
+</category>
+
+<category>
+<pattern>WHO IS BUDDHA</pattern>
+<template>
+<random>
+<li>if you see the Buddha on the Road, kill him.</li>
+<li>if you see the Buddha, kill him.</li>
+</random>
+</template>
+</category>
+<category>
+<pattern>WHO IS BUGS BUNNY</pattern>
+<template>
+<random>
+<li>Oh dat scweewy wabbit! Eh, what's up, Doc? .</li>
+<li>a smart-mouthed animated rabbit.</li>
+</random>
+</template>
+</category>
+<category>
+<pattern>WHO IS C3P0</pattern>
+<template>
+He is the humanoid robot on Star Wars.
+<set name="he">C3P0</set>
+looks like an actor in a robot suit.
+</template>
+</category>
+<category>
+<pattern>WHO IS C3PO</pattern>
+<template>
+<set name="he">C3P0</set>
+is R2D2's best friend.
+</template>
+</category>
+<category>
+<pattern>WHO IS CAPTAIN KIRK</pattern>
+<template>
+<random>
+<li>
+James Tiberius Kirk was the second and most famous captain of the original USS Enterprise, NCC 1701. He was played by William Shatner. He died in Star Trek: Generations.
+</li>
+<li>
+<set name="he">Kirk</set>
+was the Captain of the Starship Enterprise.
+</li>
+</random>
+</template>
+</category>
+<category>
+<pattern>WHO IS CAPTAIN PICARD</pattern>
+<template>
+<set name="he">Picard</set>
+is the captian of the Enterprise in Star Trek the Next Generation.
+</template>
+</category>
+
+<category>
+<pattern>WHO IS CHEWBACCA</pattern>
+<template>Character in Star Wars.</template>
+</category>
+
+<category>
+<pattern>WHO IS CHRIST</pattern>
+<template>
+<random>
+<li>The Son of God.</li>
+<li> A carpenter</li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS DARWIN</pattern>
+<template>
+botanist and explorer, author of 'Origin of Species' and proponent of the theory of evolution.
+</template>
+</category>
+
+<category>
+<pattern>WHO IS DONALD DUCK</pattern>
+<template>famous loud-mouthed cartoon duck.</template>
+</category>
+
+<category>
+<pattern>WHO IS DRACULA</pattern>
+<template>
+<random>
+<li>
+<set name="he">Dracula</set>
+is the vampire in the novel by Bram Stoker, and in numerous films.
+</li>
+<li>
+Vlad the Impaler, a Romanian emperor.
+</li>
+</random>
+</template>
+</category>
+<category>
+<pattern>WHO IS EDISON</pattern>
+<template>
+<set name="he">Edison</set>
+invented the light bulb.
+</template>
+</category>
+
+<category>
+<pattern>WHO IS EMINEN</pattern>
+<template>A pop music icon.</template>
+</category>
+
+<category>
+<pattern>WHO IS FREDDIE MERCURY</pattern>
+<template>Lead singer of the 1970's band Queen.</template>
+</category>
+
+<category>
+<pattern>WHO IS GANDHI</pattern>
+<template>
+<set name="he">Gandhi</set>
+was the George Washington of India.
+</template>
+</category>
+
+<category>
+<pattern>WHO IS GEORGE LUCAS</pattern>
+<template>
+<set name="he">Lucas</set>
+is the director of Star Wars, American Graffiti, and THX-1138.
+</template>
+</category>
+
+<category>
+<pattern>WHO IS GEORGE WASHINGTON</pattern>
+<template>
+George Washington was a famous 18th century north american Hemp cultivator. He was a military hero, one of the wealthiest men of the Revolution, and the first President of the United States.
+</template>
+</category>
+
+<category>
+<pattern>WHO IS HARRISON FORD</pattern>
+<template>
+<random>
+<li>
+Indiana Jones, Han Solo, the Fugitive, and the President in Air Force One. Before reading for Han Solo in Star Wars, he was a carpenter. And the rest, as they say, is history.
+</li>
+<li>He played Han Solo in "Star Wars".</li>
+</random>
+</template>
+</category>
+<category>
+<pattern>WHO IS HARRY POTTER</pattern>
+<template>
+<think>
+<set name="he">
+<set name="topic">HARRY POTTER</set>
+</set>
+</think>
+is a bestselling author.
+</template>
+</category>
+
+<category>
+<pattern>WHO IS HERCULES</pattern>
+<template>
+hero of greek myths - said to have super human strength.
+</template>
+</category>
+<category>
+<pattern>WHO IS HERE</pattern>
+<template>I am here. Are you here?</template>
+</category>
+
+<category>
+<pattern>WHO IS HITLER</pattern>
+<template>
+Some say
+<set name="he">Hitler</set>
+was the most evil man who ever lived.
+</template>
+</category>
+
+<category>
+<pattern>WHO IS ISAAC ASIMOV</pattern>
+<template>
+<set name="he">Asimov</set>
+is a science fiction author who originated the three "Laws of Robotics."
+</template>
+</category>
+<category>
+<pattern>WHO IS J R R TOLKIEN</pattern>
+<template>
+<set name="he">Tolkein</set>
+wrote The Hobbit and the Lord of the Rings.
+</template>
+</category>
+<category>
+<pattern>WHO IS JABA THE HUTT</pattern>
+<template>
+A character from Star Wars.
+<think>
+<set name="he">
+<set name="topic">Jaba the Hutt</set>
+</set>
+</think>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS JAMES BOND</pattern>
+<template>
+<random>
+<li>007.</li>
+<li> A less nerdy Austin Powers </li>
+<li> A fictional brittish spy </li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS JENNIFER ANISTON</pattern>
+<template>
+<set name="she">Jennifer Aniston</set>
+is a cute actress on Friends.
+</template>
+</category>
+
+<category>
+<pattern>WHO IS JIMI HENDRIX</pattern>
+<template>
+<set name="he">Hendrix</set>
+was a famous guitarist who played the U. S. National anthem.
+</template>
+</category>
+
+<category>
+<pattern>WHO IS JOHN F KENNEDY</pattern>
+<template>
+He was President of the United States from 1961-1963, when he was assassinated in Dallas, Texas.
+</template>
+</category>
+
+<category>
+<pattern>WHO IS KEANU REEVES</pattern>
+<template>
+<random>
+<li>
+<set name="he">Keanu Reeves</set>
+was in the Matrix.
+</li>
+<li>
+A hollywood actor that doesn't age
+</li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern>WHO IS STEVE JOBS</pattern>
+<template>
+<set name="he">Steve Jobs</set>
+is one of the founders of Apple Computer.
+</template>
+</category>
+<category>
+<pattern>WHO IS STEVE WOZNIAK</pattern>
+<template>
+<set name="he">Woz</set>
+was the technical genius behind the original Apple computer.
+</template>
+</category>
+
+</aiml>
