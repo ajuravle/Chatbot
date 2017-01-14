@@ -7,8 +7,9 @@ import search
 import json, random
 import pickle
 from memory import memory
+import language_check
 
-
+tool = language_check.LanguageTool('en-US')
 spacy_nlp = spacy.load('en')
 
 
@@ -42,6 +43,16 @@ pron_translate["ours"] = "your"
 pron_translate["we"] = "you"
 
 
+emotion_th = dict()
+emotion_th["NEUTER"] = 0.1
+emotion_th["SUPER HAPPY"] = 1.0
+emotion_th["GOOD SURPRISE"] = 1.0
+emotion_th["FEAR"] = 0.5
+emotion_th["COOL"] = 0.5
+emotion_th["SAD"] = 0.5
+emotion_th["ANGER"] = 0.9
+
+
 def get_emotion(polarity):
     emotion = "NEUTER"
     if polarity > 0.8:
@@ -57,6 +68,9 @@ def get_emotion(polarity):
     elif polarity < -0.7:
         emotion = "ANGER"
     return emotion
+
+# bot_topics = [ "INTRO", "NAME", "HOBBY", "THINK", "JOKE", "SEARCH", "NEWS", "FACT" ]
+bot_topics = [ "INTRO", "NAME", "HOBBY", "THINK", "JOKE" ]
 
 
 class Brain:
@@ -90,12 +104,13 @@ class Brain:
         if message == ">!forget":
             self.memory.forget()
             return "I am reborn. So much free space :) maybe you will use files to store memory and not RAM..."
+        if message == ">!memory":
+            return str(self.memory.memory)
         if message == ">!load_page":
             if self.memory.contains_id(sessionId) is False:
-                response = "Hello! My name is Chad and I am passionate about music."
-                response += "We can share our experiences and maybe we can get along."
-                response += "Would you mind telling me your name first?"
-                expect[sessionId] = "name"
+                # response = "Hello! My name is Chad and I am passionate about music."
+                # response += "We can share our experiences and maybe we can get along."
+                expect[sessionId] = [ "INTRO", "NAME" ]
             else:
                 response = "Welcome back!"
                 with open('results.json') as data_file:
@@ -109,24 +124,50 @@ class Brain:
                             else:
                                 response += " You can check out this cool song, " + mr[which]['name'] + ", by " + \
                                             mr[which]['byartist']
+                return response
+
+        if message in [">!not_exists", ">!load_page"] or expect[sessionId][0] == "NAME" :
+            expect[sessionId].append(random.choice(bot_topics[2:]))
+            bot_q = expect[sessionId][0]
+            bot_q_aiml = "Q " + bot_q
+            try:
+                aiml_response = self.kernel.respond(bot_q_aiml, sessionId)
+            except:
+                aiml_response = ""
+            response = aiml_response
+            expect[sessionId].pop(0)
             return response
 
+        if random.random() < 0.1:
+            expect[sessionId].append(random.choice(bot_topics[2:]))
+
+        matches = tool.check(unicode(message))
+        message = language_check.correct(unicode(message), matches)
+        print(message)
         doc = spacy_nlp(message)
         '''for w in doc:
             print "(", w, w.dep_, w.pos_, w.head, ")"'''
 
         data = []
 
+        random_strings = 0
+        num_tokens = 0
+
         for span in doc.sents:
             tokens = [doc[i] for i in range(span.start, span.end)]
             sentence = ''.join(doc[i].text_with_ws for i in range(span.start, span.end)).strip()
+            sentence_no_punct = ''.join(doc[i].text_with_ws for i in range(span.start, span.end) if doc[i].is_punct is False).strip()
+
+            num_tokens += len(tokens)
+            for tok in tokens:
+                if tok.is_oov:
+                    random_strings += 1
 
             sentence_type = self.instant_classifier.classify(dialogue_act_features(tokens))
             print(sentence_type)
-            print(sentence)
 
             new_data = dict()
-            new_data["type"] = sentence_type
+            new_data["type"] = sentence_type.upper()
             polarity, subjective = pattern_en.sentiment(sentence)
             sent = pattern_en.parse(sentence, lemmata=True)
             sent = pattern_en.Sentence(sent)
@@ -139,48 +180,59 @@ class Brain:
             new_data["emotion"] = get_emotion(polarity)
 
             verbs_subj = set()
-            sentence = sentence[0].upper() + sentence[1:]
-            doc = spacy_nlp(sentence)
-            for possible_subject in doc:
-                if (
-                                possible_subject.dep == nsubj or possible_subject.dep == nsubjpass) and possible_subject.head.pos == VERB:
+            for possible_subject in span:
+                if (possible_subject.dep == nsubj or possible_subject.dep == nsubjpass) and possible_subject.head.pos == VERB:
                     verbs_subj.add((possible_subject, possible_subject.head))
 
-            if sentence_type not in ["Greet", "Bye", "Reject"]:
-                try:
-                    aiml_response = self.kernel.respond(sentence, sessionId)
-                except:
-                    aiml_response = ""
-                new_data["aiml"] = aiml_response
+            try:
+                aiml_response = self.kernel.respond(sentence_no_punct.upper(), sessionId)
+            except:
+                aiml_response = ""
+            new_data["aiml"] = aiml_response
+
+            if len(verbs_subj) > 0:
+                new_data["memory"] = self.memory.respond(verbs_subj, sentence_type, sessionId)
             else:
-                new_data["aiml"] = ""
-            new_data["memory"] = self.memory.respond(verbs_subj, sentence_type, sessionId)
+                new_data["memory"] = ""
             data.append(new_data)
 
         arr_response = []
 
+        if random_strings / num_tokens > 0.3:
+            random_response = [
+                "I can't understand what you're saying.",
+                "If you want us to have a nice conversation, try to write undersandable words",
+                "How about we have a normal conversation?",
+                "Hey, please try to write something readable.Thank you!",
+                "Don't write like that, because if I would do it, you wouldn't like it",
+                "I noticed you like to tap random keys on your keyboard! Funny, but please don't do it anymore",
+                "Heh. I also like to play tap-related games on my mobile device, but not on my keyboard.",
+                "Please consider using your keyboard for writing actual words" ]
+            response = random.choice(random_response)
+            return response
+
         for sent in data:
             sentence_response = ""
 
-            sentence_type = sent["type"]
-            try:
-                aiml_sent_type_res = self.kernel.respond(sentence_type, sessionId)
-            except:
-                aiml_sent_type_res = ""
-            if random.random() <= 0.3 or sentence_type in ["Greet", "Bye", "Reject"]:
-                sentence_response += " " + aiml_sent_type_res
-
             if len(sent["aiml"]) > 0:
                 sentence_response += aiml_response
-            elif len(sent["memory"]) > 0:
-                if sent["memory"] == "memorate":
-                    sentence_response += self.kernel.respond("memorate", sessionId)
+            else:
+                if len(sent["memory"]) > 0:
+                    if sent["memory"] == "memorate":
+                        sentence_response += self.kernel.respond("memorate", sessionId)
+                    else:
+                        sentence_response += sent["memory"]
                 else:
-                    sentence_response += sent["memory"]
+                    sentence_type = sent["type"]
+                    try:
+                        aiml_sent_type_res = self.kernel.respond(sentence_type, sessionId)
+                    except:
+                        aiml_sent_type_res = ""
+                    sentence_response += " " + aiml_sent_type_res
 
             emoi = self.kernel.respond(sent["emotion"])
-            if random.random() <= 0.8:
-                sentence_response += emoi
+            if random.random() <= emotion_th[sent["emotion"]]:
+                sentence_response += " " + emoi
             
             if len(sentence_response) > 0:
                 sentence_response = sentence_response[0].upper() + sentence_response[1:]

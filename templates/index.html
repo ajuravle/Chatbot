@@ -15,11 +15,16 @@
 		<script type="text/javascript" src="{{ url_for('static', filename='js/front.js') }}"></script>
         <script type="text/javascript">
 
+            timestart = 0
+
             window.onload = function(){
 				
 				var chatlist = $('#chat__list');
                 var div = $('body');
                 height = div.height();
+
+                var d = new Date()
+                var timestart = d.getTime();
 				
 				chatlist.append("<li class=\"chat__list__item chat__list__item-new\"><a target=\"_blank\" href=\"#\" class=\"chat__list__item__author\">Chad</a> <a target=\"_blank\" href=\"#\"><img class=\"chat__avatar\" src=\"{{ url_for('static', filename='img/Untitled-2.jpg') }}\">  </a>   <div class=\"chat__bubble chat__bubble--bot chat__bubble--typing\">  </div> </li>")
 				var elem = $('.chat__bubble--typing');
@@ -45,6 +50,45 @@
                     }, "json");
                     $('input[type="text"], textarea').val('');
 			}
+
+
+            window.setInterval(function(){
+                    var chatlist = $('#chat__list');
+                    var div = $('body');
+                    height = div.height();
+                    var d = new Date()
+                    var current_time = d.getTime()
+                    var diff = (current_time - timestart)
+                    console.log(diff, current_time, timestart)
+                    if (diff > 15000 + Math.random() * 15000) {
+
+                        chatlist.append("<li class=\"chat__list__item chat__list__item-new\"><a target=\"_blank\" href=\"#\" class=\"chat__list__item__author\">Chad</a> <a target=\"_blank\" href=\"#\"><img class=\"chat__avatar\" src=\"{{ url_for('static', filename='img/Untitled-2.jpg') }}\">  </a>   <div class=\"chat__bubble chat__bubble--bot chat__bubble--typing\">  </div> </li>")
+                        var elem = $('.chat__bubble--typing');
+                        window.setTimeout(function(){elem.addClass("chat__bubble--slideIn");}, 100);
+                        window.setTimeout(function(){elem.addClass("chat__bubble--fade");}, 500);
+
+                        $.post("/respond", {"user_input" : ">!not_exists"}, function(jsonData){
+
+                            var x = JSON.stringify(jsonData)
+                            x = JSON.parse(x)["response"]
+                            console.log(x)
+                            var elem = $('.chat__bubble--typing');
+                            window.setTimeout(function(){elem.addClass("chat__bubble--slideIn");}, 100);
+                            window.setTimeout(function(){elem.addClass("chat__bubble--fade");}, 500);
+                            window.setTimeout(function(){
+                                elem.removeClass('chat__bubble--typing')
+                                elem.append('<span>' + x + '</span>');
+                            }, 1000)
+
+                            div.animate({scrollTop: height}, 500);
+                            height += div.height();
+                            timestart = d.getTime()
+                        }, "json");
+
+                    }
+
+             }, 10000);
+
         
             $(document).ready(function(){
                 
@@ -74,6 +118,7 @@
                             window.setTimeout(function(){elem.addClass("chat__bubble--fade");}, 500);
                         }, "json");
                         $.post("/respond", $(this).serialize(), function(jsonData){
+
                             var x = JSON.stringify(jsonData)
                             x = JSON.parse(x)["response"]
                             console.log(x)
@@ -88,6 +133,7 @@
 
                             div.animate({scrollTop: height}, 500);
                             height += div.height();
+                            timestart = new Date().getTime();
                         }, "json");
                     }
                     $('input[type="text"], textarea').val('');

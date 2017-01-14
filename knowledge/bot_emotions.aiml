@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+<category>
+	<pattern>NEUTER</pattern>
+	<template>
+		<random>
+			<li>hmm </li>
+			<li>uh </li>
+			<li>oh </li>
+			<li>ahm </li>
+			<li>mmm </li>
+			<li>yeah... </li>
+		</random>
+	</template>
+</category>
+<category>
+	<pattern>SUPER HAPPY</pattern>
+	<template>
+		<random>
+			<li>Glad to hear that.</li>
+			<li>Nice! </li>
+			<li>Super! </li>
+			<li>Hahah :D </li>
+			<li>Awesome!! </li>
+			<li>WOW!! </li>
+		</random>
+	</template>
+</category>
+<category>
+	<pattern>GOOD SURPRISE</pattern>
+	<template>
+		<random>
+			<li>Wow..! Glad ..</li>
+			<li>Yee! </li>
+			<li>Uhuu! </li>
+			<li>Really?! I'm Glad! </li>
+		</random>
+	</template>
+</category>
+<category>
+	<pattern>FEAR</pattern>
+	<template>
+		<random>
+			<li>Good you told me, but now I'm scared.</li>
+			<li>Let's hope not...</li>
+			<li>That is scary! </li>
+			<li>No way!</li>
+		</random>
+	</template>
+</category>
+<category>
+	<pattern>COOL</pattern>
+	<template>
+		<random>
+			<li>Cool.</li>
+			<li>Good.</li>
+			<li>Nice.</li>
+			<li>Good to hear.</li>
+		</random>
+	</template>
+</category>
+<category>
+	<pattern>SAD</pattern>
+	<template>
+		<random>
+			<li>:(</li>
+			<li>:((</li>
+			<li>That is sad.</li>
+		</random>
+	</template>
+</category>
+<category>
+	<pattern>ANGER</pattern>
+	<template>
+		<random>
+			<li>***** </li>
+			<li>WTF?!! </li>
+			<li>How??!! </li>
+		</random>
+	</template>
+</category>
+</aiml>

@@ -1,15 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <aiml>
-<category>
-	<pattern>GREET</pattern>
-	<template>
-		<random>
-			<li>Hello! Nice to meet you</li>
-			<li>Hi! Nice to meet you.</li>
-			<li>Hi there!</li>
-			<li>Hello!</li>
-		</random>
-	</template>
-</category>
+	<category>
+		<pattern>GREET</pattern>
+		<template>
+			<random>
+				<li>Hello! Nice to meet you</li>
+				<li>Hi! Nice to meet you.</li>
+				<li>Hi there!</li>
+				<li>Hello!</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+	    <pattern>HI</pattern>
+	    <template>
+	        <srai>GREET</srai>
+	    </template>
+	</category>
+
+	<category>
+		<pattern>HOWDY</pattern>
+		<template>
+			<srai>GREET</srai>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>HALLO</pattern>
+		<template>
+			<srai>GREET</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>HELLO</pattern>
+		<template>
+			<srai>GREET</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>HEY</pattern>
+		<template>
+			<srai>GREET</srai>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>HI THERE</pattern>
+		<template>
+			<srai>GREET</srai>
+		</template>
+	</category>
+	<category>
+	    <pattern>HI *</pattern>
+	    <template>
+	        <srai>GREET</srai>
+	    </template>
+	</category>
+
+	<category>
+		<pattern>HOWDY *</pattern>
+		<template>
+			<srai>GREET</srai>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>HALLO *</pattern>
+		<template>
+			<srai>GREET</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>HELLO *</pattern>
+		<template>
+			<srai>GREET</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>HEY *</pattern>
+		<template>
+			<srai>GREET</srai>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>HI THERE *</pattern>
+		<template>
+			<srai>GREET</srai>
+		</template>
+	</category>
+
 <category>
 	<pattern>BYE</pattern>
 	<template>
