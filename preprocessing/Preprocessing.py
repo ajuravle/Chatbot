@@ -6,7 +6,7 @@ from concurrent.futures import ProcessPoolExecutor
 import nltk
 import os
 import nltk.data
-from nltk.corpus.reader import path_similarity, Synset, time
+from nltk.corpus.reader import path_similarity, Synset, time, WordNetError
 from nltk.parse import stanford
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import wordnet as wn
@@ -313,62 +313,76 @@ class MyHandler(PatternMatchingEventHandler):
         print("Created")
         self.process(event)
 
-# if __name__ == "__main__":
-#
-#     logging.basicConfig(level=logging.INFO,
-#                         format='%(asctime)s - %(message)s',
-#                         datefmt='%Y-%m-%d %H:%M:%S')
-#     path = sys.argv[1] if len(sys.argv) > 1 else '.'
-#     event_handler = LoggingEventHandler()
-#     my_handler = MyHandler()
-#     observer = Observer()
-#     observer.schedule(my_handler, "E:/FII/3/IA/module_3", recursive=False)
-#     observer.start()
-#     try:
-#         while True:
-#             time.sleep(1)
-#     except KeyboardInterrupt:
-#         observer.stop()
-#     observer.join()
+if __name__ == "__main__":
 
-# *********************************************************************************
-from nltk.corpus import wordnet
-from nltk.tokenize import word_tokenize
-from random import randint
-import nltk.data
+    logging.basicConfig(level=logging.INFO,
+                        format='%(asctime)s - %(message)s',
+                        datefmt='%Y-%m-%d %H:%M:%S')
+    path = sys.argv[1] if len(sys.argv) > 1 else '.'
+    event_handler = LoggingEventHandler()
+    my_handler = MyHandler()
+    observer = Observer()
+    observer.schedule(my_handler, "E:/FII/3/IA/module_3", recursive=False)
+    observer.start()
+    try:
+        while True:
+            time.sleep(1)
+    except KeyboardInterrupt:
+        observer.stop()
+    observer.join()
 
 
-def reformulate(init_sentence):
-    output = ""
-    tokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
-    tokenized = tokenizer.tokenize(init_sentence)
-    words = word_tokenize(init_sentence)
-    tagged = nltk.pos_tag(words)
+def reform(text):
+    """
+    Method written by Dinu Georgiana
+	:param text:
+	:return: Reformulated text.
+	"""
+    proccesed_text = dict()
+    text = check_grammar(text)
+    sentenced_text = get_sentences(text)
 
-    for i in range(0, len(words)):
-        replacements = []
+    for sentence in sentenced_text:
+        tokenized_text = nltk.tokenize.word_tokenize(sentence)
+        pos_tagged_text = nltk.pos_tag(tokenized_text)
+        prop_reformulata = ''
+        i = 0
+        for token in tokenized_text:
+            wl = WordNetLemmatizer()
+            # lem = wl.lemmatize(token)
+            ss = wn.synsets(token)
+            #print(pos_tagged_text[i],ss)
+            # lem = wl.lemmatize(token)
 
-        for syn in wordnet.synsets(words[i]):
+            # print(ss)
+            if pos_tagged_text[i][1] == 'JJ' or pos_tagged_text[i][1] == 'JJR' or pos_tagged_text[i][1] == 'JJS':
+                f = token + '.a.' + '01'
+            elif pos_tagged_text[i][1] == 'NN' or pos_tagged_text[i][1] == 'NNP' or pos_tagged_text[i][1] == 'NNPS' or pos_tagged_text[i][1][0] == 'NNS':
+                f = token + '.n.' + '01'
+            elif pos_tagged_text[i][1] == 'VB' or pos_tagged_text[i][1] == 'VBD' or pos_tagged_text[i][1] == 'VBG' or pos_tagged_text[i][1][0] == 'VBN' or pos_tagged_text[i][1] == 'VBP' or pos_tagged_text[i][1] == 'VBZ':
+                f = token + '.v.' + '01'
+            else:
+                f = token + '.x.' + '01'
 
-            if tagged[i][1] == 'NNP' or tagged[i][1] == 'DT':
-                break
+            try:
+                first = wn.synset(f)
+                maxi=0.0
+                word=''
+                for j in range(0,len(ss)):
+                    ## AICI AFISEZ SCORUL DE EGALITATE AL CUVANTULUI CU TOATE SINONIMELE SALE,PENTRU ASTA AM CONCATENAREA DE MAI SUS
+                    if first.path_similarity(ss[j]) != None and first.path_similarity(ss[j]) != 1.0 and ss[j].name().split(".")[0]!= token:
+                        #print(first.path_similarity(ss[j]))
+                        if first.path_similarity(ss[j]) > maxi:
+                            word=ss[j].name().split(".")[0]
+                            maxi=first.path_similarity(ss[j])
+                #print(word)
+                if len(word)>0:
+                    prop_reformulata = prop_reformulata + word + ' '
+                else:
+                    prop_reformulata = prop_reformulata + token + ' '
+            except (KeyError,WordNetError):
+                prop_reformulata = prop_reformulata + token + ' '
+            i += 1
+    print(prop_reformulata)
 
-            word_type = tagged[i][1][0].lower()
-
-            if syn.name().find("." + word_type + "."):
-                r = syn.name()[0:syn.name().find(".")]
-                replacements.append(r)
-
-        if len(replacements) > 0:
-            replacement = replacements[randint(0, len(replacements) - 1)]
-            output = output + " " + replacement
-        else:
-            output = output + " " + words[i]
-            # print(replacements)
-    print(output)
-
-
-# process_text()
-
-reformulate(
-    "In truth money stopped meaning anything to most people two generations ago because the government provides all necessities for free.")
+# reform('The quick brown fox jumps over the lazy dog.')

@@ -3,7 +3,18 @@ from nltk.tokenize import word_tokenize
 from random import randint
 import nltk.data
 
+
 def reformulate(init_sentence):
+	"""
+	Reformulates a given input text.
+	Code written by:
+	- Ene Andrei
+	- Gurau Marian
+	- Latu Bogdan
+	:param init_sentence: Sentence to be reformulated (str)
+	:return: A reformulated sentence (str)
+	"""
+
 	output = ""
 	tokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
 	tokenized = tokenizer.tokenize(init_sentence)
@@ -32,4 +43,4 @@ def reformulate(init_sentence):
 		#print(replacements)
 	print (output)
 
-# reformulate("In truth money stopped meaning anything to most people two generations ago because the government provides all necessities for free.")
+reformulate("In truth money stopped meaning anything to most people two generations ago because the government provides all necessities for free.")
