@@ -29,8 +29,9 @@ def send():
 def process():
     request.get_data()
     message = request.form['user_input']
-    res = brain_ai.process(message)
-    out = {"response": res}
+    res, wait = brain_ai.process(message)
+    print(res, wait)
+    out = {"response": res, "wait": str(wait)}
     return jsonify(out)
 
 

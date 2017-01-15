@@ -33,9 +33,12 @@
 				
 				$.post("/respond", {"user_input" : ">!load_page"}, function(jsonData){
                         var x = JSON.stringify(jsonData)
-                        x = JSON.parse(x)["response"]
+                        var json = JSON.parse(x)
+                        var wait = parseInt(json["wait"])
+                        x = json["response"]
+                        var response_time = x.length * 10
                         console.log(x)
-                        window.setTimeout(function(){}, 2000)
+                        window.setTimeout(function(){}, 2000 + wait)
 						var elem = $('.chat__bubble--typing');
 						
 						window.setTimeout(function(){elem.addClass("chat__bubble--slideIn");}, 100);
@@ -43,7 +46,7 @@
 						window.setTimeout(function(){
 							elem.removeClass('chat__bubble--typing')
 							elem.append('<span>' + x + '</span>');
-						}, 1000)
+						}, 2000 + response_time)
 						
                         div.animate({scrollTop: height}, 500);
                         height += div.height();
@@ -60,7 +63,8 @@
                     var current_time = d.getTime()
                     var diff = (current_time - timestart)
                     console.log(diff, current_time, timestart)
-                    if (diff > 15000 + Math.random() * 15000) {
+                    var input_value = $("#user-input").val()
+                    if (diff > 15000 + Math.random() * 15000 && input_value.length == 0) {
 
                         chatlist.append("<li class=\"chat__list__item chat__list__item-new\"><a target=\"_blank\" href=\"#\" class=\"chat__list__item__author\">Chad</a> <a target=\"_blank\" href=\"#\"><img class=\"chat__avatar\" src=\"{{ url_for('static', filename='img/Untitled-2.jpg') }}\">  </a>   <div class=\"chat__bubble chat__bubble--bot chat__bubble--typing\">  </div> </li>")
                         var elem = $('.chat__bubble--typing');
@@ -70,15 +74,19 @@
                         $.post("/respond", {"user_input" : ">!not_exists"}, function(jsonData){
 
                             var x = JSON.stringify(jsonData)
-                            x = JSON.parse(x)["response"]
+                            var json = JSON.parse(x)
+                            var wait = parseInt(json["wait"])
+                            x = json["response"]
+                            var response_time = x.length * 10
                             console.log(x)
+                            window.setTimeout(function(){}, 2000 + wait)
                             var elem = $('.chat__bubble--typing');
                             window.setTimeout(function(){elem.addClass("chat__bubble--slideIn");}, 100);
                             window.setTimeout(function(){elem.addClass("chat__bubble--fade");}, 500);
                             window.setTimeout(function(){
                                 elem.removeClass('chat__bubble--typing')
                                 elem.append('<span>' + x + '</span>');
-                            }, 1000)
+                            }, 2000 + response_time)
 
                             div.animate({scrollTop: height}, 500);
                             height += div.height();
@@ -87,7 +95,7 @@
 
                     }
 
-             }, 10000);
+             }, 5000);
 
         
             $(document).ready(function(){
@@ -112,6 +120,7 @@
                             chatlist.append(ret);
                             div.animate({scrollTop: height}, 500);
                             height += div.height();
+
                             chatlist.append("<li class=\"chat__list__item chat__list__item-new\"><a target=\"_blank\" href=\"#\" class=\"chat__list__item__author\">Chad</a> <a target=\"_blank\" href=\"#\"><img class=\"chat__avatar\" src=\"{{ url_for('static', filename='img/Untitled-2.jpg') }}\">  </a>   <div class=\"chat__bubble chat__bubble--bot chat__bubble--typing\">  </div> </li>")
                             var elem = $('.chat__bubble--typing');
                             window.setTimeout(function(){elem.addClass("chat__bubble--slideIn");}, 100);
@@ -120,16 +129,21 @@
                         $.post("/respond", $(this).serialize(), function(jsonData){
 
                             var x = JSON.stringify(jsonData)
-                            x = JSON.parse(x)["response"]
+                            var json = JSON.parse(x)
+                            var wait = parseInt(json["wait"])
+                            x = json["response"]
                             console.log(x)
+                            var response_time = x.length * 10
+                            window.setTimeout(function(){}, 2000 + wait)
+
                             var elem = $('.chat__bubble--typing');
                             window.setTimeout(function(){elem.addClass("chat__bubble--slideIn");}, 100);
                             window.setTimeout(function(){elem.addClass("chat__bubble--fade");}, 500);
                             window.setTimeout(function(){
                                 elem.removeClass('chat__bubble--typing')
-                                elem.append('<span>' + x + '</span>');
-                            }, 1000)
-
+                                if (elem.find('span').length == 0)
+                                    elem.append('<span>' + x + '</span>');
+                            }, 2000 + response_time)
 
                             div.animate({scrollTop: height}, 500);
                             height += div.height();

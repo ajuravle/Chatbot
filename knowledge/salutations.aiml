@@ -182,6 +182,35 @@
 		</random>
 	</template>
 </category>
+
+<category>
+	<pattern>YANSWER</pattern>
+	<template>
+		<random>
+			<li>I will remember.</li>
+			<li>I am glad we agree.</li>
+			<li>So you agree.</li>
+			<li>Cool.</li>
+			<li>I think the same.</li>
+			<li>I have quite a different perspective.</li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>NANSWER</pattern>
+	<template>
+		<random>
+			<li>I will remember.</li>
+			<li>I am glad we agree.</li>
+			<li>So you agree.</li>
+			<li>Cool.</li>
+			<li>I think the same.</li>
+			<li>I have quite a different perspective.</li>
+		</random>
+	</template>
+</category>
+
 <category>
 	<pattern>MEMORATE</pattern>
 	<template>

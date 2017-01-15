@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
 	<category>
+	    <pattern>Q GREET</pattern>
+	    <template>
+	    	<srai>GREET</srai>
+	    </template>
+	</category>
+	<category>
 	    <pattern>Q INTRO</pattern>
 	    <template>
-	        Hello! My name is Chad and I am passionate about music. We can share our experiences and maybe we can get along.
+	    	<random>
+	    		<li>My name is Chad and I am passionate about music. Lets get to know each other first :D</li>
+	    		<li>I am Chad. I think this is the first time we meet.</li>
+	    		<li>I am Chad. I would like to know you.</li>
+	    		<li>People call me Chad. They usually like me for my personality, but lets get to know each other first :D</li>
+	    		<li>I am Chad and I like talking about music. Hope you like it too!</li>
+	    		<li>My name is Chad. I would be glad to get to know you! :D</li>
+	    	</random>
 	    </template>
 	</category>
 	<category>
@@ -81,6 +94,11 @@
 	<category>
 		<pattern>Q JOKE</pattern>
 		<template>
+			<random>
+				<li>Funny...</li>
+				<li>Check this out :)) </li>
+				<li>Hear this , lol, </li>
+			</random>
 			<random>
 				<li>Q: What do you call a blonde with two brain cells? A: Pregnant.</li>
 				<li>A neutron walks into a bar and orders a drink. When the neutron gets his drink, he asks, "Bartender, how much do I owe you?" The bartender replies, "For you, neutron, no charge."</li>

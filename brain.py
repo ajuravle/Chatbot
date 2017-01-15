@@ -1,5 +1,6 @@
 import aiml, os, re
 import pattern.en as pattern_en
+from pattern.en import wordnet
 import spacy
 from spacy.symbols import *
 from spacy.tokens.token import Token
@@ -70,7 +71,83 @@ def get_emotion(polarity):
     return emotion
 
 # bot_topics = [ "INTRO", "NAME", "HOBBY", "THINK", "JOKE", "SEARCH", "NEWS", "FACT" ]
-bot_topics = [ "INTRO", "NAME", "HOBBY", "THINK", "JOKE" ]
+bot_topics = ["GREET", "INTRO", "NAME", "HOBBY", "THINK", "JOKE", "FACT"]
+
+def song_suggestion():
+    response = ""
+    with open('results.json') as data_file:
+        data = json.load(data_file)
+        for i in range(10):
+            if 'musicrecording' in data['items'][i]['pagemap']:
+                mr = data['items'][i]['pagemap']['musicrecording']
+                which = random.randint(0, len(mr) - 1)
+                if 'name' not in mr[which]:
+                    response += " Did you know that " + mr[which]['byartist'] + " has released a new song?"
+                else:
+                    response += " You can check out this cool song, " + mr[which]['name'] + ", by " + \
+                                mr[which]['byartist']
+                break
+    return response
+
+def reformulate(data_in):
+    doc = spacy_nlp(unicode(data_in))
+    response = ""
+
+    map_pos = dict()
+    map_pos["ADJ"] = pattern_en.ADJECTIVE
+    map_pos["NOUN"] = pattern_en.NOUN
+    map_pos["VERB"] = pattern_en.VERB
+    map_pos["ADV"] = pattern_en.ADVERB
+
+    for tok in doc:
+        # print(tok.text)
+        if tok.pos_ in map_pos:
+            try:
+                partofspeech = map_pos[tok.pos_]
+                s = wordnet.synsets(tok.lower_, pos=partofspeech)[0]
+                syn_list = [ s.gloss, s.synonyms, s.hypernym, s.meronyms()]
+                if partofspeech in [pattern_en.VERB, pattern_en.ADJECTIVE]:
+                    sim = s.similar()
+                    if len(sim) > 0:
+                        response += random.choice(sim).synonyms[0] + " "
+                    else:
+                        response += tok.text_with_ws
+                else:
+                    if len(syn_list[1]) > 0:
+                        response += random.choice(syn_list[1]) + " "
+                    else:
+                        response += tok.text_with_ws
+                    if random.random() < 1.0:
+                        if len(syn_list[0]) > 0:
+                            definition = spacy_nlp(syn_list[0])
+                            span = definition.sents[0]
+                            response += "... By definition " + tok.text + " is "
+                            sentence = ''.join(definition[i].text_with_ws for i in range(span.start, span.end)).strip()
+                            response += sentence
+                            response += "..."
+                    elif random.random() < 0.5:
+                        if len(syn_list[2].synonyms) > 0:
+                            response += "(" + syn_list[2].synonyms[0] + " ) "
+                    elif random.random() < 0.1:
+                        if len(syn_list[3]) > 0:
+                            response += "... consists of "
+                            numberof = len(syn_list[3])
+                            if numberof > 0:
+                                for syn in syn_list[3]:
+                                    if numberof == 2:
+                                        response += syn.synonyms[0] + " and "
+                                    else:
+                                        response += syn.synonyms[0] + "..."
+                                    numberof -= 1
+            except IndexError:
+                response += tok.text_with_ws
+            except Exception as e:
+                # print(e)
+                response += " "
+        else:
+            response += tok.text_with_ws
+    response = response[0].upper() + response[1:]
+    return response
 
 
 class Brain:
@@ -93,57 +170,52 @@ class Brain:
 
     def process_sentiment(self, message):
         client_sentiment = pattern_en.sentiment(message)
-        print pattern_en.sentiment(message).assessments
+        # print pattern_en.sentiment(message).assessments
         return client_sentiment
 
     def process(self, message):
         # print pattern_en.suggest(message) -- suggestions
         if message == ">!train":
             self.train()
-            return "It is nice to learn new stuff."
+            return ("It is nice to learn new stuff.", 1000)
         if message == ">!forget":
             self.memory.forget()
-            return "I am reborn. So much free space :) maybe you will use files to store memory and not RAM..."
+            return ("I am reborn. So much free space :) maybe you will use files to store memory and not RAM...", 1000)
         if message == ">!memory":
-            return str(self.memory.memory)
+            return (str(self.memory.memory), 1000)
         if message == ">!load_page":
             if self.memory.contains_id(sessionId) is False:
                 # response = "Hello! My name is Chad and I am passionate about music."
                 # response += "We can share our experiences and maybe we can get along."
-                expect[sessionId] = [ "INTRO", "NAME" ]
+                expect[sessionId] = ["GREET", "INTRO", "NAME"]
             else:
                 response = "Welcome back!"
-                with open('results.json') as data_file:
-                    data = json.load(data_file)
-                    for i in range(10):
-                        if 'musicrecording' in data['items'][i]['pagemap']:
-                            mr = data['items'][i]['pagemap']['musicrecording']
-                            which = random.randint(0, len(mr) - 1)
-                            if 'name' not in mr[which]:
-                                response += " Did you know that " + mr[which]['byartist'] + " has released a new song?"
-                            else:
-                                response += " You can check out this cool song, " + mr[which]['name'] + ", by " + \
-                                            mr[which]['byartist']
-                return response
+                response += song_suggestion()
+                return (response, 1000)
 
-        if message in [">!not_exists", ">!load_page"] or expect[sessionId][0] == "NAME" :
-            expect[sessionId].append(random.choice(bot_topics[2:]))
-            bot_q = expect[sessionId][0]
-            bot_q_aiml = "Q " + bot_q
-            try:
-                aiml_response = self.kernel.respond(bot_q_aiml, sessionId)
-            except:
-                aiml_response = ""
-            response = aiml_response
+
+        bot_topic = expect[sessionId][0]
+        if message in [">!not_exists"] or bot_topic in ["GREET", "INTRO", "NAME"] :
+            expect[sessionId].append(random.choice(bot_topics[3:]))
+            if bot_topic == "FACT":
+                response = song_suggestion()
+            else:
+                bot_topic_aiml = "Q " + bot_topic
+                try:
+                    aiml_response = self.kernel.respond(bot_topic_aiml, sessionId)
+                except:
+                    aiml_response = ""
+                response = aiml_response
             expect[sessionId].pop(0)
-            return response
+            response = reformulate(response)
+            return (response, 2000)
 
         if random.random() < 0.1:
             expect[sessionId].append(random.choice(bot_topics[2:]))
 
         matches = tool.check(unicode(message))
         message = language_check.correct(unicode(message), matches)
-        print(message)
+        # print(message)
         doc = spacy_nlp(message)
         '''for w in doc:
             print "(", w, w.dep_, w.pos_, w.head, ")"'''
@@ -164,7 +236,7 @@ class Brain:
                     random_strings += 1
 
             sentence_type = self.instant_classifier.classify(dialogue_act_features(tokens))
-            print(sentence_type)
+            # print(sentence_type)
 
             new_data = dict()
             new_data["type"] = sentence_type.upper()
@@ -198,6 +270,8 @@ class Brain:
 
         arr_response = []
 
+        wait = num_tokens * 100
+
         if random_strings / num_tokens > 0.3:
             random_response = [
                 "I can't understand what you're saying.",
@@ -209,7 +283,7 @@ class Brain:
                 "Heh. I also like to play tap-related games on my mobile device, but not on my keyboard.",
                 "Please consider using your keyboard for writing actual words" ]
             response = random.choice(random_response)
-            return response
+            return (response, wait)
 
         for sent in data:
             sentence_response = ""
@@ -228,7 +302,8 @@ class Brain:
                         aiml_sent_type_res = self.kernel.respond(sentence_type, sessionId)
                     except:
                         aiml_sent_type_res = ""
-                    sentence_response += " " + aiml_sent_type_res
+                    if len(aiml_sent_type_res) > 1:
+                        sentence_response += " " + aiml_sent_type_res
 
             emoi = self.kernel.respond(sent["emotion"])
             if random.random() <= emotion_th[sent["emotion"]]:
@@ -240,9 +315,12 @@ class Brain:
 
         response = ""
 
-        if len(arr_response) == 0:
-            response = "Don't know that'"
         for res in arr_response:
             response += res + " "
 
-        return response
+        response = reformulate(response)
+
+        if len(response) == 0:
+            response = "I don't know."
+
+        return (response, wait)
