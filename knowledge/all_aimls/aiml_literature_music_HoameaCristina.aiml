@@ -1,5 +1,5 @@
-<aiml version="1.0.1" encoding="UTF-8">
-<!-- basic_chat.aiml -->
+<?xml version = "1.0" encoding = "UTF-8"?>
+<aiml>
 	<category>
 		<pattern>WHAT IS YOUR FAVORITE *</pattern>
 		<template>

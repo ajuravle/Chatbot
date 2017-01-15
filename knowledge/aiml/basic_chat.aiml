@@ -1,5 +1,5 @@
-<aiml version="1.0.1" encoding="UTF-8">
-<!-- basic_chat.aiml -->
+<?xml version = "1.0" encoding = "UTF-8"?>
+<aiml>
 	<category>
 		<pattern>WHAT IS YOUR FAVORITE *</pattern>
 		<template>
@@ -1196,17 +1196,6 @@ Indiana Jones, Han Solo, the Fugitive, and the President in Air Force One. Befor
 </random>
 </template>
 </category>
-<category>
-<pattern>WHO IS HARRY POTTER</pattern>
-<template>
-<think>
-<set name="he">
-<set name="topic">HARRY POTTER</set>
-</set>
-</think>
-is a bestselling author.
-</template>
-</category>
 
 <category>
 <pattern>WHO IS HERCULES</pattern>
@@ -1616,5 +1605,289 @@ was the technical genius behind the original Apple computer.
     <pattern>ARE YOU BEING MEAN *</pattern>
     <template>Not intentionally.</template>
   </category>
+  <category>
+		<pattern>DO YOU KNOW WHAT * IS</pattern>
+		<template>
+			<think><set name="phenomenon"> <star/></set></think>
+			<condition name = "phenomenon" value = "wind">
+				Wind is basically the movement of air
+			</condition>
+			<condition name = "phenomenon" value = "rain">
+				The rain is when small drop of wather fall from the clouds to the ground.
+			</condition>		 
+			<condition name = "phenomenon" value = "fog">
+				I don't really know how to explain this phenomenon.
+			</condition>
+		</template>
+	</category>
+	<category>
+		<pattern>DO YOU KNOW WHAT * IS</pattern>
+		<template>
+			<srai>CAN YOU EXPLAIN <star/> </srai>
+		</template>
+	</category>
+	
+	
+	
+	
+	<category>
+		<pattern>DO YOU KNOW WHICH ARE THE WORLDS *</pattern>
+		<template>
+			<think><set name="component"> <star/></set></think>
+			<condition name = "component" value = "climatic zones">
+				Yes. I know there are 5: desert, rainforest, temperate, polar, mountains.
+			</condition>
+			<condition name = "component" value = "continents">
+				Yes. Of course! There is Africa, Asia, South America, North America, Europe,
+				Antarctica and Australia.
+			</condition>
+			<condition name = "component" value = "oceans">
+				I think there is The Pacific Ocean, The Antarctic Ocean, The Atlantic Ocean,
+				The Indian Ocean and The Arctic Ocean.
+			</condition>
+		</template>   
+	</category>
+	<category>
+		<pattern>CAN YOU TELL ME MORE ABOUT THIS CLIMATIC ZONES</pattern>
+		<that>Yes. I know there are 5: desert, rainforest, temperate, polar, mountains. </that>
+		<template>
+			I don't know any details.
+		</template>
+	</category>
+	<category>
+	<pattern>CAN YOU TELL ME MORE ABOUT THIS CLIMATIC CONTINENTS</pattern>
+		<that>Yes. Of course! There is Africa, Asia, South America, North America, Europe,
+				Antarctica and Australia. </that>
+		<template>
+			Well, I know that Asia has the biggest surface and that is has the biggest 
+			population number.
+		</template>
+	</category>
+	<category>
+		<pattern>CAN YOU TELL ME MORE ABOUT THIS OCEANS</pattern>
+		<that>I think there is The Pacific Ocean, The Antarctic Ocean, The Atlantic Ocean,
+				The Indian Ocean and The Arctic Ocean. </that>
+		<template>
+			Not really. I don't like to read about waters.
+		</template>
+	</category>
+	
+	
+	
+	<category>
+		<pattern>HOW A RIVER FLOWS</pattern>
+		<template>
+			<random>
+				<li>Rivers always flow downhill, of course </li>
+				<li>I know that rivers always flow downhill </li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>HOW A RIVER FLOWS</pattern>
+		<template>
+			<srai>CAN YOU TELL ME HOW A RIVER FLOWS</srai>
+		</template>
+	</category>
+	
+	
+	
+	
+	<category>
+		<pattern>WHEN YOU CLIMB A MOUNTAIN THE TEMPERATURE GETS COLDER OR WARMER</pattern>
+		<template>It gets colder with 6 degrees each kilometer climb</template>
+	</category>
+	
+	
+	
+	
+	<category>
+		<pattern>DO YOU KNOW WHICH ARE THE FIRST * COUNTRIES IN THE WORLD BY POPULATION</pattern>
+		<template>
+			<think><set name="countries"> <star/></set></think>
+			<condition name = "countries" value = "2">
+				As I know China and India are the first 2 countries.
+			</condition>
+			<condition name = "countries" value = "3">
+				I think I do. China, India and United States of America.
+			</condition>
+			<condition name = "countries" value = "4">
+				No, I don't know so many details.
+			</condition>
+		</template>	
+	</category>
+	<category>
+		<pattern>DO YOU KNOW WHICH ARE THE FIRST * COUNTRIES IN THE WORLD BY POPULATION</pattern>
+		<template>
+			<srai>WHICH ARE THE * BIGGEST COUNTRIES BY POPULATION</srai>
+		</template>
+	</category>
+	
+	
+	
+	
+	<category>
+		<pattern>WHAT WILL BE THE POPULATION ON EARTH IN *</pattern>
+		<template>
+			<think><set name="population"> <star/></set></think>
+			<condition name = "population" value = "2017">
+				I don't know for sure but I think it will be over 8 billions.
+			</condition>	
+			<condition name = "population" value = "2020">
+				I can't predict that. Probably way bigger than the actual one.
+			</condition>
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT WILL BE THE POPULATION ON EARTH IN *</pattern>
+		<template>
+			<srai>HOW MANY PEOPLES WILL BE ON EARTH IN *</srai>
+		</template>
+	</category>
+	
+	
+	
+	
+	<category>
+		<pattern>TELL ME WHAT ARE THE HIGHEST * MOUNTAINS IN THE WORLD</pattern>
+		<template>
+			I only know the name of the highest: it's Mount Everest.
+		</template>
+	</category>
+	<category>
+		<pattern>CAN YOU TELL ME HIS HEIGHT</pattern>
+		<that>I only know the name of the highest: it's Mount Everest.</that>
+		<template>
+			It's about 8,800m. I don't remember the exact number.
+		</template>
+	</category>
+	
+	
+	
+	
+	<category>
+		<pattern>WHICH IS THE LONGEST RIVER IN *</pattern>
+		<template>
+			<think><set name="rivers"> <star/></set></think>
+			<condition name = "rivers" value = "the world">
+				It's the Amazon. But I don't know it's size.
+			</condition>
+			<condition name = "rivers" value = "Europe">
+				It's called Volga and it has about 3,600 km.
+			</condition>
+		</template>
+	</category>
+	
+	
+	
+	
+	<category>
+		<pattern>WHAT IS THE CAPITAL OF *</pattern>
+		<template>
+			<think><set name="capital"> <star/></set></think>
+			<condition name = "capital" value = "Romania">
+				Bucharest.
+			</condition>
+			<condition name = "capitals" value = "Romania and Italy">
+				For Romania it's Bucharest and for Italy it's Rome.
+			</condition>
+			<condition name = "capitals" value = "Finland">
+				I don't remember this.
+			</condition>
+		</template>
+	</category>
+	
+	
+	
+	
+	<category>
+		<pattern>WHERE ARE YOU FROM</pattern>
+		<template> 
+			<random>
+				<li>I was created in Iasi, Romania.</li>
+				<li>I'm from Romania, Iasi city.</li>
+				<li>I am from Iasi.</li>
+			</random>
+		</template>
+	</category>
+	
+	
+	
+	<category>
+		<pattern>WHO WAS THE ONE TO DISCOVER *</pattern>
+		<template>
+			<think><set name="discover"> <star/></set></think>
+			<condition name = "discover" value = "America">
+				I remember it was Cristopher Columbus.
+			</condition>
+			<condition name = "discover" value = "Asia">
+				I cna't tell you now, if I will learn I will tell you.
+			</condition>
+		</template>
+	</category>
+	
+	
+	
+	<category>
+		<pattern>DO YOU KNOW WHICH COUNTRY IS CALLED "THE COUNTRY OF *"</pattern>
+		<template>
+			<think><set name="nickname"> <star/></set></think>
+			<condition name = "nickname" value = "tulips">
+				I think it is Holland.
+			</condition>
+			<condition name = "nickname" value = "champagne">
+				I know that France has a lot of good taste in champagne but I don't know
+				if that's the answer.
+			</condition>
+		</template>
+	</category>
+	
+	
+	
+	<category>
+		<pattern>DO YOU KNOW THE AREA OF EVERY SINGLE COUNTRY OF THE GLOBE</pattern>
+		<template>
+			<random>
+				<li>No, of course not. </li>
+				<li>This is a very hard question and the answer is no</li>
+				<li>Not really. It's impossible for someone to know.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>DO YOU KNOW THE AREA OF EVERY SINGLE COUNTRY OF THE GLOBE</pattern>
+		<template>
+			<srai>TELL ME THE AREA OF EVERY SINGLE COUNTRY OF THE GLOBE</srai>
+			<srai>WHAT IS THE AREA OF EVERY SINGLE COUNTRY OF THE GLOBE</srai>
+		</template>
+	</category>
+	
+	
+	
+	<category>
+		<pattern>Is there life on the * Pole</pattern>
+		<template>
+			<random>
+				<li>Yes, of course. Animals and people who make researches here</li>
+				<li>Yes but people only live there temporarily</li>
+			</random>
+		</template>
+	</category>
+	
+	
+	
+	<category>	
+		<pattern>Which country is the most visited by tourists</pattern>
+		<template>
+			<random>
+				<li>I don't know for sure but Italy, Greece and Spain are very popular in
+				Europe.</li>
+				<li>In North America it's a pleasure to visit Los Angeles and New York, I
+				don't know about other continents.</li>
+				<li>Asia has many countries like Thailand and China. That's what I know.</li>
+				<li>Africa is known for great safaris in Kenya. </li>
+			</random>
+		</template>
+	</category>
 
 </aiml>
