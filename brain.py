@@ -90,7 +90,10 @@ def song_suggestion():
     return response
 
 def reformulate(data_in):
-    doc = spacy_nlp(unicode(data_in))
+    try:
+        doc = spacy_nlp(unicode(data_in))
+    except:
+        return data_in
     response = ""
 
     map_pos = dict()
@@ -117,13 +120,10 @@ def reformulate(data_in):
                         response += random.choice(syn_list[1]) + " "
                     else:
                         response += tok.text_with_ws
-                    if random.random() < 1.0:
+                    if random.random() < 0.05:
                         if len(syn_list[0]) > 0:
-                            definition = spacy_nlp(syn_list[0])
-                            span = definition.sents[0]
                             response += "... By definition " + tok.text + " is "
-                            sentence = ''.join(definition[i].text_with_ws for i in range(span.start, span.end)).strip()
-                            response += sentence
+                            response += syn_list[0]
                             response += "..."
                     elif random.random() < 0.5:
                         if len(syn_list[2].synonyms) > 0:
@@ -146,7 +146,8 @@ def reformulate(data_in):
                 response += " "
         else:
             response += tok.text_with_ws
-    response = response[0].upper() + response[1:]
+    if len(response) > 1:
+        response = response[0].upper() + response[1:]
     return response
 
 
@@ -195,7 +196,7 @@ class Brain:
 
 
         bot_topic = expect[sessionId][0]
-        if message in [">!not_exists"] or bot_topic in ["GREET", "INTRO", "NAME"] :
+        if message in [">!not_exists"] or bot_topic in ["GREET", "INTRO", "NAME"]:
             expect[sessionId].append(random.choice(bot_topics[3:]))
             if bot_topic == "FACT":
                 response = song_suggestion()
@@ -207,120 +208,127 @@ class Brain:
                     aiml_response = ""
                 response = aiml_response
             expect[sessionId].pop(0)
-            response = reformulate(response)
+            if len(response) > 0:
+                response = reformulate(response)
             return (response, 2000)
 
-        if random.random() < 0.1:
-            expect[sessionId].append(random.choice(bot_topics[2:]))
+        try:
+            if random.random() < 0.1:
+                expect[sessionId].append(random.choice(bot_topics[3:]))
 
-        matches = tool.check(unicode(message))
-        message = language_check.correct(unicode(message), matches)
-        # print(message)
-        doc = spacy_nlp(message)
-        '''for w in doc:
-            print "(", w, w.dep_, w.pos_, w.head, ")"'''
+            matches = tool.check(unicode(message))
+            message = language_check.correct(unicode(message), matches)
+            # print(message)
+            doc = spacy_nlp(message)
+            '''for w in doc:
+                print "(", w, w.dep_, w.pos_, w.head, ")"'''
 
-        data = []
+            data = []
 
-        random_strings = 0
-        num_tokens = 0
+            random_strings = 0
+            num_tokens = 0
 
-        for span in doc.sents:
-            tokens = [doc[i] for i in range(span.start, span.end)]
-            sentence = ''.join(doc[i].text_with_ws for i in range(span.start, span.end)).strip()
-            sentence_no_punct = ''.join(doc[i].text_with_ws for i in range(span.start, span.end) if doc[i].is_punct is False).strip()
+            for span in doc.sents:
+                tokens = [doc[i] for i in range(span.start, span.end)]
+                sentence = ''.join(doc[i].text_with_ws for i in range(span.start, span.end)).strip()
+                sentence_no_punct = ''.join(doc[i].text_with_ws for i in range(span.start, span.end) if doc[i].is_punct is False).strip()
 
-            num_tokens += len(tokens)
-            for tok in tokens:
-                if tok.is_oov:
-                    random_strings += 1
+                num_tokens += len(tokens)
+                for tok in tokens:
+                    if tok.is_oov:
+                        random_strings += 1
 
-            sentence_type = self.instant_classifier.classify(dialogue_act_features(tokens))
-            # print(sentence_type)
+                sentence_type = self.instant_classifier.classify(dialogue_act_features(tokens))
+                # print(sentence_type)
 
-            new_data = dict()
-            new_data["type"] = sentence_type.upper()
-            polarity, subjective = pattern_en.sentiment(sentence)
-            sent = pattern_en.parse(sentence, lemmata=True)
-            sent = pattern_en.Sentence(sent)
-            modality = pattern_en.modality(sent)
-            mood = pattern_en.mood(sent)
-            new_data["polarity"] = polarity
-            new_data["subjective"] = subjective
-            new_data["modality"] = modality
-            new_data["mood"] = mood
-            new_data["emotion"] = get_emotion(polarity)
+                new_data = dict()
+                new_data["type"] = sentence_type.upper()
+                polarity, subjective = pattern_en.sentiment(sentence)
+                sent = pattern_en.parse(sentence, lemmata=True)
+                sent = pattern_en.Sentence(sent)
+                modality = pattern_en.modality(sent)
+                mood = pattern_en.mood(sent)
+                new_data["polarity"] = polarity
+                new_data["subjective"] = subjective
+                new_data["modality"] = modality
+                new_data["mood"] = mood
+                new_data["emotion"] = get_emotion(polarity)
 
-            verbs_subj = set()
-            for possible_subject in span:
-                if (possible_subject.dep == nsubj or possible_subject.dep == nsubjpass) and possible_subject.head.pos == VERB:
-                    verbs_subj.add((possible_subject, possible_subject.head))
+                verbs_subj = set()
+                for possible_subject in span:
+                    if (possible_subject.dep == nsubj or possible_subject.dep == nsubjpass) and possible_subject.head.pos == VERB:
+                        verbs_subj.add((possible_subject, possible_subject.head))
 
-            try:
-                aiml_response = self.kernel.respond(sentence_no_punct.upper(), sessionId)
-            except:
-                aiml_response = ""
-            new_data["aiml"] = aiml_response
+                try:
+                    aiml_response = self.kernel.respond(sentence_no_punct.upper(), sessionId)
+                except:
+                    aiml_response = ""
+                new_data["aiml"] = aiml_response
 
-            if len(verbs_subj) > 0:
-                new_data["memory"] = self.memory.respond(verbs_subj, sentence_type, sessionId)
-            else:
-                new_data["memory"] = ""
-            data.append(new_data)
-
-        arr_response = []
-
-        wait = num_tokens * 100
-
-        if random_strings / num_tokens > 0.3:
-            random_response = [
-                "I can't understand what you're saying.",
-                "If you want us to have a nice conversation, try to write undersandable words",
-                "How about we have a normal conversation?",
-                "Hey, please try to write something readable.Thank you!",
-                "Don't write like that, because if I would do it, you wouldn't like it",
-                "I noticed you like to tap random keys on your keyboard! Funny, but please don't do it anymore",
-                "Heh. I also like to play tap-related games on my mobile device, but not on my keyboard.",
-                "Please consider using your keyboard for writing actual words" ]
-            response = random.choice(random_response)
-            return (response, wait)
-
-        for sent in data:
-            sentence_response = ""
-
-            if len(sent["aiml"]) > 0:
-                sentence_response += aiml_response
-            else:
-                if len(sent["memory"]) > 0:
-                    if sent["memory"] == "memorate":
-                        sentence_response += self.kernel.respond("memorate", sessionId)
-                    else:
-                        sentence_response += sent["memory"]
+                if len(verbs_subj) > 0:
+                    new_data["memory"] = self.memory.respond(verbs_subj, sentence_type, sessionId)
                 else:
-                    sentence_type = sent["type"]
-                    try:
-                        aiml_sent_type_res = self.kernel.respond(sentence_type, sessionId)
-                    except:
-                        aiml_sent_type_res = ""
-                    if len(aiml_sent_type_res) > 1:
-                        sentence_response += " " + aiml_sent_type_res
+                    new_data["memory"] = ""
+                data.append(new_data)
 
-            emoi = self.kernel.respond(sent["emotion"])
-            if random.random() <= emotion_th[sent["emotion"]]:
-                sentence_response += " " + emoi
-            
-            if len(sentence_response) > 0:
-                sentence_response = sentence_response[0].upper() + sentence_response[1:]
-                arr_response.append(sentence_response)
+            arr_response = []
 
-        response = ""
+            wait = num_tokens * 100
 
-        for res in arr_response:
-            response += res + " "
+            if random_strings / num_tokens > 0.3:
+                random_response = [
+                    "I can't understand what you're saying.",
+                    "If you want us to have a nice conversation, try to write undersandable words",
+                    "How about we have a normal conversation?",
+                    "Hey, please try to write something readable.Thank you!",
+                    "Don't write like that, because if I would do it, you wouldn't like it",
+                    "I noticed you like to tap random keys on your keyboard! Funny, but please don't do it anymore",
+                    "Heh. I also like to play tap-related games on my mobile device, but not on my keyboard.",
+                    "Please consider using your keyboard for writing actual words" ]
+                response = random.choice(random_response)
+                return (response, wait)
 
-        response = reformulate(response)
+            for sent in data:
+                sentence_response = ""
 
-        if len(response) == 0:
-            response = "I don't know."
+                if len(sent["aiml"]) > 0:
+                    sentence_response += aiml_response
+                else:
+                    if len(sent["memory"]) > 0:
+                        if sent["memory"] == "memorate":
+                            sentence_response += self.kernel.respond("memorate", sessionId)
+                        else:
+                            sentence_response += sent["memory"]
+                    else:
+                        sentence_type = sent["type"]
+                        try:
+                            aiml_sent_type_res = self.kernel.respond(sentence_type, sessionId)
+                        except:
+                            aiml_sent_type_res = ""
+                        if len(aiml_sent_type_res) > 1:
+                            sentence_response += " " + aiml_sent_type_res
+
+                emoi = self.kernel.respond(sent["emotion"])
+                if random.random() <= emotion_th[sent["emotion"]]:
+                    sentence_response += " " + emoi
+                
+                if len(sentence_response) > 1:
+                    sentence_response = sentence_response[0].upper() + sentence_response[1:]
+                    arr_response.append(sentence_response)
+
+            response = ""
+
+            for res in arr_response:
+                response += res + " "
+
+            if len(response) > 0:
+                response = reformulate(response)
+            else:
+                aiml_generic = self.kernel.respond("FILTER INSULT", sessionId)
+                response = aiml_generic
+
+        except Exception as e:
+            response = str(e)
+            wait = 100
 
         return (response, wait)
