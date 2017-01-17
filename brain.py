@@ -71,7 +71,7 @@ def get_emotion(polarity):
     return emotion
 
 # bot_topics = [ "INTRO", "NAME", "HOBBY", "THINK", "JOKE", "SEARCH", "NEWS", "FACT" ]
-bot_topics = ["GREET", "INTRO", "NAME", "HOBBY", "THINK", "JOKE", "FACT"]
+bot_topics = ["GREET", "INTRO", "NAME", "HOBBY", "THINK", "JOKE", "FACT", "REVIEW"]
 
 def song_suggestion():
     response = ""
@@ -87,6 +87,19 @@ def song_suggestion():
                     response += " You can check out this cool song, " + mr[which]['name'] + ", by " + \
                                 mr[which]['byartist']
                 break
+    return response
+
+def song_review():
+    response = ""
+    with open('reviews.json') as data_file:
+        data = json.load(data_file)
+        choice = random.choice(data)
+        if random.random() < 0.5:
+            response += "Do you know \""
+        else:
+            response += "Have you heard about \""
+        response += choice["song"] + "\" by " + choice["artist"] + "? "
+        response += choice["review"]
     return response
 
 def reformulate(data_in):
@@ -198,8 +211,13 @@ class Brain:
         bot_topic = expect[sessionId][0]
         if message in [">!not_exists"] or bot_topic in ["GREET", "INTRO", "NAME"]:
             expect[sessionId].append(random.choice(bot_topics[3:]))
+            allow_reformulate = True
             if bot_topic == "FACT":
                 response = song_suggestion()
+                allow_reformulate = False
+            elif bot_topic == "REVIEW":
+                response = song_review()
+                allow_reformulate = False
             else:
                 bot_topic_aiml = "Q " + bot_topic
                 try:
@@ -208,7 +226,7 @@ class Brain:
                     aiml_response = ""
                 response = aiml_response
             expect[sessionId].pop(0)
-            if len(response) > 0:
+            if len(response) > 0 and allow_reformulate is True:
                 response = reformulate(response)
             return (response, 2000)
 
@@ -329,6 +347,14 @@ class Brain:
 
         except Exception as e:
             response = str(e)
+            if random.random() < 0.5:
+                response = song_review()
+            else:
+                response = song_suggestion()
             wait = 100
 
         return (response, wait)
+
+
+if __name__ == "__main__":
+    song_review()
