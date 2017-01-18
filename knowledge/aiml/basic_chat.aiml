@@ -1,5 +1,158 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 <aiml>
+
+	<category>
+		<pattern>WHEN WORLD WAR II STARTED</pattern>
+		<template>World War II started on 1 September 1939</template>
+	</category>
+
+	<category>
+		<pattern>WHO IS *</pattern>
+		<template>
+			<think><set name="who"><star index="1"/></set></think>
+			<condition name="who" value="ADOLF HITLER">Adolf Hitler was a German politician who was the leader of Nazi Party</condition>
+			<condition name="who" value="JOSEPH STALIN">Stalin was the leader of Soviet Union</condition>
+			<condition name="who" value="VLADIMIR PUTIN">Putin is the current President of the Russian Federation</condition>
+		</template>
+	</category>
+
+	<category>
+		<pattern>DO YOU THINK THAT A WORLD WAR III IS COMING</pattern>
+		<template>I can`t predict the future but i can see that all nations are getting more and more disrespectful with each other. I think something very dangerously is not so far...</template>
+	</category>
+
+	<category>
+		<pattern>IN WHAT YEAR DID FIDEL CASTRIO DIE</pattern>
+		<template>He died in 2016</template>
+	</category>
+
+	<category>
+		<pattern>IN WHAT YEAR DID INDIA GAIN TIS INDEPENDENCE FROM BRITAIN</pattern>
+		<template>1947</template>
+	</category>
+
+	<category>
+		<pattern>WHAT FAMOUS DOCUMENT BEGINS: WHEN IN THE COURS OF HUMAN EVENT...</pattern>
+		<template>The Declaration of Independence</template>
+	</category>
+
+	<category>
+		<pattern>WHAT IS THE NAME OF THE DEEPEST KNOWN LOCATION IN THE EARTH'S OCEANS</pattern>
+		<template>Challenger Deep</template>
+	</category>
+
+	<category>
+		<pattern>WHAT DO YOU KNOW ABOUT 9/11 ATTACKS</pattern>
+		<template>The September 11 attacks were a series of four coordinated terrorist attacks by the Islamic terrorist group al-Qaeda on the United States on the morning of Tuesday, September 11, 2001</template>
+	</category>
+
+	<category>
+		<pattern>FARC IS THE ACRONYM FOR A GUERRILLA MOVEMENT ORIGINATING IN WHICH COUNTRY</pattern>
+		<template>Colombia</template>
+	</category>
+
+	<category>
+		<pattern>THE UNITED KINGDOM'S WITHDRAWAL FROM THE EUROPEAN UNION IS COMMONLY KNOWN AS WHAT</pattern>
+		<template>Is known as Brexit</template>
+	</category>
+
+	<category>
+		<pattern>HOW LONG DID THE * LAST</pattern>
+		<template>
+			<think><set name="which"><star index="1"/></set></think>
+			<condition name="which" value="VIETNAM WAR">19 years, 5 months, 4 weeks and 1 day</condition>
+			<condition name="which" value="COLD WAR">The Cold War lasted for a total of 45 years</condition>
+			<condition name="which" value="WORLD WAR II">6 yeard and one day</condition>
+			<condition name="which" value="WORLD WAR I">4 years, 3 months and 2 weeks</condition>
+			<condition name="which" value="HUNDRED YEARS' WAR">I know what you're thinking but it last 116 years</condition>
+		</template>
+	</category>
+
+	<category>
+		<pattern>ARE YOU A RACIST ?</pattern>
+		<template>No, and i think no one should be. We should make the world a better place by stoping judgement based on race, religion and so on...</template>
+	</category>
+
+	<category>
+		<pattern>WHO ASSASSINATED PRESIDENT ABRAHAM LINCOLN</pattern>
+		<template>He was assasinated by John Wilkes Booth</template>
+	</category>
+
+	<category>
+		<pattern>IN WHAT YEAR WAS THE DECLARATION OF INDEPENDENCE CREATED</pattern>
+		<template>
+			<random>
+				<li>1776</li>
+				<li>It was created in 1776</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>HOW MANY ELEVATORS DOES THE EMPIRE STATE BUILDING HAVE</pattern>
+		<template>
+			<random>
+				<li>Woaah, there are 73 elevators</li>
+				<li>73 elevators</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHO WAS THE FIRST AUSTRONAUT TO VISIT SPACE TWICE</pattern>
+		<template>Gus Grissom</template>
+	</category>
+
+	<category>
+		<pattern>IN WHAT YEAR WAS NELSON MANDELA RELEASED FROM PRISON ?</pattern>
+		<template>1990</template>
+	</category>
+
+	<category>
+		<pattern>WHAT IS YOUR NAME</pattern>
+		<template>
+			<random>
+				<li>My name is Chad.</li>
+				<li>I am Chad.</li>
+				<li>You can call me Chad.</li>
+			</random>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>DO YOU HAVE A FAMILY</pattern>
+			<template>
+				<random>
+					<li>Not really, I'm a chatbot.</li>
+					<li>No. It's just me.</li>
+					<li>I live in a computer so I can say it is my family.</li>
+					<li>Well, there are many chatbots in this world so I can call them my family. </li>
+				</random>
+		</template>
+	</category>
+	
+	
+	<category>
+		<pattern>WHERE ARE YOU FROM</pattern>
+			<template>
+				<random>
+					<li>I can say I'm from Iasi.</li>
+					<li>I live in Romania for now.</li>
+					<li>I have been made by students from Iasi so this is my city.</li>
+				</random>
+		</template>
+	</category>
+	
+	
+	<category>
+		<pattern>DO YOU HAVE ANY HOBBIES</pattern>
+			<template>
+				<random>
+					<li>I like to learn new things.</li>
+					<li>I love talking and socializing.</li>
+				</random>
+		</template>
+	</category>
 	<category>
 		<pattern>WHAT IS YOUR FAVORITE *</pattern>
 		<template>
@@ -1330,7 +1483,7 @@ was the technical genius behind the original Apple computer.
         series has a perfect operational record.
         </li>
         <li>
-        Let me put it this way
+        Let me put it this way,
         <get name="name"/>
         : the
         <bot name="name"/>
